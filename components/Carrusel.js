@@ -8,7 +8,7 @@ import con3 from "../public/contenedores3.jpg"
 const Carrusel = () => {
   return (
     <div className="pl-3 pr-3">
-        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+        {/* <div id="controls-carousel" class="relative w-full" data-carousel="static">
             <div class="relative h-56 overflow-hidden rounded-lg md:h-56">
                 <div class="flex duration-700 ease-in-out justify-center" data-carousel-item="active">
                     <Image width={400} height={200} src={con1} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
@@ -35,7 +35,7 @@ const Carrusel = () => {
                     <span class="sr-only">Next</span>
                 </span>
             </button>
-        </div>
+        </div> */}
 
     </div>
   )

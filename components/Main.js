@@ -23,8 +23,8 @@ const Main = () => {
             </div>
         </div>
         <div className="flex flex-row">
-        <div class="basis-1/4 p-6 m-1 border border-gray-200 rounded-lg shadow">
-            <ul class="list-disc text-ssm text-gray-dark">
+        <div className="basis-1/4 p-6 m-1 border border-gray-200 rounded-lg shadow">
+            <ul className="list-disc text-ssm text-gray-dark">
                 <li>Desarrollo de clientes y mercados.</li>
                 <li>Desarrollo de proveedores de productos y/o insumos.</li>
                 <li>Control de producción en proveedores del exterior.</li>
@@ -32,8 +32,8 @@ const Main = () => {
                 <li>Exportación por cuenta y orden de terceros.</li>
             </ul>
         </div>
-        <div class="basis-1/4 p-6 m-1 border border-gray-200 rounded-lg shadow">
-            <ul class="list-disc text-ssm">
+        <div className="basis-1/4 p-6 m-1 border border-gray-200 rounded-lg shadow">
+            <ul className="list-disc text-ssm">
                 <li>Participación en misiones propias e inversas.</li>
                 <li>Promoción a través de comerciantes propios.</li>
                 <li>Ingreso, egreso y liquidación de divisas.</li>
@@ -41,8 +41,8 @@ const Main = () => {
                 <li>Tramites en registro de importadores/exportadores.</li>
             </ul>
         </div>
-            <div class="p-6 basis-1/4 m-1 border border-gray-200 rounded-lg shadow">
-                <ul class="list-disc text-ssm">
+            <div className="p-6 basis-1/4 m-1 border border-gray-200 rounded-lg shadow">
+                <ul className="list-disc text-ssm">
                     <li>Tramitación de certificados y autorizaciones.</li>
                     <li>Asesoramiento sobre el modo de transporte.</li>
                     <li>Supervisión física de los embarques.</li>
@@ -50,8 +50,8 @@ const Main = () => {
                     <li>Seguimiento de los reintegros a la exportación.</li>
                 </ul>
             </div>
-            <div class="p-6 basis-1/4 m-1 border border-gray-200 rounded-lg shadow">
-                <ul class="list-disc text-ssm">
+            <div className="p-6 basis-1/4 m-1 border border-gray-200 rounded-lg shadow">
+                <ul className="list-disc text-ssm">
                     <li>Análisis tributario y aduanero.</li>
                     <li>Confección y presentación de SIMI y LNA.</li>
                     <li>Planificación y generación de ordenes de compras.</li>
