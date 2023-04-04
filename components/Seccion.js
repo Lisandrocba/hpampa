@@ -13,7 +13,7 @@ const Seccion = () => {
     <div className="bg-hpampa p-5 mt-5 pb-7">
       <h3 className="text-xl text-blanco p-3 pb-7">Sectores con los que trabajamos</h3>
       <div className="flex flex-row justify-around items-center">
-        <Link href="/">
+        <Link href="/alimentos">
             <div className="grid justify-items-center bg-blanco rounded-full p-4 w-24 h-24 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300">
                 <Image width={40} height={40} src={alimentos} />
                 <h2 className="text-ssm pt-1">Alimentos</h2>

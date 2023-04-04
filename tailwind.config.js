@@ -19,7 +19,7 @@ module.exports = {
         'blanco': '#fff',
         'negro': '#000',
         'hpampa': '#66add4',
-        'pink': '#ff49db',
+        'dark': '#1e293b',
         'orange': '#ff7849',
         'green': '#13ce66',
         'yellow': '#ffc82c',
