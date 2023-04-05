@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex flex-row items-center justify-between p-2 ">
             <div className="flex flex-row items-center">
                 <Image src={logoHPampa} alt="logohpampa" width={30} height={40}/>
-                <p className="text-2xl text-blanco font-bold">Pampa</p>
+                <p className="text-2xl text-blanco font-bold pl-1">Pampa</p>
             </div>
             <h1 className='text-blanco'>Comercio Exterior</h1>
         </div>

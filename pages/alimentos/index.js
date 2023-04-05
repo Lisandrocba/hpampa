@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logoHPampa from "../../public/hLogo.png"
+import logoHPampa from "../../public/logo-HPampaBlanco.png"
 import Typed from 'typed.js';
 import Link from 'next/link';
 
@@ -23,8 +23,8 @@ const el = React.useRef(null);
             <div className="flex flex-row items-center justify-between p-2 ">
                 <Link href="/">
                     <div className="flex flex-row items-center">
-                        <Image src={logoHPampa} alt="logohpampa" width={40} height={40}/>
-                        <p className="text-2xl text-blanco font-bold">Pampa</p>
+                        <Image src={logoHPampa} alt="logohpampa" width={35} height={35}/>
+                        <p className="text-2xl text-blanco font-bold pl-1">Pampa</p>
                     </div>
                 </Link>
                 <h1 className='text-blanco'>Comercio Exterior</h1>
