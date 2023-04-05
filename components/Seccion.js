@@ -10,7 +10,7 @@ import martillo from "../public/martillo.png"
 
 const Seccion = () => {
   return (
-    <div className="bg-hpampa p-5 mt-5 pb-7">
+    <div className="bg-hpampa p-5 pb-7">
       <h3 className="text-xl text-blanco p-3 pb-7">Sectores con los que trabajamos</h3>
       <div className="flex flex-row justify-around items-center">
         <Link href="/">
