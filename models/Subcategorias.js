@@ -13,7 +13,6 @@ export default class Subcategorias{
     static get schema(){
         return{
             nombre: String,
-            img: String,
             productos: [{
                 producto:{
                     type: Schema.Types.ObjectId,

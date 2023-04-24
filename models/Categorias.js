@@ -14,7 +14,6 @@ export default class Categorias{
         return {
             nombre: String,
             descripcion: String,
-            img: String,
             subcategorias: [{
                 subcategoria: {
                     type: Schema.Types.ObjectId,
