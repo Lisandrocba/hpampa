@@ -21,9 +21,9 @@ export default class Dao{
         const productoSchema = mongoose.Schema(Productos.schema, timestamp)
         
         this.models = {
-            [Categorias.model] : mongoose.Models.Categorias || mongoose.model(Categorias.model, categoriaSchema),
-            [Subcategorias.model] : mongoose.Models.Subcategorias || mongoose.model(Subcategorias.model, subcategoriaSchema),
-            [Productos.model] : mongoose.Models.Productos || mongoose.model(Productos.model, productoSchema)
+            [Categorias.model] : mongoose.models.Categorias || mongoose.model(Categorias.model, categoriaSchema),
+            [Subcategorias.model] : mongoose.models.Subcategorias || mongoose.model(Subcategorias.model, subcategoriaSchema),
+            [Productos.model] : mongoose.models.Productos || mongoose.model(Productos.model, productoSchema)
         }
     }
 

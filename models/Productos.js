@@ -9,9 +9,10 @@ export default class Productos{
 
     static get schema(){
         return{
-            nombre: String,
+            nombreEmpresa: String,
+            nombreLinea: String,
             descripcion: String,
-            img: String
+            img: String,
         }
     }
 }

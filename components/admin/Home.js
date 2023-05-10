@@ -7,7 +7,7 @@ import FormCategoria from './FormCategoria'
 import FormSubcategoria from './FormSubcategoria'
 import FormProducto from './FormProducto'
 
-const HomeAdmin = () => {
+const HomeAdmin = (categorias) => {
   const {ternarioAdmin, setTernarioAdmin} = useContext(AdminContext)
 
   useEffect(()=>{
@@ -20,7 +20,7 @@ const HomeAdmin = () => {
             <div className="w-2/3 mr-4">
               {ternarioAdmin==="lista" ?  <ListaServicios /> : null}
               {ternarioAdmin==="categoria" ?  <FormCategoria /> : null}
-              {ternarioAdmin==="subcategoria" ?  <FormSubcategoria /> : null}
+              {ternarioAdmin==="subcategoria" ?  <FormSubcategoria  categorias= {categorias.categorias}/> : null}
               {ternarioAdmin==="producto" ?  <FormProducto /> : null}
             </div>
         </div>
