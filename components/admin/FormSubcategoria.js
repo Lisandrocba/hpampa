@@ -9,7 +9,7 @@ const initialState = {
 export default function FormSubcategoria (categorias){
   const [formSub, setFormSub] = useState(initialState);
   let categoria = [categorias.categorias]
-
+  console.log(categorias)
   const handlerChange = async (e) => {
     e.preventDefault()
     setFormSub({

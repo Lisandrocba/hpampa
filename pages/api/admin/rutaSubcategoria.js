@@ -1,18 +1,22 @@
-import { categoriasServices } from "@/services/services"
+import { categoriasServices, subcategoriasServices } from "@/services/services"
 
 export default async function Login (req,res){
-    const result = req.body
+    const {nombre, descripcion, categorias} = req.body
 
      switch (req.method) {
         case "POST":{
-            console.log(result)
-            /* const categoriasDB = categoriasServices.getById({nombre})
-            if(!categoriasDB) return res.json({error: "La categoria ya existe"})
-            const nuevaCategoria = await categoriasServices.save({
+            const subcategoriasDB = await subcategoriasServices.getById({nombre})
+            if(subcategoriasDB) return res.json({error: "La subcategoria ya existe"})
+            const nuevaSubcategoria = await subcategoriasServices.save({
                 nombre,
                 descripcion
             })
-            return res.json({error: "La categoria se creo exitosamente"}) */
+            const categorie = await categoriasServices.getById({nombre : categorias})
+            if(!categorie) return res.json({error: "La categoria no se encontro"})
+            const _id = categorie._id
+            categorie.subcategorias.push({subcategoria: nuevaSubcategoria._id})
+            const result = await categoriasServices.update({_id, categorie})
+            return res.json({error: "La categoria se creo exitosamente", result}) 
         }
 
         default:

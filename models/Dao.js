@@ -55,7 +55,7 @@ export default class Dao{
         if (!this.models[entity]) throw new Error(`Modelo ${entity} no encontrado`);
         const id = document._id;
         delete document._id;
-        let result = await this.models[entity].findByIdAndUpdate(id, {$set: document})
+        let result = await this.models[entity].findByIdAndUpdate(id, {$set: document.categorie})
         return result.toObject();
       }
     

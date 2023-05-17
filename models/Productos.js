@@ -12,6 +12,7 @@ export default class Productos{
             nombreEmpresa: String,
             nombreLinea: String,
             descripcion: String,
+            subcategorias: String,
             img: String,
         }
     }
