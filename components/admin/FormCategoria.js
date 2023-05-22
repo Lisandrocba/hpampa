@@ -16,7 +16,7 @@ const FormCategoria = () => {
   }
 
   return (
-    <div>
+    <div className="mb-5 mt-5">
       <p>Agregar categoria</p>
       <form className="mt-6" action="../api/admin/rutaCategoria" method="POST">
         <div className="relative z-0 w-full mb-6 group">

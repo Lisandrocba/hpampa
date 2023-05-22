@@ -95,7 +95,7 @@ const FormProducto = (subcategorias) => {
           </label>
           <select
             id="selectCategoria"
-            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             onChange={handlerChange}
             name="subcategorias"
           >
@@ -116,7 +116,7 @@ const FormProducto = (subcategorias) => {
             Imagen Linea
           </label>
           <input
-            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg hover:border-hpampa cursor-pointer bg-gray-50 focus:outline-none "
+            className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg hover:border-hpampa cursor-pointer bg-gray-50 focus:outline-none "
             id="file_input"
             name='img'
             type="file"

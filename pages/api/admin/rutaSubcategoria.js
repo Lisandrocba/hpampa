@@ -4,6 +4,10 @@ export default async function Login (req,res){
     const {nombre, descripcion, categorias} = req.body
 
      switch (req.method) {
+        case "GET": {
+            const subcategorias = subcategoriasServices.getAll()
+            res.json({subcategorias})
+        }
         case "POST":{
             const subcategoriasDB = await subcategoriasServices.getById({nombre})
             if(subcategoriasDB) return res.json({error: "La subcategoria ya existe"})

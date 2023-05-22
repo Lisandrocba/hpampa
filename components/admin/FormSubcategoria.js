@@ -9,7 +9,7 @@ const initialState = {
 export default function FormSubcategoria (categorias){
   const [formSub, setFormSub] = useState(initialState);
   let categoria = [categorias.categorias]
-  console.log(categorias)
+  
   const handlerChange = async (e) => {
     e.preventDefault()
     setFormSub({
@@ -19,7 +19,7 @@ export default function FormSubcategoria (categorias){
   };
 
   return (
-    <div>
+    <div className="mb-5 mt-5">
       <p>Agregar subcategoria</p>
       <form className="mt-6" action="../api/admin/rutaSubcategoria" method="POST">
         <div className="relative z-0 w-full mb-6 group">

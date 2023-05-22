@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import { AdminContext } from '@/context/AdminContext'
 
 const Botones = () => {
@@ -24,9 +24,9 @@ const Botones = () => {
                 Agregar producto
             </span>
         </button>
-        <button onClick={()=>console.log("error")} className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-hpampa to-blue-500 group-hover:from-hpampa group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
+        <button onClick={()=>cambiarValor("lista")} className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-hpampa to-blue-500 group-hover:from-hpampa group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
             <span className="relative w-48 text-xs px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Eliminar
+                Lista completa
             </span>
         </button>
     </div>
