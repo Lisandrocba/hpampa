@@ -8,13 +8,18 @@ export default async function Login (req,res){
             return res.json({categorias})
         }
         case "POST":{
-            const categoriasDB = categoriasServices.getById({nombre})
+            const categoriasDB = await categoriasServices.getById({nombre})
             if(!categoriasDB) return res.json({error: "La categoria ya existe"})
             const nuevaCategoria = await categoriasServices.save({
                 nombre,
                 descripcion
             })
             return res.json({error: "La categoria se creo exitosamente"})
+        }
+
+        case "DELETE":{
+            const id = JSON.parse(req.body)
+            await categoriasServices.delete(id.id) 
         }
 
         default:
