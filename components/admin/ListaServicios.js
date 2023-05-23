@@ -66,7 +66,7 @@ const ListaServicios = (props) => {
       </div>
       <div>
         {filtro === "producto" && (<ListaProductos listaProducto={listaProducto} />)}
-        {filtro === "subcategoria" && (<ListaSubcategorias deleteItem={deleteItem} listaSubcategoria={listaSubcategoria} />)}
+        {filtro === "subcategoria" && (<ListaSubcategorias listaSubcategoria={listaSubcategoria} />)}
         {filtro === "categoria" && (<ListaCategorias listaCategoria={listaCategoria} />)}
       </div>
     </div>
