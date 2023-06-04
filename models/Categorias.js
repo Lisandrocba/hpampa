@@ -16,7 +16,7 @@ export default class Categorias{
             descripcion: String,
             subcategorias: [{
                 subcategoria: {
-                    type: Schema.Types.ObjectId,
+                    type: Schema.Types.String,
                     ref: "Subcategorias"
                 }
             }]

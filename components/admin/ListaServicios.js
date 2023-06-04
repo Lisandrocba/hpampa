@@ -28,7 +28,7 @@ const ListaServicios = (props) => {
         .then((res) => setListaSubcategoria(res));
     }
     devolver();
-  });
+  },[]);
   
   return (
     <div className="mb-5 mt-5">

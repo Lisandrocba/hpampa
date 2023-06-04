@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ListaCategorias = ({ listaCategoria }) => {
+
+  
 
   const deleteItem =async(id)=>{
     const url = "http://localhost:3000/api/admin/rutaCategoria";

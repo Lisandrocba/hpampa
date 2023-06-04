@@ -18,7 +18,7 @@ export default async function Login (req,res){
             const categorie = await categoriasServices.getById({nombre : categorias})
             if(!categorie) return res.json({error: "La categoria no se encontro"})
             const _id = categorie._id
-            categorie.subcategorias.push({subcategoria: nuevaSubcategoria._id})
+            categorie.subcategorias.push({subcategoria: nuevaSubcategoria.nombre})
             const result = await categoriasServices.update({_id, categorie})
             return res.json({error: "La categoria se creo exitosamente", result}) 
         }

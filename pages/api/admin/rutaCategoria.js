@@ -9,7 +9,8 @@ export default async function Login (req,res){
         }
         case "POST":{
             const categoriasDB = await categoriasServices.getById({nombre})
-            if(!categoriasDB) return res.json({error: "La categoria ya existe"})
+            console.log(categoriasDB)
+            if(!categoriasDB === null) return res.json({error: "La categoria ya existe"})
             const nuevaCategoria = await categoriasServices.save({
                 nombre,
                 descripcion

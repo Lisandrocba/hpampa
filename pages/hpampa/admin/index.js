@@ -31,7 +31,6 @@ export async function getServerSideProps(){
     const categoria = categorias.map(cat=>{
       return cat.nombre
     })
-
     const subcategorias = await subcategoriasServices.getAll()
     const subcategoria = subcategorias.map(cat=>{
       return cat.nombre
@@ -43,13 +42,13 @@ export async function getServerSideProps(){
       return (cat._id).toString()
     })
 
-    return{
+    return({
       props: {
         categorias : categoria,
         subcategorias: subcategoria, 
         productos: producto
       }
-    }
+    })
   }catch(e){
     console.log(e)
   }

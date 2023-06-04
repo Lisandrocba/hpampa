@@ -10,6 +10,7 @@ const ListaSubcategorias = ({ listaSubcategoria }) => {
         id: id
       })
     })
+    location.reload()
   }
 
   return (
