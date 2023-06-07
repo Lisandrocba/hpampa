@@ -5,13 +5,13 @@ const initialState = {
   nombreEmpresa: "",
   nombreLinea: "",
   descripcion: "",
-  img: "",
+  img: {},
 };
 
 const FormProducto = (subcategorias) => {
   const [form, setForm] = useState(initialState);
   const [image, setImage] = useState(null);
-  const [imageI, setImageI] = useState(null);
+  const [imageI, setImageI] = useState({});
   let subcategoria = [subcategorias.subcategorias];
 
   const handlerChange = async (e) => {
@@ -23,17 +23,17 @@ const FormProducto = (subcategorias) => {
   };
 
   const handlerImage = (e) => {
-    e.preventDefault();
-    const file = e.target.files[0];
+    e.preventDefault()
+    const newfile = e.target.files[0];
     setForm({
       ...form,
-      [e.target.name]: file,
+      [e.target.name]: e.target.files[0],
     });
     const fileRead = new FileReader();
     fileRead.onload = function (e) {
       setImage(e.target.result);
     };
-    fileRead.readAsDataURL(file);
+    fileRead.readAsDataURL(newfile);
   };
 
   return (
@@ -102,7 +102,7 @@ const FormProducto = (subcategorias) => {
             {subcategoria[0].map((cat) => {
               if (cat[0]) {
                 return (
-                  <option value={cat} selected>
+                  <option key={cat} defaultValue={cat} >
                     {cat}
                   </option>
                 );
@@ -112,7 +112,7 @@ const FormProducto = (subcategorias) => {
           </select>
         </div>
         <div className="relative z-0 w-full mb-6 mt-6 group">
-          <label class="block mb-2 text-sm text-gray-500 " for="file_input">
+          <label className="block mb-2 text-sm text-gray-500 " htmlFor="file_input">
             Imagen Linea
           </label>
           <input

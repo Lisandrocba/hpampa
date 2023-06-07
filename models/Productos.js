@@ -13,7 +13,7 @@ export default class Productos{
             nombreLinea: String,
             descripcion: String,
             subcategorias: String,
-            img: String,
+            img: Object,
         }
     }
 }

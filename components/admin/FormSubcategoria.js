@@ -56,19 +56,19 @@ export default function FormSubcategoria (categorias){
           </label>
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label for="underline_select" class="sr-only">
+          <label htmlFor="underline_select" className="sr-only">
             Underline select
           </label>
           <select
             id="selectCategoria"
-            class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             onChange={handlerChange}
             name="categorias"
           >
             {
               categoria[0].map(cat=>{
                   if(cat[0]){
-                   return <option value={cat} selected>{cat}</option>
+                   return <option key={cat} defaultValue={cat}>{cat}</option>
                   }
                   return <option value={cat}>{cat}</option>
               })

@@ -33,7 +33,7 @@ const ListaCategorias = ({ listaCategoria }) => {
             {listaCategoria
               ? listaCategoria.categorias.map((ele) => {
                   return (
-                    <tr className="bg-white border-b hover:bg-gray-50 ">
+                    <tr key={ele._id} className="bg-white border-b hover:bg-gray-50 ">
                       <th
                         scope="row"
                         className="px-6 py-4 text-xs font-medium text-gray-900 whitespace-nowrap"

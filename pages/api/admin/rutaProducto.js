@@ -9,6 +9,7 @@ export default async function Login(req, res) {
     }
     case "POST": {
       const { nombreEmpresa, nombreLinea, descripcion, subcategorias, img } = req.body;
+      console.log(img)
       const nuevoProducto = await productosServices.save({
         nombreEmpresa,
         nombreLinea,
