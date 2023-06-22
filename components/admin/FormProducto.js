@@ -5,13 +5,13 @@ const initialState = {
   nombreEmpresa: "",
   nombreLinea: "",
   descripcion: "",
-  img: {},
+  imagen: {},
 };
 
 const FormProducto = (subcategorias) => {
   const [form, setForm] = useState(initialState);
+  const [file, setFile] = useState()
   const [image, setImage] = useState(null);
-  const [imageI, setImageI] = useState({});
   let subcategoria = [subcategorias.subcategorias];
 
   const handlerChange = async (e) => {
@@ -24,10 +24,11 @@ const FormProducto = (subcategorias) => {
 
   const handlerImage = (e) => {
     e.preventDefault()
+    setFile(e.target.files[0])
     const newfile = e.target.files[0];
     setForm({
       ...form,
-      [e.target.name]: e.target.files[0],
+      [e.target.name]: e.target.files[0].name,
     });
     const fileRead = new FileReader();
     fileRead.onload = function (e) {
@@ -36,10 +37,36 @@ const FormProducto = (subcategorias) => {
     fileRead.readAsDataURL(newfile);
   };
 
+  const handlerSubmit =async(e)=>{
+    e.preventDefault()
+    const formData = new FormData();
+    formData.append('image', file);
+
+    let res = await fetch('http://localhost:3000/api/admin/file/rutaImagen',{
+      method: 'POST',
+      body: formData,
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data); // La respuesta del servidor
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
+    let resp = await fetch("http://localhost:3000/api/admin/rutaProducto",{
+      method: "POST",
+      body: form
+    })
+    .then(data => data.json())
+    .then(res => console.log(res))
+    
+  }
+
   return (
     <div className="mb-5 mt-5">
       <p>Agregar producto</p>
-      <form className="mt-6" action="../api/admin/rutaProducto" method="POST">
+      <form className="mt-6" onSubmit={(e)=>handlerSubmit(e)}>
         <div className="relative z-0 w-full mb-6 group">
           <input
             type="text"
@@ -117,8 +144,7 @@ const FormProducto = (subcategorias) => {
           </label>
           <input
             className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg hover:border-hpampa cursor-pointer bg-gray-50 focus:outline-none "
-            id="file_input"
-            name='img'
+            name='imagen'
             type="file"
             onChange={handlerImage}
           />

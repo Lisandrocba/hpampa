@@ -1,6 +1,6 @@
 import { categoriasServices, subcategoriasServices } from "@/services/services"
 
-export default async function Login (req,res){
+export default async function Subcategoria (req,res){
     const {nombre, descripcion, categorias} = req.body
 
      switch (req.method) {

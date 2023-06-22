@@ -1,6 +1,6 @@
 import { categoriasServices } from "@/services/services"
 
-export default async function Login (req,res){
+export default async function Categoria (req,res){
     const {nombre, descripcion} = req.body
     switch (req.method) {
         case "GET": {

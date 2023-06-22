@@ -1,23 +1,28 @@
 import { categoriasServices, productosServices } from "@/services/services";
 
-export default async function Login(req, res) {
-  
+
+
+ export default async function Producto(req, res) {
+ 
   switch (req.method) {
     case "GET" : {
       const productos = await productosServices.getAll()
       return res.json({productos})
     }
     case "POST": {
-      const { nombreEmpresa, nombreLinea, descripcion, subcategorias, img } = req.body;
-      console.log(img)
-      const nuevoProducto = await productosServices.save({
+
+      
+      const { nombreEmpresa, nombreLinea, descripcion, subcategorias, img } = JSON.parse(req.body)
+      console.log("info metodo post en rutaProducto", nombreEmpresa, nombreLinea, descripcion, subcategorias, img)
+    
+     /*  const nuevoProducto = await productosServices.save({
         nombreEmpresa,
         nombreLinea,
         descripcion,
         subcategorias,
         img,
-      });
-      return res.json({ error: "El producto se agrego exitosamente",  nuevoProducto});
+      });  */
+      return res.json({ success: "El producto se agrego exitosamente"});
     }
 
     case "DELETE":{
@@ -27,4 +32,4 @@ export default async function Login(req, res) {
     default:
       res.json({ error: "error de servidor" });
   }
-}
+} 
