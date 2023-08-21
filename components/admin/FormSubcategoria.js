@@ -12,6 +12,7 @@ export default function FormSubcategoria (categorias){
   
   const handlerChange = async (e) => {
     e.preventDefault()
+    console.log(formSub)
     setFormSub({
       ...formSub,
       [e.target.name]: e.target.value,
@@ -59,18 +60,19 @@ export default function FormSubcategoria (categorias){
           <label htmlFor="underline_select" className="sr-only">
             Underline select
           </label>
+          <label htmlFor="descripcion" className="text-sm text-gray-200">
+            Categoria:
+          </label>
           <select
             id="selectCategoria"
             className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             onChange={handlerChange}
             name="categorias"
           >
+            <option key={categoria[0].length}>Seleccione una opcion</option>
             {
               categoria[0].map(cat=>{
-                  if(cat[0]){
-                   return <option key={cat} defaultValue={cat}>{cat}</option>
-                  }
-                  return <option value={cat}>{cat}</option>
+                return <option key={cat} value={cat}>{cat}</option>
               })
             }
            

@@ -1,8 +1,11 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const TablaProductos = ({subcategoriaSelect}) => {
   const [listaProductos, setListaProductos] = useState();
   const [image, setImage] = useState()
+
+  console.log(subcategoriaSelect)
   
   useEffect(() => {
     const productos = async () => {
@@ -14,13 +17,12 @@ const TablaProductos = ({subcategoriaSelect}) => {
   }, []);
 
   const handlerImage =(img)=>{
-    const fileRead = new FileReader();
+    /* const fileRead = new FileReader();
     fileRead.readAsDataURL(img);
     fileRead.onload = function (e) {
       setImage(fileRead.result);
-    };
+    }; */
   };
-  
   return (
     <div>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-2">
@@ -46,28 +48,48 @@ const TablaProductos = ({subcategoriaSelect}) => {
           </thead>
           <tbody>
             {listaProductos
-              ? listaProductos.map((ele) => {
+              ? 
+              subcategoriaSelect ?
+              listaProductos.map((ele) => {
                   if (ele.subcategorias === subcategoriaSelect) {
                     {handlerImage(ele.img)}
                     return (
-                      <tr class="bg-blue-500 border-b border-blue-400">
+                      <tr key={ele._id} className="bg-blue-500 border-b border-blue-400">
                         <th
                           scope="row"
-                          class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                          className="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
                         >
                           {ele.nombreEmpresa}
                         </th>
-                        <td class="px-6 py-4">{ele.nombreLinea}</td>
-                        <td class="px-6 py-4">{ele.descripcion}</td>
-                        <td class="px-6 py-4">{ele.subcategorias}</td>
-                        <td class="px-6 py-4">
-                            <img src={image} width={100} height={100} />
+                        <td className="px-6 py-4">{ele.nombreLinea}</td>
+                        <td className="px-6 py-4">{ele.descripcion}</td>
+                        <td className="px-6 py-4">{ele.subcategorias}</td>
+                        <td className="px-6 py-4">
+                            <Image src={`/../public/img/${ele.img}`} width={100} height={100} />
                         </td>
                       </tr>
                     );
                   }
                 })
-              : null}
+                :
+                <tr className="bg-blue-500 border-b border-blue-400">
+                  <th className="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                  No hay elementos
+                  </th>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                </tr>
+              : <tr>
+                  <th>
+                  No hay elementos
+                  </th>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                  <td className="px-6 py-4"></td>
+                </tr>}
           </tbody>
         </table>
       </div>

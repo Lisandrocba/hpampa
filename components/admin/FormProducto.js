@@ -5,7 +5,8 @@ const initialState = {
   nombreEmpresa: "",
   nombreLinea: "",
   descripcion: "",
-  imagen: {},
+  subcategorias: "",
+  img: "",
 };
 
 const FormProducto = (subcategorias) => {
@@ -13,7 +14,6 @@ const FormProducto = (subcategorias) => {
   const [file, setFile] = useState()
   const [image, setImage] = useState(null);
   let subcategoria = [subcategorias.subcategorias];
-
   const handlerChange = async (e) => {
     e.preventDefault();
     setForm({
@@ -44,7 +44,7 @@ const FormProducto = (subcategorias) => {
 
     let res = await fetch('http://localhost:3000/api/admin/file/rutaImagen',{
       method: 'POST',
-      body: formData,
+      body: formData
     })
     .then((response) => response.json())
     .then((data) => {
@@ -53,10 +53,10 @@ const FormProducto = (subcategorias) => {
     .catch((error) => {
       console.error(error);
     });
-
+    console.log(form)
     let resp = await fetch("http://localhost:3000/api/admin/rutaProducto",{
       method: "POST",
-      body: form
+      body: JSON.stringify(form),
     })
     .then(data => data.json())
     .then(res => console.log(res))
@@ -118,23 +118,19 @@ const FormProducto = (subcategorias) => {
         </div>
         <div className="mt-2">
           <label htmlFor="descripcion" className="text-sm text-gray-200">
-            Subcategoria
+            Subcategoria:
           </label>
           <select
             id="selectCategoria"
             className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             onChange={handlerChange}
             name="subcategorias"
+            required
           >
-            {subcategoria[0].map((cat) => {
-              if (cat[0]) {
-                return (
-                  <option key={cat} defaultValue={cat} >
-                    {cat}
-                  </option>
-                );
-              }
-              return <option value={cat}>{cat}</option>;
+            <option key={subcategoria[0].length}>Seleccione una opcion</option>
+            {
+            subcategoria[0].map((cat) => {
+             return <option key={cat} value={cat}>{cat}</option>
             })}
           </select>
         </div>
@@ -144,9 +140,10 @@ const FormProducto = (subcategorias) => {
           </label>
           <input
             className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg hover:border-hpampa cursor-pointer bg-gray-50 focus:outline-none "
-            name='imagen'
+            name='img'
             type="file"
             onChange={handlerImage}
+            required
           />
         </div>
         <div className="m-3">
