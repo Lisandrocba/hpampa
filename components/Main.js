@@ -2,27 +2,28 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div>
-        <h5 className="text-lg m-8">Nuestra empresa</h5>
-        <div className="flex flex-row justify-center ml-16 mr-16 mb-7">
-            <p className="basis-2/6 text-sm text-gray-dark pr-3">
+    <div className="bg-zinc-800 m-0 pt-10 ">
+        <h5 className="text-white text-center text-lg mb-8">Nuestra empresa</h5>
+        <div className="flex flex-row justify-around ml-16 mr-16 mb-7 relative pt-5 ">
+            <div className="bg-black w-96 h-52 rounded-lg absolute -left-28 top-0 border-2 border-zinc-900"></div>
+            <p className="basis-2/6 text-sm text-slate-300 pr-3 z-10 mb-10 relative">
                 Somos una empresa conformada por profesionales de comercio exterior, 
                 dedicada al desarrollo comercial de clientes, mercados y proveedores de insumos como
                 así también de productos terminados.
             </p>
             <div className="basis-4/6">
-                <p className="mb-2 text-sm text-gray-dark">
+                <p className="mb-2 text-sm text-slate-300 ml-20">
                     En HPampa contamos con el respaldo de los más de 18 años de experiencia de TEBSA S.R.L.,
                     empresa Argentina con más de 100 participaciones en misiones y ferias internacionales 
                     en más de 30 países.
                 </p>
-                <p className="text-sm text-gray-dark">
+                <p className="text-sm text-slate-300 ml-20">
                     Estamos ubicados en la provincia de Zaragoza, España y contamos con bases operativas en Argentina, 
                     Brasil, Uruguay, Estados Unidos y China.
                 </p>
             </div>
         </div>
-        <div className="flex flex-col bg-hpampa mb-0 pb-0">
+        <div className="flex flex-col bg-hpampa mb-0 pb-0 border-t-yellow border-t-8">
             <h3 className="text-xl text-blanco ml-6 p-3 pb-7">Servicio de consultoria</h3>
             <div className="flex flex-row bg-hpampa mb-0 pb-0">
             <div className="basis-1/4 p-6 m-1 border border-blanco text-blanco rounded-lg shadow">

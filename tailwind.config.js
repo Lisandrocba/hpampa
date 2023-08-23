@@ -22,10 +22,10 @@ module.exports = {
         'dark': '#1e293b',
         'orange': '#ff7849',
         'green': '#13ce66',
-        'yellow': '#ffc82c',
+        'yellow': '#5d89ca',
         'gray-dark': '#273444',
         'gray': '#8492a6',
-        'gray-light': '#d3dce6',
+        'gray-light': '#D3FFFF',
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
