@@ -3,9 +3,6 @@ import React, { useEffect, useState } from 'react'
 
 const TablaProductos = ({subcategoriaSelect}) => {
   const [listaProductos, setListaProductos] = useState();
-  const [image, setImage] = useState()
-
-  console.log(subcategoriaSelect)
   
   useEffect(() => {
     const productos = async () => {
@@ -25,7 +22,7 @@ const TablaProductos = ({subcategoriaSelect}) => {
   };
   return (
     <div>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg m-2">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-2">
         <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
           <thead class="text-xs text-white uppercase bg-blue-600 dark:text-white">
             <tr>

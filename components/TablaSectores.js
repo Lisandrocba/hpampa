@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TablaProductos from "./TablaProductos";
 
-const TablaSectores = ({ subcategorias }) => {
-  const [subcategoriaSelect, setSubcategoriaSelect] = useState(null);
-  useEffect(()=>{
-    subcategorias[0] ?
-    setSubcategoriaSelect(subcategorias[0].subcategoria)
-    :
-    null
-  },[])
+const TablaSectores = ({ subcategoriaSelect }) => {
+ 
   return (
     <div>
-      <div className="flex flex-row flex-wrap justify-center items-center pt-2 pb-2">
+      {/* <div className="flex flex-row flex-wrap justify-center items-center pt-2 pb-2">
         <p className="text-blue-800 mr-4">Subcategoria:</p>
         {subcategorias[0]
           ? subcategorias.map((ele) => {
@@ -27,7 +21,7 @@ const TablaSectores = ({ subcategorias }) => {
               );
             })
           : null}
-      </div>
+      </div> */}
       <TablaProductos subcategoriaSelect={subcategoriaSelect} />
     </div>
   );
