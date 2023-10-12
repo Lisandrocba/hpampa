@@ -12,11 +12,6 @@ const Main = () => {
                 así también de productos terminados.
             </p>
             <div className="basis-4/6">
-                <p className="mb-2 text-sm text-slate-300 ml-20">
-                    En HPampa contamos con el respaldo de los más de 18 años de experiencia de TEBSA S.R.L.,
-                    empresa Argentina con más de 100 participaciones en misiones y ferias internacionales 
-                    en más de 30 países.
-                </p>
                 <p className="text-sm text-slate-300 ml-20">
                     Estamos ubicados en la provincia de Zaragoza, España y contamos con bases operativas en Argentina, 
                     Brasil, Uruguay, Estados Unidos y China.

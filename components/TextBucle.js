@@ -5,10 +5,10 @@ const TextBucle = () => {
     <div className="contenedorBucle mt-12">
        <p>Exportacion</p>
        <p>Importacion</p>
-       <p>Acesoramiento</p>
+       <p>Asesoramiento</p>
        <p>Exportacion</p>
        <p>Importacion</p>
-       <p>Acesoramiento</p>
+       <p>Asesoramiento</p>
     </div>
   )
 }
