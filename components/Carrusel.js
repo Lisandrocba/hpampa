@@ -1,46 +1,56 @@
 import "flowbite";
 import Image from "next/image";
-import con2 from "../public/conten2.jpg";
-import con1 from "../public/contenedores2.jpg";
-import con3 from "../public/pexels-pixabay-163726.jpg";
-import { useState } from "react";
+import con1 from "../public/Contenedor1.jpg";
+import con3 from "../public/Contenedor2.jpg";
+import con2 from "../public/Contenedor3.jpg";
+import React, { useEffect, useState } from "react";
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 
-function Carrusel() {
+const Carrusel=React.memo(()=> {
   const imgs = [
     {
         img: con1,
-        msj: "Ejemplo mensaje 1"
+        msj: "Exportación"
     },
     {
         img: con2,
-        msj: "Ejemplo mensaje largo 2"
+        msj: "Importación"
     },
     {
         img: con3,
-        msj: "Ejemplo mensaje 3"
+        msj: "Asesoramiento"
     },
   ]
   
   const [index, setIndex] = useState(0);
 
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setIndex((prevIndex) => (prevIndex === imgs.length - 1 ? 0 : prevIndex + 1));
+      }, 7000);
+  
+      return () => clearInterval(interval); // Limpiar el intervalo al desmontar el componente
+  
+    }, []); 
+  
+
   const siguiente = () => {
     const siguienteImg = index === imgs.length - 1;
     const newIndex = siguienteImg ? 0 : index + 1;
     setIndex(newIndex);
-    console.log(index);
   };
 
   const anterior = () => {
     const siguienteImg = index === 0;
     const newIndex = siguienteImg ? imgs.length - 1 : index - 1;
     setIndex(newIndex);
-    console.log(index);
   };
-
+  
   return (
-    <div className="carousel-container relative mt-12">
+    <div className="w-full carousel-container relative">
+    
       <FiChevronLeft
         onClick={anterior}
         className="text-black/50 text-4xl absolute z-20 top-[40%] bg-white/40 rounded-full ml-2 cursor-pointer"
@@ -50,15 +60,16 @@ function Carrusel() {
         onClick={siguiente}
         className="text-black/50 absolute z-20 top-[40%] text-4xl right-0 mr-2 bg-white/40 rounded-full cursor-pointer"
       />
-        <p style={{textShadow: '5px 5px 5px #000' }} className="text-gray-light text-2xl absolute z-10 inset-x-0 top-[40%] text-center font-bold">{imgs[index].msj}</p>
+      <p className="text-zinc-900 text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center ">{imgs[index].msj}</p>
       <Image
         src={imgs[index].img}
-        className="h-40 object-cover object-center rounded-lg contrast-50 "
+        className="w-full h-screen object-cover contrast-50 "
         alt="..."
+        width='5000'
       />
     </div>
   );
-}
+})
 
 export default Carrusel;
 

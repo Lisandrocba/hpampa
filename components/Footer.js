@@ -5,7 +5,7 @@ import logoHPampa from "../public/logo-HPampaBlanco.png"
 const Footer = () => {
   return (
     <div>
-        <div className="bg-dark p-5 h-56 flex justify-around items-center">
+        <div className="p-5 h-56 flex justify-around items-center">
             <div className="w-1/2">
                 <Image className="m-3" src={logoHPampa} alt="logohpampa" width={70} height={40}/>
             </div>

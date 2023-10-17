@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div className="bg-zinc-800 m-0 pt-10 ">
+    <div className=" m-0 pt-10 ">
         <h5 className="text-white text-center text-lg mb-8">Nuestra empresa</h5>
         <div className="flex flex-row justify-around ml-16 mr-16 mb-7 relative pt-5 ">
             <div className="bg-black w-96 h-52 rounded-lg absolute -left-28 top-0 border-2 border-zinc-900"></div>

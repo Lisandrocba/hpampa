@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import logoHPampa from "../../public/logo-HPampaBlanco.png";
+import logoHPampa from "../../public/logo-HPampaCeleste.png";
 import Typed from "typed.js";
 import Link from "next/link";
 import TablaSectores from "@/components/TablaSectores";
@@ -36,8 +36,8 @@ const Alimentos = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-800">
-      <div className="bg-cover h-40 flex-column items-center justify-center  bg-gradient-to-t from-zinc-800 to-zinc-900">
+    <div >
+      <div className="bg-cover h-40 flex-column items-center justify-center ">
         <div className="flex flex-row items-center justify-between">
           <Link href="/">
             <div className="flex flex-row items-center p-2">
@@ -45,7 +45,7 @@ const Alimentos = () => {
               <p className="text-2xl text-blanco font-bold pl-1">Pampa</p>
             </div>
           </Link>
-          <h1 className="text-blanco p-2">Comercio Exterior</h1>
+          <h1 className="p-2">Comercio Exterior</h1>
         </div>
         <div className="flex justify-center items-center">
           <span
