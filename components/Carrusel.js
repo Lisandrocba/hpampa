@@ -53,12 +53,12 @@ const Carrusel=React.memo(()=> {
     
       <FiChevronLeft
         onClick={anterior}
-        className="text-black/50 text-4xl absolute z-20 top-[40%] bg-white/40 rounded-full ml-2 cursor-pointer"
+        className="text-black/80 w-16 h-16 text-4xl absolute z-20 top-[43%] bg-black/20 rounded-full ml-2 cursor-pointer"
       />
 
       <FiChevronRight
         onClick={siguiente}
-        className="text-black/50 absolute z-20 top-[40%] text-4xl right-0 mr-2 bg-white/40 rounded-full cursor-pointer"
+        className="text-black/80 w-16 h-16 absolute z-20 top-[43%] text-4xl right-0 mr-2 bg-black/20 rounded-full cursor-pointer"
       />
       <p className="text-zinc-900 text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center ">{imgs[index].msj}</p>
       <Image

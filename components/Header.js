@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div >
-        <div  className="flex flex-row items-center justify-between px-2 fixed top-0 left-0 right-0 z-20 carruselAnimacion">
+        <div  className="flex flex-row items-center justify-between px-2 fixed top-0 left-0 right-0 z-30 carruselAnimacion">
             <div className="flex flex-row items-center ml-3">
                 <Image src={logoHPampa} alt="logohpampa" width={200} height={30}/>
             </div>

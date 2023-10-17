@@ -2,18 +2,17 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div className=" m-0 pt-10 ">
-        <h5 className="text-white text-center text-lg mb-8">Nuestra empresa</h5>
-        <div className="flex flex-row justify-around ml-16 mr-16 mb-7 relative pt-5 ">
-            <div className="bg-black w-96 h-52 rounded-lg absolute -left-28 top-0 border-2 border-zinc-900"></div>
-            <p className="basis-2/6 text-sm text-slate-300 pr-3 z-10 mb-10 relative">
-                Somos una empresa conformada por profesionales de comercio exterior, 
+    <div className=" pt-10 ">
+        <h5 className=" text-center text-5xl mb-20"><span className='text-6xl text-hpampa'>N</span>uestra <span className='text-6xl text-hpampa'>E</span>mpresa</h5>
+        <div className="flex flex-row justify-around pt-5 mb-10">
+            <p className="basis-5/12 text-2xl text-slate-900 px-5 pb-28 pt-16 mb-10">
+                <span className='text-4xl text-hpampa'>S</span>omos una empresa conformada por profesionales de comercio exterior, 
                 dedicada al desarrollo comercial de clientes, mercados y proveedores de insumos como
                 así también de productos terminados.
             </p>
-            <div className="basis-4/6">
-                <p className="text-sm text-slate-300 ml-20">
-                    Estamos ubicados en la provincia de Zaragoza, España y contamos con bases operativas en Argentina, 
+            <div className="basis-7/12">
+                <p className="px-20 pb-28 pt-24 bg-slate-900 text-2xl text-slate-200 ml-20 rounded-tl-md rounded-bl-md ">
+                <span className='text-4xl text-hpampa'>E</span>stamos ubicados en la provincia de Zaragoza, España y contamos con bases operativas en Argentina, 
                     Brasil, Uruguay, Estados Unidos y China.
                 </p>
             </div>
