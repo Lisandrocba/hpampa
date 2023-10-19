@@ -1,14 +1,12 @@
 import { AdminContext } from "@/context/AdminContext";
-import Alimentos from "@/pages/alimentos";
-import { redirect } from "next/dist/server/api-utils";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
 import Cookies from "universal-cookie";
 
 const Seccion = () => {
+  
   const [listCategorias, setListCategoria] = useState(null);
-  const { setSectorSeleccionado } = useContext(AdminContext);
+
   useEffect(() => {
     const devolver = async () => {
       await fetch("http://localhost:3000/api/admin/rutaCategoria")
