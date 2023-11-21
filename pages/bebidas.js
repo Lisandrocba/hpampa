@@ -4,7 +4,7 @@ import React from "react";
 
 const Bebidas = () => {
   return (
-    <div>
+    <div className='FondoBebidas'>
       <NavBarSectores />
       <div className="flex justify-center items-center flex-wrap my-10">
         <CartProductos

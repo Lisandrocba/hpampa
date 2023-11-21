@@ -5,7 +5,7 @@ import { GoTriangleRight } from "react-icons/go";
 const CartProductos = ({img, productos =[], black=false, imgW = 300, w='w-96'}) => {
   return (
     <div className={`flex flex-col justify-center items-center bg-hpampa ${w} pb-10 rounded-3xl mx-3 mb-5 shadow-xl shadow-hpampa/50 border-solid border-4 border-blue-200`}>
-        <Image className={black === false ? `p-5 bg-white rounded-3xl my-3` : "p-6 bg-slate-800 rounded-3xl my-3"} src={img} alt='img prod' width={imgW} height={300}/>
+        <Image className={black === false ? `p-5  rounded-3xl my-3` : "p-6  rounded-3xl my-3"} src={img} alt='img prod' width={imgW} height={300}/>
         <h4 className='font-bold py-3 mt-3'>Productos:</h4>   
         <div className='flex flex-col items-start'>
             {
@@ -30,7 +30,7 @@ const CartProductos = ({img, productos =[], black=false, imgW = 300, w='w-96'}) 
             )
             }
         </div>    
-         <button className={black === false ? 'py-3 my-3 px-5 bg-white rounded-lg' : "py-3 my-3 px-5 bg-slate-800 text-white rounded-lg"}>Ver catalogo</button>
+         <button className= "py-3 my-3 px-5 bg-slate-800 text-white rounded-lg">Ver catalogo</button>
     </div>
   )
 }

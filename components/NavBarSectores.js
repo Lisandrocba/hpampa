@@ -11,7 +11,9 @@ const NavBarSectores = () => {
     <div>
       <div className="flex flex-row items-center justify-between px-2 bg-slate-100 mb-5 py-2">
         <div className="flex flex-row items-center ml-3">
-          <Image src={logoHPampa} alt="logohpampa" width={200} height={30} />
+          <Link href="/">
+            <Image src={logoHPampa} alt="logohpampa" width={200} height={30} />
+          </Link>
         </div>
         <div className="flex flex-row justify-around w-1/2">
           <Link

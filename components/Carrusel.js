@@ -29,7 +29,7 @@ const Carrusel=React.memo(()=> {
     useEffect(() => {
       const interval = setInterval(() => {
         setIndex((prevIndex) => (prevIndex === imgs.length - 1 ? 0 : prevIndex + 1));
-      }, 7000);
+      }, 3000);
   
       return () => clearInterval(interval); // Limpiar el intervalo al desmontar el componente
   
@@ -53,14 +53,14 @@ const Carrusel=React.memo(()=> {
     
       <FiChevronLeft
         onClick={anterior}
-        className="text-black/80 w-16 h-16 text-4xl absolute z-20 top-[43%] bg-black/20 rounded-full ml-2 cursor-pointer"
+        className="text-white/50 w-16 h-16 text-4xl absolute z-20 top-[43%] bg-white/10 rounded-full ml-2 cursor-pointer"
       />
 
       <FiChevronRight
         onClick={siguiente}
-        className="text-black/80 w-16 h-16 absolute z-20 top-[43%] text-4xl right-0 mr-2 bg-black/20 rounded-full cursor-pointer"
+        className="text-white/50 w-16 h-16 absolute z-20 top-[43%] text-4xl right-0 mr-2 bg-white/10 rounded-full cursor-pointer"
       />
-      <p className="text-zinc-900 text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center ">{imgs[index].msj}</p>
+      <p className="text-slate-200 text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center cursor-default">{imgs[index].msj}</p>
       <Image
         src={imgs[index].img}
         className="w-full h-screen object-cover contrast-50 "
