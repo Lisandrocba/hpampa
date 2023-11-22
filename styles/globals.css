@@ -55,11 +55,6 @@
   animation: bucle 20s linear infinite;
 }
 
-.FondoBebidas{
-  background-image: url('../public/copas-coctel.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 @keyframes bucle {
   0%{

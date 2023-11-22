@@ -4,7 +4,7 @@ import React from "react";
 
 const Bebidas = () => {
   return (
-    <div className='FondoBebidas'>
+    <div>
       <NavBarSectores />
       <div className="flex justify-center items-center flex-wrap my-10">
         <CartProductos
@@ -28,7 +28,6 @@ const Bebidas = () => {
             "Vino Malbec 23 by Aconcagua Distillery",
             "Vino Malbec 23 by Aconcagua Distillery",
           ]}
-          black={true}
         />
         <CartProductos
           img="https://i.imgur.com/F84izGL.png"
@@ -40,7 +39,6 @@ const Bebidas = () => {
             "Vino Carelli Madero Reserve",
             "Vino Carelli Madero",
           ]}
-          black={true}
           imgW={250}
         />
          <CartProductos
@@ -56,7 +54,6 @@ const Bebidas = () => {
             "Espumante Extra Brut",
             "Espumante Champenoise",
           ]}
-          black={true}
           imgW={250}
         />
          <CartProductos
@@ -84,31 +81,19 @@ const Bebidas = () => {
           imgW={250}
         />
         <CartProductos
-          img="https://i.imgur.com/kdwGQgh.png"
-          productos={[
-            "Vino El Nevado Malbec Reserva",
-            "Vino El Naufrago Malbec",
-            "Vino El Naufrago Blanco Dulce",
-            "Vino Aturdido Malbec",
-            "Vino Aturdido Blanco Dulce",
-          ]}
-          imgW={250}
-        />
-        <CartProductos
           img="https://i.imgur.com/cQPhVf6.png"
           productos={[
-            "Vino Finca Gabriel",
-            "Vino Privado Jorge Rubio Reserva Malbec",
-            "Vino Finca Gabriel ED. Especial Malbec",
-            "Vino Finca Gabriel ED. Especial Tinto Tardio",
-            "Vino Gran Reserva Bicentenario Malbec",
-            "Vino Finca Gabriel Dulce Natural",
-            "Vino Finca Gabriel ED. Especial Rosé Malbec",
-            "Espumante Finca Gabriel Brut Nature",
-            "Espumante Privado Brut Nature",
+            "Finca Gabriel",
+            "Privado Jorge Rubio Reserva Malbec",
+            "Finca Gabriel ED. Especial Malbec",
+            "Finca Gabriel ED. Especial Tinto Tardio",
+            "Gran Reserva Bicentenario Malbec",
+            "Finca Gabriel Dulce Natural",
+            "Finca Gabriel ED. Especial Rosé Malbec",
+            "Finca Gabriel Brut Nature",
+            "Privado Brut Nature",
           ]}
           imgW={300}
-          black={true}
         />
          <CartProductos
           img="https://i.imgur.com/keR7hYv.png"
@@ -119,7 +104,6 @@ const Bebidas = () => {
             "Vino Uko Estate",
           ]}
           imgW={200}
-          black={true}
         />
       </div>
     </div>

@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react'
 import { GoTriangleRight } from "react-icons/go";
 
-const CartProductos = ({img, productos =[], black=false, imgW = 300, w='w-96'}) => {
+const CartProductos = ({img, productos =[],  imgW = 300, w='w-96'}) => {
   return (
     <div className={`flex flex-col justify-center items-center bg-hpampa ${w} pb-10 rounded-3xl mx-3 mb-5 shadow-xl shadow-hpampa/50 border-solid border-4 border-blue-200`}>
-        <Image className={black === false ? `p-5  rounded-3xl my-3` : "p-6  rounded-3xl my-3"} src={img} alt='img prod' width={imgW} height={300}/>
+        <Image className="p-6  rounded-3xl my-3" src={img} alt='img prod' width={imgW} height={300}/>
         <h4 className='font-bold py-3 mt-3'>Productos:</h4>   
         <div className='flex flex-col items-start'>
             {
