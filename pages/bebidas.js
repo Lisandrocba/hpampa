@@ -17,6 +17,7 @@ const Bebidas = () => {
             "Vino Cabernet Sauv. Cask",
             "Vino Tempranillo Cask",
           ]}
+          name='araujo'
         />
          <CartProductos
           img="https://i.imgur.com/f46OM9T.png"
@@ -28,6 +29,7 @@ const Bebidas = () => {
             "Vino Malbec 23 by Aconcagua Distillery",
             "Vino Malbec 23 by Aconcagua Distillery",
           ]}
+          name='aconcagua'
         />
         <CartProductos
           img="https://i.imgur.com/F84izGL.png"
@@ -40,6 +42,7 @@ const Bebidas = () => {
             "Vino Carelli Madero",
           ]}
           imgW={250}
+          name='carelli'
         />
          <CartProductos
           img="https://i.imgur.com/VqV58K3.png"
@@ -55,6 +58,7 @@ const Bebidas = () => {
             "Espumante Champenoise",
           ]}
           imgW={250}
+          name='bournett'
         />
          <CartProductos
           img="https://i.imgur.com/EQKRmZj.png"
@@ -68,6 +72,7 @@ const Bebidas = () => {
             "Vino Corazón Satánico Malbec",
           ]}
           imgW={250}
+          name='doncarlos'
         />
         <CartProductos
           img="https://i.imgur.com/kdwGQgh.png"
@@ -79,6 +84,7 @@ const Bebidas = () => {
             "Vino Aturdido Blanco Dulce",
           ]}
           imgW={250}
+          name='elnevado'
         />
         <CartProductos
           img="https://i.imgur.com/cQPhVf6.png"
@@ -94,6 +100,7 @@ const Bebidas = () => {
             "Privado Brut Nature",
           ]}
           imgW={300}
+          name='jorgerubio'
         />
          <CartProductos
           img="https://i.imgur.com/keR7hYv.png"
@@ -104,6 +111,7 @@ const Bebidas = () => {
             "Vino Uko Estate",
           ]}
           imgW={200}
+          name='uko'
         />
       </div>
     </div>
