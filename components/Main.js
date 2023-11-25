@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div className=" pt-10 ">
+    <div className="pt-10">
         <h5 className=" text-center text-5xl mb-20"><span className='text-6xl text-hpampa'>N</span>uestra <span className='text-6xl text-hpampa'>E</span>mpresa</h5>
         <div className="flex flex-row justify-around pt-5 mb-10">
             <p className="basis-5/12 text-2xl text-slate-900 px-5 pb-28 pt-16 mb-10">

@@ -5,7 +5,7 @@ import { GoTriangleRight } from "react-icons/go";
 
 const CartProductos = ({img, productos =[],name,  imgW = 300, w='w-96'}) => {
   return (
-    <div className={`flex flex-col justify-center items-center bg-hpampa ${w} pb-10 rounded-3xl mx-3 mb-5 shadow-sm shadow-slate-400 border-solid border-4 border-blue-200`}>
+    <div className={`flex flex-col justify-center items-center bg-hpampa ${w} pb-10 rounded-3xl mx-3 mb-5 shadow-sm shadow-slate-400 `}>
         <Image className="p-6  rounded-3xl my-3" src={img} alt='img prod' width={imgW} height={300}/>
         <h4 className='font-bold py-3 mt-3'>Productos:</h4>   
         <div className='flex flex-col items-center'>
