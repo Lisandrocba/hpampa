@@ -6,7 +6,7 @@ const Bebidas = () => {
   return (
     <div>
       <NavBarSectores />
-      <div className="flex justify-center items-center flex-wrap my-10">
+      <div className="flex justify-center items-start flex-wrap my-10">
         <CartProductos
           img="https://i.imgur.com/WeUSrHN.png"
           productos={[

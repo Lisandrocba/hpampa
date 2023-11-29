@@ -2,92 +2,153 @@
 export const prodBebidas = [
   { 
     name : 'araujo',
-    logo: 'https://i.imgur.com/WeUSrHN.png',
+    titulo: 'Bodega Araujo',
     img : [
-      "https://i.imgur.com/s27W6TU.png",
-      "https://i.imgur.com/h82aHSH.png",
-      "https://i.imgur.com/e4sxUa8.png",
-      "https://i.imgur.com/VZwSl5w.png",
-      "https://i.imgur.com/vOJX06Q.png",
-      "https://i.imgur.com/TROrelS.png",
+      'https://i.imgur.com/GxFCcmb.png',
+      'https://i.imgur.com/JfCzJRE.png',
+      'https://i.imgur.com/5R3z9kM.png',
+      'https://i.imgur.com/GLpvaTY.png',
+      'https://i.imgur.com/0EPNmcQ.png',
+      'https://i.imgur.com/K73onbl.png'
     ],
   },
   {
     name : 'aconcagua',
-    logo: 'https://i.imgur.com/f46OM9T.png',
+    titulo: 'Aconcagua',
     img: [
-      "https://i.imgur.com/IAPx5Uq.png",
-      "https://i.imgur.com/VR3yPIT.png",
-      "https://i.imgur.com/xLorlUN.png",
-      "https://i.imgur.com/bfpMSUF.png",
-      "https://i.imgur.com/yJNY4QT.png",
-      "https://i.imgur.com/MXXw5vh.png",
+      'https://i.imgur.com/0esKBWK.png',
+      'https://i.imgur.com/cguHWLh.png',
+      'https://i.imgur.com/roo4dOm.png',
+      'https://i.imgur.com/VTcrPe4.png',
+      'https://i.imgur.com/kleQBhR.png',
+      'https://i.imgur.com/hggkqEa.png'
     ],
   },
   {
     name: 'carelli',
-    logo: 'https://i.imgur.com/F84izGL.png',
+    titulo: 'Bodega Carelli',
     img: [
-      "https://i.imgur.com/TyuFuIH.png",
-      "https://i.imgur.com/BHB7u0Q.png",
-      "https://i.imgur.com/DDUnsqY.png",
-      "https://i.imgur.com/XGcIUap.png",
-      "https://i.imgur.com/AHWVflR.png",
+      "https://i.imgur.com/lNve2Wd.png",
+      'https://i.imgur.com/3EnFcye.png',
+      'https://i.imgur.com/778aZ6i.png',
+      'https://i.imgur.com/As367BQ.png',
+      'https://i.imgur.com/RPgOGfs.png'
+      
     ],
   },
   {
     name: 'bournett',
-    logo: 'https://i.imgur.com/VqV58K3.png',
+    titulo: 'Bodega Bournett',
     img: [
-      "https://i.imgur.com/11R6SyL.png",
-      "https://i.imgur.com/N2dD2GE.png",
-      "https://i.imgur.com/99oBp22.png",
-      "https://i.imgur.com/tLHw4Ar.png",
-      "https://i.imgur.com/R5ch8Ub.png",
-      "https://i.imgur.com/PdBpCRC.jpg",
+      "https://i.imgur.com/QUGd31r.png",
+      'https://i.imgur.com/djsFfS8.png',
+      'https://i.imgur.com/s338ieK.png',
+      'https://i.imgur.com/NZbN2EK.png',
+      'https://i.imgur.com/ACxsgtx.png',
+      'https://i.imgur.com/y9CWCyf.png'
+     
     ],
   },
   {
     name: 'doncarlos',
-    logo: 'https://i.imgur.com/EQKRmZj.png',
+    titulo: 'Finca Don Carlos',
     img: [
-      "https://i.imgur.com/wx0sOCM.png",
-      "https://i.imgur.com/mSJK6oz.png",
-      "https://i.imgur.com/4C2cozW.png",
+      'https://i.imgur.com/B26s3KW.png',
+      'https://i.imgur.com/QtuH6rx.png',
+      'https://i.imgur.com/iCctUcO.png'
+      
     ],
   },
   {
     name: 'elnevado',
-    logo: 'https://i.imgur.com/kdwGQgh.png',
+    titulo: 'Finca El Nevado',
     img: [
-      "https://i.imgur.com/6OsyjS9.png",
-      "https://i.imgur.com/l3sL3qd.png",
-      "https://i.imgur.com/ct9S0WU.png",
+      "https://i.imgur.com/UC8oyG4.png",
+      'https://i.imgur.com/ANK3yHm.png',
+      'https://i.imgur.com/orw6r08.png'
+     
     ],
   },
   {
     name: 'jorgerubio',
-    logo: 'https://i.imgur.com/cQPhVf6.png',
+    titulo: 'Bodega Jorge Rubio',
     img: [
-      "https://i.imgur.com/sJuToWo.png",
-      "https://i.imgur.com/40a2FIy.png",
-      "https://i.imgur.com/4jyKzYV.png",
-      "https://i.imgur.com/pvt264X.png",
-      "https://i.imgur.com/DxBjP8j.png",
-      "https://i.imgur.com/5S1VEcG.png",
-      "https://i.imgur.com/Rj7XXF9.png",
-      "https://i.imgur.com/IxitYQg.png",
-      "https://i.imgur.com/lzEJ8IX.png",
+      "https://i.imgur.com/6YKaLG0.png",
+      'https://i.imgur.com/muatWXE.png',
+      'https://i.imgur.com/X8Coz0y.png',
+      'https://i.imgur.com/iaszJ0k.png',
+      'https://i.imgur.com/CoBVqw9.png',
+      'https://i.imgur.com/3W43sIj.png',
+      'https://i.imgur.com/aUVqaro.png',
+      'https://i.imgur.com/dDC5lyD.png',
+      'https://i.imgur.com/P2p0ViD.png'
     ],
   },
   {
     name: 'uko',
-    logo: 'https://i.imgur.com/keR7hYv.png',
+    titulo: 'Bodega Uko',
     img: [
-      "https://i.imgur.com/4YywERH.png",
-      "https://i.imgur.com/VNipJiC.png",
-      "https://i.imgur.com/UqvNbqf.png",
-      "https://i.imgur.com/y8oTnFJ.png",
+      "https://i.imgur.com/anfKGwc.png",
+      'https://i.imgur.com/kKkoAtP.png',
+      'https://i.imgur.com/9F6GgR7.png',
+      'https://i.imgur.com/7sXZmT6.png'
+    ],
+  },
+  {
+    name: 'vacuna',
+    titulo: 'Carne Vacuna',
+    img: [
+      "https://i.imgur.com/htfcNB6.png",
+      'https://i.imgur.com/ZakqR7j.png',
+      'https://i.imgur.com/0Hk2G7G.png',
+      'https://i.imgur.com/aO9Nc1z.png',
+      'https://i.imgur.com/jKyyqpT.png',
+      'https://i.imgur.com/EXiXmZf.png',
+      'https://i.imgur.com/E1FOC0y.png',
+      'https://i.imgur.com/XRunFBT.png'
+    ],
+  },
+  {
+    name: 'cerdo',
+    titulo: 'Carne Porcina',
+    img: [
+      "https://i.imgur.com/irLAyaC.png",
+      'https://i.imgur.com/iBeyIFj.png',
+      'https://i.imgur.com/PbheEKU.png',
+      'https://i.imgur.com/HOINzQr.png',
+      'https://i.imgur.com/mNAZeS1.png',
+      'https://i.imgur.com/6n9rw8p.png'
+    ],
+  },
+  {
+    name: 'ovino',
+    titulo: 'Carne Ovina',
+    img: [
+      "https://i.imgur.com/epY8eFu.png",
+      'https://i.imgur.com/OW5bczB.png',
+      'https://i.imgur.com/nDTGee3.png',
+      'https://i.imgur.com/LXZtFf6.png'
+    ],
+  },
+  {
+    name: 'aviar',
+    titulo: 'Carne Aviar',
+    img: [
+      "https://i.imgur.com/PZaessS.png",
+      'https://i.imgur.com/iOrY6Md.png',
+      'https://i.imgur.com/Ug6AC0D.png',
+      'https://i.imgur.com/WQxgPkf.png',
+      'https://i.imgur.com/DI35FQR.png'
+    ],
+  },
+  {
+    name: 'pescados',
+    titulo: 'Productos de Mar',
+    img: [
+      "https://i.imgur.com/2Aa2Py2.png",
+      'https://i.imgur.com/1QzHUkK.png',
+      'https://i.imgur.com/Jyod1OV.png',
+      'https://i.imgur.com/FgmsgdX.png'
     ],
   },
 ];

@@ -47,7 +47,7 @@ const HeaderConsultoria = () => {
         <span className="text-6xl text-hpampa">S</span>ervicios de consultoria
       </h2>
       <div className="flex flex-row flex-wrap justify-center items-center mb-10 ">
-        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-slate-200 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
+        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
           <p className="font-bold text-2xl text-center pb-10">Servicio 1</p>
           {buttonForm.servicio1 ? (
             <form className="w-full">
@@ -100,7 +100,7 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio1 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-slate-200 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
+        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
           <p className="font-bold text-2xl text-center pb-10">Servicio 2</p>
           {buttonForm.servicio2
             ? 
@@ -154,7 +154,7 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio2 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-slate-200 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
+        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
           <p className="font-bold text-2xl text-center pb-10">Servicio 3</p>
           {buttonForm.servicio3
             ? 
@@ -208,7 +208,7 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio3 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-slate-200 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
+        <div className="w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
           <p className="font-bold text-2xl text-center pb-10">Servicio 4</p>
           {buttonForm.servicio4
             ? 

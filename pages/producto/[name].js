@@ -14,17 +14,17 @@ const ProductoDetalle = () => {
       <NavBarSectores />
       <div className="grid grid-cols-4 gap-4 px-5 ">
       <div className="flex flex-col justify-center items-center col-span-2">
-          <div className=" flex flex-col justify-center items-center rounded-xl ">
-            <div className="grid grid-cols-4 gap-4 pr-8">
+          <div className=" flex flex-col justify-center items-center rounded-xl">
+            <div className="flex flex-row flex-wrap justify-around items-start">
               { producto ? (producto.img.map((i) => {
                 return (
-                  <div className="bg-white rounded-2xl flex justify-center items-center">
+                  <div className="flex justify-center items-center mx-3 my-2 w-1/4">
                     <Image
-                      className="mx-5 object-contain w-full hover:scale-150 ease-in duration-300 px-5 py-8"
+                      className="mx-3 object-cover h-full w-auto  hover:scale-125 ease-in duration-300 px-5 py-8"
                       alt="img"
                       src={i}
-                      width={50}
-                      height={400}
+                      width={200}
+                      height={450}
                     />
                   </div>
                 );
@@ -34,7 +34,9 @@ const ProductoDetalle = () => {
             </div>
           </div>
         </div>
-        <form className="w-full pt-8 col-span-2 flex flex-col justify-around items-start">
+        <form className="w-full pt-8 col-span-2 flex flex-col justify-start items-start">
+        {producto ? (<h4 className="text-hpampa font-bold">{producto.titulo}</h4>) : null}
+          
           <p className="text-2xl font-bold text-slate-800 pb-8">
             Consultas sobre el producto
           </p>
