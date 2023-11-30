@@ -17,7 +17,7 @@ const FrutosSecos = () => {
             "Té rojo con chocolate & frutos rojos",
             "Arandanos en Polvo",
           ]}
-          black={true}
+          name='mani'
         />
          <CartProductos
           img="https://i.imgur.com/5hCgg50.png"
@@ -30,6 +30,7 @@ const FrutosSecos = () => {
             "Nuez Mammoth Peces",
           ]}
           black={true}
+          name='nueces'
         />
          <CartProductos
           img="https://i.imgur.com/2Uqaimp.png"

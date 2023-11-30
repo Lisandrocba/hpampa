@@ -151,4 +151,22 @@ export const prodBebidas = [
       'https://i.imgur.com/FgmsgdX.png'
     ],
   },
+  {
+    name: 'mani',
+    titulo: 'Roruka',
+    img: [
+      "https://i.imgur.com/E6sKSig.png",
+      'https://i.imgur.com/C7lRZiz.png',
+      'https://i.imgur.com/WeouOj2.png',
+      'https://i.imgur.com/8hwcS69.png'
+    ],
+  },
+  {
+    name: 'nueces',
+    titulo: 'Producor S.A.',
+    img: [
+      "https://i.imgur.com/dkfJHRf.png"
+      
+    ],
+  },
 ];

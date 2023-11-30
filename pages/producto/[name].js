@@ -12,19 +12,19 @@ const ProductoDetalle = () => {
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
-      <div className="grid grid-cols-4 gap-4 px-5 ">
+      <div className="flex flex-col justify-center items-center px-10 lg:grid lg:grid-cols-4 lg:gap-4 lg:px-5">
       <div className="flex flex-col justify-center items-center col-span-2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
-            <div className="flex flex-row flex-wrap justify-around items-start">
+            <div className="flex flex-row flex-wrap justify-around">
               { producto ? (producto.img.map((i) => {
                 return (
-                  <div className="flex justify-center items-center mx-3 my-2 w-1/4">
+                  <div className="flex justify-center items-center mx-3 my-2 lg:w-1/4 w-1/6">
                     <Image
-                      className="mx-3 object-cover h-full w-auto  hover:scale-125 ease-in duration-300 px-5 py-8"
+                      className="mx-3  lg:h-full lg:w-screen lg:hover:scale-125 ease-in duration-300 px-5 py-8"
                       alt="img"
                       src={i}
-                      width={200}
-                      height={450}
+                      width={400}
+                      height={850}
                     />
                   </div>
                 );
