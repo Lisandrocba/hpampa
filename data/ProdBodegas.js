@@ -4,36 +4,35 @@ export const prodBebidas = [
     name : 'araujo',
     titulo: 'Bodega Araujo',
     img : [
+      'https://i.imgur.com/0EPNmcQ.png',
+      'https://i.imgur.com/5R3z9kM.png',
+      'https://i.imgur.com/K73onbl.png',
+      'https://i.imgur.com/GLpvaTY.png',
       'https://i.imgur.com/GxFCcmb.png',
       'https://i.imgur.com/JfCzJRE.png',
-      'https://i.imgur.com/5R3z9kM.png',
-      'https://i.imgur.com/GLpvaTY.png',
-      'https://i.imgur.com/0EPNmcQ.png',
-      'https://i.imgur.com/K73onbl.png'
     ],
   },
   {
     name : 'aconcagua',
     titulo: 'Aconcagua',
     img: [
-      'https://i.imgur.com/0esKBWK.png',
-      'https://i.imgur.com/cguHWLh.png',
-      'https://i.imgur.com/roo4dOm.png',
-      'https://i.imgur.com/VTcrPe4.png',
+      'https://i.imgur.com/hggkqEa.png',
       'https://i.imgur.com/kleQBhR.png',
-      'https://i.imgur.com/hggkqEa.png'
+      'https://i.imgur.com/VTcrPe4.png',
+      'https://i.imgur.com/cguHWLh.png',
+      'https://i.imgur.com/roo4dOm.png',  
+      'https://i.imgur.com/0esKBWK.png', 
     ],
   },
   {
     name: 'carelli',
     titulo: 'Bodega Carelli',
     img: [
-      "https://i.imgur.com/lNve2Wd.png",
       'https://i.imgur.com/3EnFcye.png',
-      'https://i.imgur.com/778aZ6i.png',
       'https://i.imgur.com/As367BQ.png',
-      'https://i.imgur.com/RPgOGfs.png'
-      
+      'https://i.imgur.com/778aZ6i.png',
+      'https://i.imgur.com/RPgOGfs.png',
+      "https://i.imgur.com/lNve2Wd.png",      
     ],
   },
   {
@@ -41,12 +40,11 @@ export const prodBebidas = [
     titulo: 'Bodega Bournett',
     img: [
       "https://i.imgur.com/QUGd31r.png",
-      'https://i.imgur.com/djsFfS8.png',
-      'https://i.imgur.com/s338ieK.png',
-      'https://i.imgur.com/NZbN2EK.png',
       'https://i.imgur.com/ACxsgtx.png',
-      'https://i.imgur.com/y9CWCyf.png'
-     
+      'https://i.imgur.com/NZbN2EK.png',
+      'https://i.imgur.com/djsFfS8.png',
+      'https://i.imgur.com/y9CWCyf.png',
+      'https://i.imgur.com/s338ieK.png',
     ],
   },
   {
@@ -73,25 +71,25 @@ export const prodBebidas = [
     name: 'jorgerubio',
     titulo: 'Bodega Jorge Rubio',
     img: [
-      "https://i.imgur.com/6YKaLG0.png",
-      'https://i.imgur.com/muatWXE.png',
-      'https://i.imgur.com/X8Coz0y.png',
-      'https://i.imgur.com/iaszJ0k.png',
       'https://i.imgur.com/CoBVqw9.png',
-      'https://i.imgur.com/3W43sIj.png',
+      'https://i.imgur.com/muatWXE.png',
+      'https://i.imgur.com/iaszJ0k.png',
+      'https://i.imgur.com/X8Coz0y.png',
+      "https://i.imgur.com/6YKaLG0.png",
       'https://i.imgur.com/aUVqaro.png',
+      'https://i.imgur.com/3W43sIj.png',
+      'https://i.imgur.com/P2p0ViD.png',
       'https://i.imgur.com/dDC5lyD.png',
-      'https://i.imgur.com/P2p0ViD.png'
     ],
   },
   {
     name: 'uko',
     titulo: 'Bodega Uko',
     img: [
+      'https://i.imgur.com/7sXZmT6.png',
+      'https://i.imgur.com/9F6GgR7.png',
       "https://i.imgur.com/anfKGwc.png",
       'https://i.imgur.com/kKkoAtP.png',
-      'https://i.imgur.com/9F6GgR7.png',
-      'https://i.imgur.com/7sXZmT6.png'
     ],
   },
   {
@@ -107,6 +105,7 @@ export const prodBebidas = [
       'https://i.imgur.com/E1FOC0y.png',
       'https://i.imgur.com/XRunFBT.png'
     ],
+    width: 'scale-125'
   },
   {
     name: 'cerdo',
@@ -119,6 +118,7 @@ export const prodBebidas = [
       'https://i.imgur.com/mNAZeS1.png',
       'https://i.imgur.com/6n9rw8p.png'
     ],
+    width: 'scale-125'
   },
   {
     name: 'ovino',
@@ -129,6 +129,7 @@ export const prodBebidas = [
       'https://i.imgur.com/nDTGee3.png',
       'https://i.imgur.com/LXZtFf6.png'
     ],
+    width: 'scale-125'
   },
   {
     name: 'aviar',
@@ -140,6 +141,7 @@ export const prodBebidas = [
       'https://i.imgur.com/WQxgPkf.png',
       'https://i.imgur.com/DI35FQR.png'
     ],
+    width: 'lg:scale-125'
   },
   {
     name: 'pescados',
@@ -150,6 +152,7 @@ export const prodBebidas = [
       'https://i.imgur.com/Jyod1OV.png',
       'https://i.imgur.com/FgmsgdX.png'
     ],
+    width: 'lg:scale-125'
   },
   {
     name: 'mani',
@@ -160,6 +163,7 @@ export const prodBebidas = [
       'https://i.imgur.com/WeouOj2.png',
       'https://i.imgur.com/8hwcS69.png'
     ],
+    width: 'lg:scale-125'
   },
   {
     name: 'nueces',
@@ -168,5 +172,6 @@ export const prodBebidas = [
       "https://i.imgur.com/dkfJHRf.png"
       
     ],
+    width: 'lg:scale-125'
   },
 ];

@@ -9,8 +9,8 @@ const NavBarSectores = () => {
   const [estiloNavBar, setEstiloNavBar] = useState(true)
 
   return (
-    <div>
-      <div className="flex flex-row items-center justify-between px-2 bg-slate-100 mb-5 py-2 lg:relative pr-5">
+    <div className="relative z-10">
+      <div className="flex flex-row items-center justify-between px-2  bg-slate-100 mb-5 py-2 lg:relative pr-5">
         <div className="flex flex-row items-center ml-3">
           <Link href="/">
             <Image className="w-1/3 lg:w-1/2" src={logoHPampa} alt="logohpampa" width={200} height={30} />
@@ -25,8 +25,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/consultoria"
-                ? "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+                ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+                : "lg:text-sm xl:text-lg xl:font-bold py-4 lg:py-0  lg:text-slate-800"
             }
             href="/consultoria"
           >
@@ -35,8 +35,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/bebidas"
-              ? "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+              ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
             }
             href="/bebidas"
           >
@@ -45,8 +45,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/carnes"
-              ? "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+              ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
             }
             href="/carnes"
           >
@@ -55,8 +55,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/legumbres"
-              ? "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+              ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
             }
             href="/legumbres"
           >
@@ -65,8 +65,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/frutossecos"
-                ?   "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+                ?   "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+                : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
             }
             href="/frutossecos"
           >
@@ -75,8 +75,8 @@ const NavBarSectores = () => {
           <Link
             className={
               asPath === "/alimentos"
-                 ? "py-4 lg:py-0 lg:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "py-4 lg:py-0 lg:font-bold lg:text-slate-800"
+                 ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+                : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
             }
             href="/alimentos"
           >

@@ -12,7 +12,7 @@ const ProductoDetalle = () => {
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
-      <div className="flex flex-col justify-center items-center px-10 lg:grid lg:grid-cols-4 lg:gap-4 lg:px-5 lg:items-start">
+      <div className="flex flex-col justify-center items-center px-10  lg:grid lg:grid-cols-4 lg:gap-4 lg:px-5 lg:items-start">
         <div className="flex flex-col justify-center items-center col-span-2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around">
@@ -21,7 +21,7 @@ const ProductoDetalle = () => {
                     return (
                       <div className="flex justify-center items-center mx-3 my-2 lg:w-1/4 w-1/4">
                         <Image
-                          className="mx-3  lg:h-full lg:w-screen lg:hover:scale-125 ease-in duration-300 px-5 py-8"
+                          className={`mx-3  ${producto.width}  lg:h-full lg:w-screen lg:hover:-translate-y-6 ease-in duration-300 px-5 py-8`}
                           alt="img"
                           src={i}
                           width={400}
@@ -36,7 +36,7 @@ const ProductoDetalle = () => {
         </div>
         <form className="w-full pt-8 col-span-2 flex flex-col justify-start item-start lg:pt-0">
           {producto ? (
-            <h4 className="text-hpampa font-bold">{producto.titulo}</h4>
+            <h4 className="text-hpampa font-bold lg:mt-5">{producto.titulo}</h4>
           ) : null}
 
           <p className="text-2xl font-bold text-slate-800 pb-8">
@@ -66,7 +66,7 @@ const ProductoDetalle = () => {
             />
             <button
               type="submit"
-              className="py-3 my-3 px-5 bg-slate-800 text-white rounded-lg hover:bg-slate-600 hover:text-white w-full"
+              className="py-3 my-3 px-5 bg-slate-800 text-white rounded-lg hover:bg-slate-600 hover:text-white w-full lg:mt-5"
             >
               Enviar
             </button>
