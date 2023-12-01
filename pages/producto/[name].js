@@ -12,31 +12,33 @@ const ProductoDetalle = () => {
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
-      <div className="flex flex-col justify-center items-center px-10 lg:grid lg:grid-cols-4 lg:gap-4 lg:px-5">
-      <div className="flex flex-col justify-center items-center col-span-2">
+      <div className="flex flex-col justify-center items-center px-10 lg:grid lg:grid-cols-4 lg:gap-4 lg:px-5 lg:items-start">
+        <div className="flex flex-col justify-center items-center col-span-2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around">
-              { producto ? (producto.img.map((i) => {
-                return (
-                  <div className="flex justify-center items-center mx-3 my-2 lg:w-1/4 w-1/6">
-                    <Image
-                      className="mx-3  lg:h-full lg:w-screen lg:hover:scale-125 ease-in duration-300 px-5 py-8"
-                      alt="img"
-                      src={i}
-                      width={400}
-                      height={850}
-                    />
-                  </div>
-                );
-              }) )
-              : null
-             }
+              {producto
+                ? producto.img.map((i) => {
+                    return (
+                      <div className="flex justify-center items-center mx-3 my-2 lg:w-1/4 w-1/4">
+                        <Image
+                          className="mx-3  lg:h-full lg:w-screen lg:hover:scale-125 ease-in duration-300 px-5 py-8"
+                          alt="img"
+                          src={i}
+                          width={400}
+                          height={850}
+                        />
+                      </div>
+                    );
+                  })
+                : null}
             </div>
           </div>
         </div>
-        <form className="w-full pt-8 col-span-2 flex flex-col justify-start items-start">
-        {producto ? (<h4 className="text-hpampa font-bold">{producto.titulo}</h4>) : null}
-          
+        <form className="w-full pt-8 col-span-2 flex flex-col justify-start item-start lg:pt-0">
+          {producto ? (
+            <h4 className="text-hpampa font-bold">{producto.titulo}</h4>
+          ) : null}
+
           <p className="text-2xl font-bold text-slate-800 pb-8">
             Consultas sobre el producto
           </p>
@@ -70,8 +72,6 @@ const ProductoDetalle = () => {
             </button>
           </div>
         </form>
-
-       
       </div>
     </div>
   );

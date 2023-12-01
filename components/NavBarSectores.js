@@ -10,10 +10,10 @@ const NavBarSectores = () => {
 
   return (
     <div>
-      <div className="flex flex-row items-center justify-between px-2 bg-slate-100 mb-5 py-2 lg:relative ">
+      <div className="flex flex-row items-center justify-between px-2 bg-slate-100 mb-5 py-2 lg:relative pr-5">
         <div className="flex flex-row items-center ml-3">
           <Link href="/">
-            <Image src={logoHPampa} alt="logohpampa" width={200} height={30} />
+            <Image className="w-1/3 lg:w-1/2" src={logoHPampa} alt="logohpampa" width={200} height={30} />
           </Link>
         </div>
         <button onClick={()=>setEstiloNavBar(!estiloNavBar)}>
@@ -21,7 +21,7 @@ const NavBarSectores = () => {
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
         </button>
-        <div className={`${estiloNavBar ? 'hidden' : 'flex flex-col'} justify-center items-center w-full text-2xl top-20 bg-slate-100 py-3 absolute lg:flex lg:top-auto lg:text-lg lg:flex-row lg:static lg:justify-around  lg:w-1/2`}>
+        <div className={`${estiloNavBar ? 'hidden' : 'flex flex-col'} justify-center items-center w-full text-2xl left-0 top-14 bg-slate-100 py-3 absolute lg:flex lg:top-auto lg:text-lg lg:flex-row lg:static lg:justify-around  lg:w-1/2`}>
           <Link
             className={
               asPath === "/consultoria"

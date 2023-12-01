@@ -4,8 +4,6 @@ import con1 from "../public/Contenedor1.jpg";
 import con3 from "../public/Contenedor2.jpg";
 import con2 from "../public/Contenedor3.jpg";
 import React, { useEffect, useState } from "react";
-import { FiChevronLeft } from "react-icons/fi";
-import { FiChevronRight } from "react-icons/fi";
 
 const Carrusel=React.memo(()=> {
   const imgs = [
@@ -50,20 +48,10 @@ const Carrusel=React.memo(()=> {
   
   return (
     <div className="w-full carousel-container relative">
-    
-      <FiChevronLeft
-        onClick={anterior}
-        className="text-white/50 w-16 h-16 text-4xl absolute z-20 top-[43%] bg-white/10 rounded-full ml-2 cursor-pointer"
-      />
-
-      <FiChevronRight
-        onClick={siguiente}
-        className="text-white/50 w-16 h-16 absolute z-20 top-[43%] text-4xl right-0 mr-2 bg-white/10 rounded-full cursor-pointer"
-      />
-      <p className="text-slate-200 text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center cursor-default">{imgs[index].msj}</p>
+      <p className="text-slate-200 text-3xl lg:text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center cursor-default">{imgs[index].msj}</p>
       <Image
         src={imgs[index].img}
-        className="w-full h-screen object-cover contrast-50 "
+        className="w-full h-96 lg:h-screen object-cover contrast-50 "
         alt="..."
         width='5000'
       />
