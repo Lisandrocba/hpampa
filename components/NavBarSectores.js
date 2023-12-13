@@ -17,8 +17,8 @@ const NavBarSectores = () => {
           </Link>
         </div>
         <button onClick={()=>setEstiloNavBar(!estiloNavBar)}>
-          <svg class="w-5 h-5 lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          <svg className="w-5 h-5 lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
         </button>
         <div className={`${estiloNavBar ? 'hidden' : 'flex flex-col'} justify-center items-center w-full text-2xl left-0 top-14 bg-slate-100 py-3 absolute lg:flex lg:top-auto lg:text-lg lg:flex-row lg:static lg:justify-around  lg:w-1/2`}>

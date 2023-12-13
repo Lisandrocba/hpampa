@@ -19,9 +19,9 @@ const ProductoDetalle = () => {
               {producto
                 ? producto.img.map((i) => {
                     return (
-                      <div className="flex justify-center items-center mx-3 my-2 lg:w-1/4 w-1/4">
+                      <div key={Math.random()} className="flex justify-center items-center mx-3 my-2">
                         <Image
-                          className={`mx-3  ${producto.width}  lg:h-full lg:w-screen lg:hover:-translate-y-6 ease-in duration-300 px-5 py-8`}
+                          className={`mx-3 w-32 h-64 lg:h-64 lg:w-32 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-2`}
                           alt="img"
                           src={i}
                           width={400}

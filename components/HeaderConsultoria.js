@@ -47,30 +47,43 @@ const HeaderConsultoria = () => {
         <span className="text-6xl text-hpampa">S</span>ervicios de consultoria
       </h2>
       <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center item-center mb-10 ">
-        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
-          <p className="font-bold text-2xl text-center pb-10">Servicio 1</p>
+        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-hpampa px-5 py-10 rounded-3xl shadow-xl  m-3">
           {buttonForm.servicio1 ? (
             <form className="w-full">
               <div className="flex-column items-center w-full">
                 <input
                   type="text"
                   id="first_name"
-                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700  border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
                   placeholder="Nombre compania"
                   required
                 />
                 <input
                   type="text"
                   id="last_name"
-                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
                   placeholder="Nombre de contacto"
                   required
                 />
                 <input
                   type="email"
                   id="email"
-                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
                   placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="pais"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="País"
+                  required
+                />
+                <input
+                  type="text"
+                  id="consulta"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Escriba su consulta"
                   required
                 />
                 <button
@@ -82,14 +95,17 @@ const HeaderConsultoria = () => {
               </div>
             </form>
           ) : (
-            textos.servicio1.map((text) => {
-              return (
-                <div className="flex flex-row justify-center items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md border-black border-solid border-2 px-3 py-4">
-                  <GoTriangleRight className="text-white" />
-                  <p className="text-white">{text}</p>
-                </div>
-              );
-            })
+            <div>
+              <p className="font-bold text-2xl text-center pb-10">Servicio 1</p>
+              {textos.servicio1.map((text) => {
+                return (
+                  <div className="flex flex-row justify-start items-center bg-sky-100 m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4">
+                    <GoTriangleRight className="text-black" />
+                    <p className="text-black">{text}</p>
+                  </div>
+                );
+              })}
+            </div>
           )}
           <button
             onClick={() =>
@@ -100,51 +116,66 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio1 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
-          <p className="font-bold text-2xl text-center pb-10">Servicio 2</p>
-          {buttonForm.servicio2
-            ? 
-            (
-              <form className="w-full">
-                <div className="flex-column items-center w-full">
-                  <input
-                    type="text"
-                    id="first_name"
-                    className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre compania"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="last_name"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre de contacto"
-                    required
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
-                  >
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            )
-            : textos.servicio2.map((text) => {
+        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-hpampa px-5 py-10 rounded-3xl shadow-xl m-3">
+          {buttonForm.servicio2 ? (
+            <form className="w-full">
+              <div className="flex-column items-center w-full">
+                <input
+                  type="text"
+                  id="first_name"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700  border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre compania"
+                  required
+                />
+                <input
+                  type="text"
+                  id="last_name"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre de contacto"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="pais"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="País"
+                  required
+                />
+                <input
+                  type="text"
+                  id="consulta"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Escriba su consulta"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none placeholder:text-slate-700 focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div>
+              <p className="font-bold text-2xl text-center pb-10">Servicio 2</p>
+              {textos.servicio2.map((text) => {
                 return (
-                  <div className="flex flex-row justify-center items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md border-black border-solid border-2 px-3 py-4">
-                    <GoTriangleRight className="text-white" />
-                    <p className="text-white">{text}</p>
+                  <div className="flex flex-row justify-start items-center bg-sky-100 m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4">
+                    <GoTriangleRight className="text-black" />
+                    <p className="text-black">{text}</p>
                   </div>
                 );
               })}
+            </div>
+          )}
           <button
             onClick={() =>
               setButtonForm({ ...buttonForm, servicio2: !buttonForm.servicio2 })
@@ -154,51 +185,67 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio2 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
-          <p className="font-bold text-2xl text-center pb-10">Servicio 3</p>
-          {buttonForm.servicio3
-            ? 
-            (
-              <form className="w-full">
-                <div className="flex-column items-center w-full">
-                  <input
-                    type="text"
-                    id="first_name"
-                    className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre compania"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="last_name"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre de contacto"
-                    required
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
-                  >
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            )
-            : textos.servicio3.map((text) => {
+        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-hpampa px-5 py-10 rounded-3xl shadow-xl  m-3">
+          {buttonForm.servicio3 ? (
+            <form className="w-full">
+              <div className="flex-column items-center w-full">
+                <input
+                  type="text"
+                  id="first_name"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700  border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre compania"
+                  required
+                />
+                <input
+                  type="text"
+                  id="last_name"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre de contacto"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="pais"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="País"
+                  required
+                />
+                <input
+                  type="text"
+                  id="consulta"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Escriba su consulta"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div>
+              <p className="font-bold text-2xl text-center pb-10">Servicio 3</p>
+
+              {textos.servicio3.map((text) => {
                 return (
-                  <div className="flex flex-row justify-center items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md border-black border-solid border-2 px-3 py-4">
-                    <GoTriangleRight className="text-white" />
-                    <p className="text-white">{text}</p>
+                  <div className="flex flex-row justify-start items-center bg-sky-100 m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4">
+                    <GoTriangleRight className="text-black" />
+                    <p className="text-black">{text}</p>
                   </div>
                 );
               })}
+            </div>
+          )}
           <button
             onClick={() =>
               setButtonForm({ ...buttonForm, servicio3: !buttonForm.servicio3 })
@@ -208,51 +255,66 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio3 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-sky-100 px-5 py-10 rounded-3xl shadow-xl border-4 border-slate-700 border-solid m-3">
-          <p className="font-bold text-2xl text-center pb-10">Servicio 4</p>
-          {buttonForm.servicio4
-            ? 
-            (
-              <form className="w-full">
-                <div className="flex-column items-center w-full">
-                  <input
-                    type="text"
-                    id="first_name"
-                    className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre compania"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="last_name"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Nombre de contacto"
-                    required
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
-                  >
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            )
-            : textos.servicio4.map((text) => {
+        <div className="lg:w-2/5 flex flex-col flex-wrap justify-center cursor-default bg-hpampa px-5 py-10 rounded-3xl shadow-xl  m-3">
+          {buttonForm.servicio4 ? (
+            <form className="w-full">
+              <div className="flex-column items-center w-full">
+                <input
+                  type="text"
+                  id="first_name"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700  border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre compania"
+                  required
+                />
+                <input
+                  type="text"
+                  id="last_name"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Nombre de contacto"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  id="pais"
+                  className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="País"
+                  required
+                />
+                <input
+                  type="text"
+                  id="consulta"
+                  className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-800 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
+                  placeholder="Escriba su consulta"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full  px-5 py-2.5 mt-5 mb-10 text-center"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div>
+              <p className="font-bold text-2xl text-center pb-10">Servicio 4</p>
+              {textos.servicio4.map((text) => {
                 return (
-                  <div className="flex flex-row justify-center items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md border-black border-solid border-2 px-3 py-4">
-                    <GoTriangleRight className="text-white" />
-                    <p className="text-white">{text}</p>
+                  <div className="flex flex-row justify-start items-center bg-sky-100 m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4">
+                    <GoTriangleRight className="text-black" />
+                    <p className="text-black">{text}</p>
                   </div>
                 );
               })}
+            </div>
+          )}
           <button
             onClick={() =>
               setButtonForm({ ...buttonForm, servicio4: !buttonForm.servicio4 })
@@ -263,7 +325,6 @@ const HeaderConsultoria = () => {
           </button>
         </div>
       </div>
-     
     </div>
   );
 };

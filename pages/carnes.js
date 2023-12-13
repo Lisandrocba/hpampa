@@ -20,6 +20,7 @@ const Carnes = () => {
             'Nalga'
           ]}
           name='vacuna'
+          sector='carnes'
         />
           <CartProductos 
           img='https://i.imgur.com/u5Eb3UN.png'
@@ -32,6 +33,7 @@ const Carnes = () => {
             'Carré'
           ]}
           name='cerdo'
+          sector='carnes'
         />
            <CartProductos 
           img='https://i.imgur.com/IvNgi1a.png'
@@ -44,6 +46,7 @@ const Carnes = () => {
             'Corazón'
           ]}
           name='aviar'
+          sector='carnes'
         />
          <CartProductos 
           img='https://i.imgur.com/hASBg5e.png'
@@ -55,6 +58,7 @@ const Carnes = () => {
             'Oveja'
           ]}
           name='ovino'
+          sector='carnes'
         />
          <CartProductos 
           img='https://i.imgur.com/r5eFxdz.png'
@@ -65,6 +69,7 @@ const Carnes = () => {
             'Calamar'
           ]}
          name='pescados'
+         sector='carnes'
         />
 
       </div>

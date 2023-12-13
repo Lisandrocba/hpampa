@@ -93,85 +93,15 @@ export const prodBebidas = [
     ],
   },
   {
-    name: 'vacuna',
-    titulo: 'Carne Vacuna',
+    name: 'eltransito',
+    titulo: 'El Transito',
     img: [
-      "https://i.imgur.com/htfcNB6.png",
-      'https://i.imgur.com/ZakqR7j.png',
-      'https://i.imgur.com/0Hk2G7G.png',
-      'https://i.imgur.com/aO9Nc1z.png',
-      'https://i.imgur.com/jKyyqpT.png',
-      'https://i.imgur.com/EXiXmZf.png',
-      'https://i.imgur.com/E1FOC0y.png',
-      'https://i.imgur.com/XRunFBT.png'
-    ],
-    width: 'scale-125'
-  },
-  {
-    name: 'cerdo',
-    titulo: 'Carne Porcina',
-    img: [
-      "https://i.imgur.com/irLAyaC.png",
-      'https://i.imgur.com/iBeyIFj.png',
-      'https://i.imgur.com/PbheEKU.png',
-      'https://i.imgur.com/HOINzQr.png',
-      'https://i.imgur.com/mNAZeS1.png',
-      'https://i.imgur.com/6n9rw8p.png'
-    ],
-    width: 'scale-125'
-  },
-  {
-    name: 'ovino',
-    titulo: 'Carne Ovina',
-    img: [
-      "https://i.imgur.com/epY8eFu.png",
-      'https://i.imgur.com/OW5bczB.png',
-      'https://i.imgur.com/nDTGee3.png',
-      'https://i.imgur.com/LXZtFf6.png'
-    ],
-    width: 'scale-125'
-  },
-  {
-    name: 'aviar',
-    titulo: 'Carne Aviar',
-    img: [
-      "https://i.imgur.com/PZaessS.png",
-      'https://i.imgur.com/iOrY6Md.png',
-      'https://i.imgur.com/Ug6AC0D.png',
-      'https://i.imgur.com/WQxgPkf.png',
-      'https://i.imgur.com/DI35FQR.png'
+      "https://i.imgur.com/2kJxMr6.png",
+      "https://i.imgur.com/RRkWUXb.png",
+      "https://i.imgur.com/mgcDZ0n.png",
+      "https://i.imgur.com/fXtZiWP.png",
     ],
     width: 'lg:scale-125'
   },
-  {
-    name: 'pescados',
-    titulo: 'Productos de Mar',
-    img: [
-      "https://i.imgur.com/2Aa2Py2.png",
-      'https://i.imgur.com/1QzHUkK.png',
-      'https://i.imgur.com/Jyod1OV.png',
-      'https://i.imgur.com/FgmsgdX.png'
-    ],
-    width: 'lg:scale-125'
-  },
-  {
-    name: 'mani',
-    titulo: 'Roruka',
-    img: [
-      "https://i.imgur.com/E6sKSig.png",
-      'https://i.imgur.com/C7lRZiz.png',
-      'https://i.imgur.com/WeouOj2.png',
-      'https://i.imgur.com/8hwcS69.png'
-    ],
-    width: 'lg:scale-125'
-  },
-  {
-    name: 'nueces',
-    titulo: 'Producor S.A.',
-    img: [
-      "https://i.imgur.com/dkfJHRf.png"
-      
-    ],
-    width: 'lg:scale-125'
-  },
+ 
 ];

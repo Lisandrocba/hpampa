@@ -18,6 +18,7 @@ const Bebidas = () => {
             "Vino Tempranillo Cask",
           ]}
           name='araujo'
+          sector='producto'
         />
          <CartProductos
           img="https://i.imgur.com/f46OM9T.png"
@@ -30,6 +31,7 @@ const Bebidas = () => {
             "Vino Malbec 23 by Aconcagua Distillery",
           ]}
           name='aconcagua'
+          sector='producto'
         />
         <CartProductos
           img="https://i.imgur.com/F84izGL.png"
@@ -43,6 +45,7 @@ const Bebidas = () => {
           ]}
           imgW={250}
           name='carelli'
+          sector='producto'
         />
          <CartProductos
           img="https://i.imgur.com/VqV58K3.png"
@@ -59,6 +62,7 @@ const Bebidas = () => {
           ]}
           imgW={250}
           name='bournett'
+          sector='producto'
         />
          <CartProductos
           img="https://i.imgur.com/EQKRmZj.png"
@@ -73,6 +77,7 @@ const Bebidas = () => {
           ]}
           imgW={250}
           name='doncarlos'
+          sector='producto'
         />
         <CartProductos
           img="https://i.imgur.com/kdwGQgh.png"
@@ -85,6 +90,7 @@ const Bebidas = () => {
           ]}
           imgW={250}
           name='elnevado'
+          sector='producto'
         />
         <CartProductos
           img="https://i.imgur.com/cQPhVf6.png"
@@ -101,6 +107,7 @@ const Bebidas = () => {
           ]}
           imgW={300}
           name='jorgerubio'
+          sector='producto'
         />
          <CartProductos
           img="https://i.imgur.com/keR7hYv.png"
@@ -112,6 +119,18 @@ const Bebidas = () => {
           ]}
           imgW={200}
           name='uko'
+          sector='producto'
+        />
+        <CartProductos
+          img="https://i.imgur.com/iY3B6JI.png"
+          productos={[
+            "Prieto Marini",
+            "Pata i' Lana",
+            "Pedro Moises",
+          ]}
+          imgW={200}
+          name='eltransito'
+          sector='producto'
         />
       </div>
     </div>

@@ -5,7 +5,6 @@ import Carrusel from './Carrusel';
 
 const Header = () => {
   const el = React.useRef(null);
-
   return (
     <div >
         <div  className="flex flex-row items-center justify-between px-2 py-3 lg:px-2 lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-30 carruselAnimacion">
