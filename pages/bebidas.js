@@ -132,6 +132,47 @@ const Bebidas = () => {
           name='eltransito'
           sector='producto'
         />
+        <CartProductos
+          img="https://i.imgur.com/iJH6f8R.png"
+          productos={[
+            "Blanco Dulce Natural",
+            "Rosé",
+            "Malbec",
+          ]}
+          imgW={200}
+          name='moschini'
+          sector='producto'
+        />
+         <CartProductos
+          img="https://i.imgur.com/UPIUxBk.png"
+          productos={[
+            "Mantra Classic",
+            "Mantra Rebel",
+            "Mantra Reserva",
+          ]}
+          imgW={200}
+          name='secretopatagonico'
+          sector='producto'
+        />
+         <CartProductos
+          img="https://i.imgur.com/1sKWNqx.png"
+          productos={[
+            "Blanco",
+            "Rosado",
+            "Crianza",
+            "Garnacha Rioja",
+            "Reserva",
+            "Tahon",
+            "506 M",
+            "Leukade",
+            "Salinillas",
+            "Las Piletas",
+            "Los Quiñones",
+          ]}
+          imgW={200}
+          name='tobelos'
+          sector='producto'
+        />
       </div>
     </div>
   );
