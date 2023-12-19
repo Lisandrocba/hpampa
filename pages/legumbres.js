@@ -20,7 +20,8 @@ const Legumbres = () => {
             "Porotos Adzuki",
             "Porotos Cramberry",
           ]}
-          w="w-1/2"
+          name='legumbres'
+          sector='legumbres'
         />
       </div>
     </div>
