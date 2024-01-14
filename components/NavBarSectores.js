@@ -26,7 +26,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/consultoria"
                 ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "lg:text-sm xl:text-lg xl:font-bold py-4 lg:py-0  lg:text-slate-800"
+                : "lg:text-sm xl:text-lg  py-4 lg:py-0  lg:text-slate-800"
             }
             href="/consultoria"
           >
@@ -36,7 +36,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/bebidas"
               ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg  lg:text-slate-800"
             }
             href="/bebidas"
           >
@@ -46,7 +46,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/carnes"
               ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg  lg:text-slate-800"
             }
             href="/carnes"
           >
@@ -56,7 +56,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/legumbres"
               ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-              : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
+              : "py-4 lg:py-0 lg:text-sm xl:text-lg  lg:text-slate-800"
             }
             href="/legumbres"
           >
@@ -66,7 +66,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/frutossecos"
                 ?   "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
+                : "py-4 lg:py-0 lg:text-sm xl:text-lg  lg:text-slate-800"
             }
             href="/frutossecos"
           >
@@ -76,7 +76,7 @@ const NavBarSectores = () => {
             className={
               asPath === "/alimentos"
                  ? "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
-                : "py-4 lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800"
+                : "py-4 lg:py-0 lg:text-sm xl:text-lg lg:text-slate-800"
             }
             href="/alimentos"
           >

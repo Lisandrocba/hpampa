@@ -1,6 +1,6 @@
 export const ProdSecos = [
     {
-        name: 'frutossecos',
+        name: 'mani',
         titulo: 'Roruka',
         img: 'https://i.imgur.com/z2LhnW6.png',
         productos: [
@@ -23,8 +23,8 @@ export const ProdSecos = [
         ]
     },
     {
-        name: 'frutossecos',
-        titulo: 'Producor S.A',
+        name: 'nueces',
+        titulo: 'Producor Pecan S.A',
         img: 'https://i.imgur.com/62nJbPO.png',
         productos: [
             'Nueces de Pecan'
@@ -50,7 +50,7 @@ export const ProdSecos = [
         ]
     },
     {
-        name: 'frutossecos',
+        name: 'pasas',
         titulo: 'Pietrelli',
         img: 'https://i.imgur.com/b65GNvf.png',
         productos: [

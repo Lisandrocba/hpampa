@@ -5,12 +5,13 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const FrutosSecos = () => {
+    
   const {
     query: { name },
   } = useRouter();
  
-  const producto = ProdSecos.find((item) => item.name === name);
-
+  const res = ProdSecos.find((item) => item.name === name);
+  const producto = [res]
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
@@ -19,22 +20,44 @@ const FrutosSecos = () => {
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around mx-4">
               {producto ?
-                producto.data.map((i) => {
+                producto.map((i) => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-between items-center mx-3 my-2  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 w-auto h-44"
+                          className="flex flex-col justify-between items-start mx-3 my-2  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900"
                         >
                           <Image
-                            className={`w-20`}
+                            className={`w-32 mx-auto`}
                             alt="img"
                             src={i.img}
                             width={100}
                             height={100}
                           />
                           <div className="flex flex-col justify-center items-start ">
-                            <p className="text-xs">{i.desc}</p>
-                            <p className="text-xs">{i.descIng}</p>
+                            <p className="text-xl font-bold mt-5">Tamaño:</p> 
+                            {i.tam?.map(p=>{
+                                return(
+                                    <p>{p}</p>
+                                )
+                            })}
+                          </div>
+                          <div className="flex flex-col justify-center items-start ">
+                          <p className="text-xl font-bold mt-5"> Presentacion:</p> 
+                           
+                            {i.presentacion?.map(p=>{
+                                return(
+                                    <p>{p}</p>
+                                )
+                            })}
+                          </div>
+                          <div className="flex flex-col justify-center items-start ">
+                          <p className="text-xl font-bold mt-5">  Formato: </p> 
+                      
+                            {i.formato?.map(p=>{
+                                return(
+                                    <p>{p}</p>
+                                )
+                            })}
                           </div>
                         </div>
                       );
@@ -47,7 +70,7 @@ const FrutosSecos = () => {
           <form className="w-full pt-8 col-span-2 flex flex-col justify-start item-start lg:pt-0">
             {producto ? (
               <h4 className="text-hpampa font-bold lg:mt-5">
-                {producto.titulo}
+                {res.titulo}
               </h4>
             ) : null}
 
@@ -84,17 +107,6 @@ const FrutosSecos = () => {
               </button>
             </div>
           </form>
-          <div className="bg-hpampa px-5 py-3 rounded-2xl mt-10">
-            <h4 className="mb-5 text-lg">Presentacion:</h4>
-            {producto ?
-            producto.presentacion.map(descripcion=>{
-                return(
-                    <p>{descripcion}</p>
-                    )
-            }) 
-            : null   
-        }
-          </div>
         </div>
       </div>
     </div>

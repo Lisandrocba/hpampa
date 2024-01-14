@@ -5,6 +5,7 @@ import Main from '@/components/Main'
 import Seccion from '@/components/Seccion'
 import Head from 'next/head'
 
+
 export default function Home() {
   return (
     <div>

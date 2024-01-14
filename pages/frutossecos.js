@@ -18,6 +18,7 @@ const FrutosSecos = () => {
             "Arandanos en Polvo",
           ]}
           name='mani'
+          sector='frutossecos'
         />
          <CartProductos
           img="https://i.imgur.com/5hCgg50.png"
@@ -29,8 +30,8 @@ const FrutosSecos = () => {
             "Nuez Large/medium Peces",
             "Nuez Mammoth Peces",
           ]}
-          black={true}
           name='nueces'
+          sector='frutossecos'
         />
          <CartProductos
           img="https://i.imgur.com/2Uqaimp.png"
@@ -40,7 +41,8 @@ const FrutosSecos = () => {
             "Puré de ciruelas",
             "Pasas de Uva",
           ]}
-          imgW={250}
+          name='pasas'
+          sector='frutossecos'
         />
       </div>
     </div>
