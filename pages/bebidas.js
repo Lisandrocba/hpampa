@@ -27,8 +27,6 @@ const Bebidas = () => {
             "Gin Red Fruits",
             "Gin Lima & Lemongrass",
             "Gin Cardamomo & Lemongras",
-            "Vino Malbec 23 by Aconcagua Distillery",
-            "Vino Malbec 23 by Aconcagua Distillery",
           ]}
           name='aconcagua'
           sector='producto'

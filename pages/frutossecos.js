@@ -12,10 +12,6 @@ const FrutosSecos = () => {
           productos={[
             "Maní Roruka tostado sin sal linea gourmet",
             "Maní Roruka tostado con sal linea gourmet",
-            "Té negro Ceylon con azahar",
-            "Té negro con especias y hierbas",
-            "Té rojo con chocolate & frutos rojos",
-            "Arandanos en Polvo",
           ]}
           name='mani'
           sector='frutossecos'
