@@ -145,7 +145,7 @@ export const ProdAlimentos = [
       },
       {
         img: "https://i.imgur.com/UNVJen2.png",
-        desc: "All NatureU+0060s",
+        desc: "All Nature s",
       },
       {
         img: "https://i.imgur.com/KsLuxd1.png",
@@ -194,7 +194,7 @@ export const ProdAlimentos = [
     ]
   },
     {
-    name: "Arroz",
+    name: "arroz",
     titulo: "Don Marcos",
     data: [
       {
@@ -262,10 +262,6 @@ export const ProdAlimentos = [
       {
         img: "https://i.imgur.com/OovUQbi.png",
         desc: "Tostaditas",
-      },
-      {
-        img: "https://i.imgur.com/q7NkYZA.png",
-        desc: "Tapas de Copetín, masa de Hojaldre 250 grs / Copetín Tapas, puff pastry dough 250 grs",
       },
       {
         img: "https://i.imgur.com/xO7RKDx.png",
