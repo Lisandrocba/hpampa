@@ -46,6 +46,10 @@
   border-bottom: 5px solid rgb(93, 137, 202);
 }
 
+.inputOculto{
+  display: none;
+}
+
 .contenedorBucle p{
   color: rgb(255, 255, 255);
   font-size: 1.3rem;

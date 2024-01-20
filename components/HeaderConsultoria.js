@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { GoTriangleRight } from "react-icons/go";
-import Footer from "./Footer";
-import FormControl from "./FormControl";
 import FormControlServicios from "./FormControlServicios";
 
 const textos = {
@@ -37,6 +35,7 @@ const HeaderConsultoria = () => {
     servicio2: false,
     servicio3: false,
     servicio4: false,
+    servicio: ''
   });
 
   return (
@@ -48,7 +47,7 @@ const HeaderConsultoria = () => {
       <div className="flex flex-col lg:flex-col lg:flex-wrap justify-center item-center mb-10 ">
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 px-5 py-10   mx-10 my-3">
           {buttonForm.servicio2 ? (
-            <FormControlServicios />
+            <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 2</p>
@@ -69,7 +68,7 @@ const HeaderConsultoria = () => {
           )}
           <button
             onClick={() =>
-              setButtonForm({ ...buttonForm, servicio2: !buttonForm.servicio2 })
+              setButtonForm({ ...buttonForm, servicio2: !buttonForm.servicio2, servicio1: false, servicio3: false, servicio: 'Servicio 2' })
             }
             className="py-3 my-3 px-5 bg-gray-dark hover:bg-slate-700 text-white rounded-lg lg:w-1/2 mt-3"
           >
@@ -78,7 +77,7 @@ const HeaderConsultoria = () => {
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default px-5 py-10 border-b-solid border-b-2 border-slate-400   mx-10 my-3">
           {buttonForm.servicio3 ? (
-            <FormControlServicios />
+            <FormControlServicios  servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 3</p>
@@ -99,7 +98,7 @@ const HeaderConsultoria = () => {
           )}
           <button
             onClick={() =>
-              setButtonForm({ ...buttonForm, servicio3: !buttonForm.servicio3 })
+              setButtonForm({ ...buttonForm, servicio3: !buttonForm.servicio3, servicio1: false, servicio2: false, servicio: 'Servicio 3' })
             }
             className="py-3 my-3 px-5 bg-gray-dark hover:bg-slate-700 text-white rounded-lg mt-3 lg:w-1/2 "
           >
@@ -108,7 +107,7 @@ const HeaderConsultoria = () => {
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default  border-slate-400 px-5 py-10 mx-10 my-3">
           {buttonForm.servicio1 ? (
-            <FormControlServicios />
+            <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 1</p>
@@ -129,7 +128,7 @@ const HeaderConsultoria = () => {
           )}
           <button
             onClick={() =>
-              setButtonForm({ ...buttonForm, servicio1: !buttonForm.servicio1 })
+              setButtonForm({ ...buttonForm, servicio1: !buttonForm.servicio1, servicio2: false, servicio3: false, servicio: 'Servicio 1' })
             }
             className="py-3 px-5 bg-gray-dark hover:bg-slate-700 text-white rounded-lg mt-3 lg:w-1/2"
           >

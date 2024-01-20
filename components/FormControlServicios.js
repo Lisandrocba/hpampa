@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import 'dotenv/config';
 
-const FormControlServicios = () => {
+const FormControlServicios = ({servicio}) => {
   const formRef = useRef(null);
   const formik = useFormik({
     initialValues: {
@@ -25,9 +25,9 @@ const FormControlServicios = () => {
     }),
     onSubmit: values =>{
       try {
-        emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS, process.env.NEXT_PUBLIC_TAMPLATE_ID_EMAILJS, formRef.current, process.env.NEXT_PUBLIC_PK_EMAILJS)
+       emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS, process.env.NEXT_PUBLIC_TAMPLATE_ID_SERVICIO_EMAILJS, formRef.current, process.env.NEXT_PUBLIC_PK_EMAILJS)
         .then(res=>console.log(res))
-        .catch(err=>console.log(err))
+        .catch(err=>console.log(err)) 
       } catch (error) {
         console.log(error)
       }
@@ -102,6 +102,11 @@ const FormControlServicios = () => {
             />
      
          </div>
+         <input
+            name='servicio'
+            value={servicio} 
+            className="inputOculto"
+         />
         <div className='flex flex-col w-2/5'>
             <textarea
             type="text"
