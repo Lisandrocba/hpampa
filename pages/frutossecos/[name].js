@@ -18,7 +18,7 @@ const FrutosSecos = () => {
       <NavBarSectores />
       {producto ? (
               <h4 className="text-hpampa lg:hidden m-5 font-bold lg:mt-5">
-                {res.titulo}
+                {res?.titulo}
               </h4>
             ) : null}
       <div className="flex flex-col lg:flex-row justify-around items-center lg:items-start">

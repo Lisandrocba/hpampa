@@ -23,7 +23,7 @@ const CarneDetalle = () => {
         <div className="flex flex-col justify-center items-center lg:w-1/2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around mx-4">
-              {producto
+              {producto.name
                 ? producto.name === "pescados"
                   ? producto.data.map((i) => {
                       return (
@@ -68,7 +68,9 @@ const CarneDetalle = () => {
                     })
                 : null}
             </div>
-            {producto.name === "ovino" ? (
+            {
+            producto.name ?
+            producto.name === "ovino" ? (
               <div className="bg-hpampa px-5 py-3 text-slate-900 rounded-2xl">
                 <p>Codero / lamb: 8-15 kg</p>
                 <p>Cabrito / Baby Goat: 6-8 kg</p>
@@ -76,7 +78,9 @@ const CarneDetalle = () => {
                 <p>Mutton: 16-25 kg</p>
                 <p>Oveja / Sheep: 18-25 kg</p>
               </div>
-            ) : null}
+            ) : null
+          : null
+          }
           </div>
         </div>
         <div className="lg:w-2/5 px-5">
