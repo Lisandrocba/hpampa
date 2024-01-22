@@ -9,6 +9,11 @@ const CarneDetalle = () => {
   const {
     query: { name },
   } = useRouter();
+
+  if(!name){
+    return
+  }
+
   const producto = prodCarnes.find((item) => item.name === name);
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
