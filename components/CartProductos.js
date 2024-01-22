@@ -31,7 +31,7 @@ const CartProductos = ({img, productos =[],name,  imgW = 300, w='w-96', sector})
             )
             }
         </div>    
-         <Link href={`${sector}/${name}`} className= "py-3 my-3 px-5 bg-slate-800 text-white rounded-lg hover:bg-slate-300 hover:text-slate-800">Ver mas</Link>
+         <Link href={`/${sector}/${name}`} className= "py-3 my-3 px-5 bg-slate-800 text-white rounded-lg hover:bg-slate-300 hover:text-slate-800">Ver mas</Link>
     </div>
   )
 }
