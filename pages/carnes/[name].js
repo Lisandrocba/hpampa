@@ -1,3 +1,4 @@
+import FormControl from "@/components/FormControl";
 import NavBarSectores from "@/components/NavBarSectores";
 import { prodCarnes } from "@/data/ProdCarnes";
 import Image from "next/image";
@@ -13,8 +14,13 @@ const CarneDetalle = () => {
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
-      <div className="flex flex-row justify-around items-center lg:items-start">
-        <div className="flex flex-col justify-center items-center w-1/2">
+      {producto ? (
+              <h4 className="text-hpampa lg:hidden my-5 mx-5 font-bold lg:mt-5">
+                {producto.titulo}
+              </h4>
+            ) : null}
+      <div className="flex flex-col lg:flex-row justify-around items-center lg:items-start">
+        <div className="flex flex-col justify-center items-center lg:w-1/2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around mx-4">
               {producto
@@ -23,11 +29,11 @@ const CarneDetalle = () => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-around items-center mx-3 my-2  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900"
+                          className="flex flex-col justify-around items-center  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 w-full lg:w-2/5"
                         >
-                          <p className="text-sm text-center">{i.desc}</p>
+                          <p className="text-sm font-bold text-slate-800 text-center">{i.desc}</p>
                           <Image
-                            className={`w-48 py-5`}
+                            className={`mx-3 h-64 lg:h-32 lg:w-auto object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                             alt="img"
                             src={i.img}
                             width={400}
@@ -36,7 +42,7 @@ const CarneDetalle = () => {
                           <div className="mt-5">
                             {i.tipos
                               ? i.tipos.map((tipo) => {
-                                  return <p className="text-xs">{tipo}</p>;
+                                  return <p className="text-sm text-slate-800 text-center">{tipo}</p>;
                                 })
                               : null}
                           </div>
@@ -47,11 +53,11 @@ const CarneDetalle = () => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-around items-center mx-3 my-2 w-40 object-cover mb-10 bg-hpampa rounded-2xl py-5 px-3 text-slate-900"
+                          className="flex flex-col justify-around items-center mx-1 object-cover mb-3 bg-hpampa rounded-2xl px-3 w-full lg:w-2/5 text-slate-900"
                         >
-                          <p className="text-xs text-center">{i.desc}</p>
+                          <p className="text-sm font-bold text-slate-800 text-center mt-3">{i.desc}</p>
                           <Image
-                            className={`pt-5`}
+                            className={`mx-3  h-64 lg:h-auto lg:w-56 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                             alt="img"
                             src={i.img}
                             width={400}
@@ -73,47 +79,17 @@ const CarneDetalle = () => {
             ) : null}
           </div>
         </div>
-        <div className="w-1/2 px-5">
-          <form className="w-full pt-8 col-span-2 flex flex-col justify-start item-start lg:pt-0">
+        <div className="lg:w-2/5 px-5">
             {producto ? (
-              <h4 className="text-hpampa font-bold lg:mt-5">
+              <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5">
                 {producto.titulo}
               </h4>
             ) : null}
 
-            <p className="text-2xl font-bold text-slate-800 pb-8">
+            <p className="text-2xl mt-5 font-bold text-slate-800 pb-8">
               Consultas sobre el producto
             </p>
-            <div className="flex-column items-center w-full">
-              <input
-                type="text"
-                id="first_name"
-                className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-hpampa focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                placeholder="Nombre compania"
-                required
-              />
-              <input
-                type="text"
-                id="last_name"
-                className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-hpampa focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                placeholder="Nombre de contacto"
-                required
-              />
-              <input
-                type="email"
-                id="email"
-                className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent border-gray-300 text-gray-900 text-xl border-2 focus:border-b-hpampa focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-                placeholder="Email"
-                required
-              />
-              <button
-                type="submit"
-                className="py-3 my-3 px-5 bg-slate-800 text-white rounded-lg hover:bg-slate-600 hover:text-white w-full lg:mt-5"
-              >
-                Enviar
-              </button>
-            </div>
-          </form>
+          <FormControl />
           <div className="flex flex-row justify-around bg-white rounded-2xl">
             <Image
               className="w-24 h-24 object-contain p-2"

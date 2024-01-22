@@ -12,11 +12,18 @@ const AlimentosDetalle = () => {
  
   const producto = ProdAlimentos.find((item) => item.name === name);
 
+  
+
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />
-      <div className="flex flex-row justify-around items-center lg:items-start">
-        <div className="flex flex-col justify-center items-center w-3/5">
+      {producto ? (
+              <h4 className="text-hpampa lg:hidden m-5 font-bold lg:mt-5 ">
+                {producto.titulo}
+              </h4>
+            ) : null}
+      <div className="flex flex-col lg:flex-row justify-around items-center lg:items-start">
+        <div className="flex flex-col justify-center items-center lg:w-3/5">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around mx-4">
               {producto ?
@@ -24,18 +31,18 @@ const AlimentosDetalle = () => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-around items-center mx-2 w-52 object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 max-w-xs"
+                          className="flex flex-col justify-around items-center mx-2 w-2/5 lg:w-auto object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 max-w-xs "
                         >
                           <Image
-                            className={`w-auto h-48 py-5 object-contain`}
+                            className={`lg:mx-3 w-56 lg:h-56 lg:w-auto object-contain lg:hover:scale-125 ease-in duration-300 lg:px-5`}
                             alt="img"
                             src={i.img}
                             width={100}
                             height={100}
                           />
                           <div className="flex flex-col justify-center items-start ">
-                            <p className="text-xs">{i.desc}</p>
-                            <p className="text-xs">{i.descIng}</p>
+                            <p className="text-slate-800 text-xs lg:text-lg font-bold text-center">{i.desc}</p>
+                            <p className="lg:text-xs">{i.descIng}</p>
                           </div>
                         </div>
                       );
@@ -44,13 +51,13 @@ const AlimentosDetalle = () => {
             </div>
           </div>
         </div>
-        <div className="w-2/5 px-5 flex flex-col justify-center items-start">
+        <div className="lg:w-2/5 px-5 flex flex-col justify-center items-start">
         {producto ? (
-              <h4 className="text-hpampa font-bold lg:mt-5 ">
+              <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5 ">
                 {producto.titulo}
               </h4>
             ) : null}
-          <p className="text-2xl font-bold text-slate-800 pb-8">
+          <p className="text-xl lg:text-2xl font-bold text-slate-800 pb-8">
               Consultas sobre el producto
             </p>
           <FormControl />

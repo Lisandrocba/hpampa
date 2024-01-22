@@ -37,8 +37,8 @@ const FormControlServicios = ({servicio}) => {
   })
   return (
     <form ref={formRef} className="w-full" onSubmit={formik.handleSubmit}>
-      <div className="flex flex-row flex-wrap items-center justify-around w-full">
-        <div className='flex flex-col w-2/5'> 
+      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-around w-full">
+        <div className='flex flex-col w-4/5 lg:w-2/5'> 
             <input
             type="text"
             id="nombreEmpresa"
@@ -51,7 +51,7 @@ const FormControlServicios = ({servicio}) => {
             />
         
         </div>
-        <div className='flex flex-col w-2/5'>
+        <div className='flex flex-col w-4/5 lg:w-2/5'>
             <input
             type="text"
             id="nombreContacto"
@@ -64,7 +64,7 @@ const FormControlServicios = ({servicio}) => {
             />
             
         </div>
-        <div className='flex flex-col w-2/5'>
+        <div className='flex flex-col w-4/5 lg:w-2/5'>
             <input
             type="email"
             id="email"
@@ -76,7 +76,7 @@ const FormControlServicios = ({servicio}) => {
             onBlur={formik.handleBlur}
             />
         </div>
-        <div className='flex flex-col w-2/5'>
+        <div className='flex flex-col w-4/5 lg:w-2/5'>
             <input
             type="text"
             id="pais"
@@ -89,7 +89,7 @@ const FormControlServicios = ({servicio}) => {
             />
         
         </div>
-         <div className='flex flex-col w-2/5'>
+         <div className='flex flex-col w-4/5 lg:w-2/5'>
             <input
             type="tel"
             id="telefono"
@@ -107,12 +107,12 @@ const FormControlServicios = ({servicio}) => {
             value={servicio} 
             className="inputOculto"
          />
-        <div className='flex flex-col w-2/5'>
+        <div className='flex flex-col w-4/5 lg:w-2/5'>
             <textarea
             type="text"
             id="consulta"
             name='consulta'
-            className={`mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent ${formik.touched.consulta && formik.errors.consulta ? 'placeholder:text-red-500 border-red-500' : 'border-slate-800'} placeholder:text-slate-700   text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5`}
+            className={`mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent ${formik.touched.consulta && formik.errors.consulta ? 'placeholder:text-red-500 border-red-500' : 'border-slate-800'} placeholder:text-slate-700   text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full lg:p-2.5`}
             placeholder={`${formik.touched.consulta && formik.errors.consulta ? formik.errors.consulta :'Consulta'}`}
             value={formik.values.consulta}
             onChange={formik.handleChange}

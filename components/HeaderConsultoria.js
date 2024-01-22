@@ -40,23 +40,23 @@ const HeaderConsultoria = () => {
 
   return (
     <div className="w-screen mx-0">
-      <h2 className=" text-3xl lg:text-5xl pt-3 pb-7 mb-3 mt-10 text-center">
-        <span className="text-6xl text-hpampa">S</span>ervicios de{" "}
-        <span className="text-6xl text-hpampa">C</span>onsultoria
+      <h2 className="text-xl lg:text-5xl pt-3 pb-7 mb-3 mt-10 text-center">
+        <span className="text-2xl lg:text-6xl text-hpampa">S</span>ervicios de{" "}
+        <span className="text-2xl lg:text-6xl text-hpampa">C</span>onsultoria
       </h2>
       <div className="flex flex-col lg:flex-col lg:flex-wrap justify-center item-center mb-10 ">
-        <div className="flex flex-col flex-wrap justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 px-5 py-10   mx-10 my-3">
+        <div className="flex flex-col flex-wrap justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
           {buttonForm.servicio2 ? (
             <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 2</p>
-              <div className="flex flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center">
                 {textos.servicio2.map((text) => {
                   return (
                     <div
                       key={Math.random()}
-                      className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4 w-2/5"
+                      className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md  px-3 py-4 w-4/5 lg:w-2/5"
                     >
                       <GoTriangleRight className="text-white" />
                       <p className="text-white">{text}</p>
@@ -75,18 +75,18 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio2 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="flex flex-col flex-wrap justify-center items-center cursor-default px-5 py-10 border-b-solid border-b-2 border-slate-400   mx-10 my-3">
+        <div className="flex flex-col flex-wrap justify-center items-center cursor-default lg:px-5 py-10 border-b-solid border-b-2 border-slate-400   lg:mx-10 my-3">
           {buttonForm.servicio3 ? (
             <FormControlServicios  servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 3</p>
-              <div className="flex flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center">
               {textos.servicio3.map((text) => {
                 return (
                   <div
                     key={Math.random()}
-                    className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md w-2/5 px-3 py-4"
+                    className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md w-4/5 lg:w-2/5 lg:px-3 py-4"
                   >
                     <GoTriangleRight className="text-white" />
                     <p className="text-white">{text}</p>
@@ -105,18 +105,18 @@ const HeaderConsultoria = () => {
             {buttonForm.servicio3 ? "ver servicio" : "consultar"}
           </button>
         </div>
-        <div className="flex flex-col flex-wrap justify-center items-center cursor-default  border-slate-400 px-5 py-10 mx-10 my-3">
+        <div className="flex flex-col flex-wrap justify-center items-center cursor-default  border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
           {buttonForm.servicio1 ? (
             <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">Servicio 1</p>
-              <div className="flex flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center">
               {textos.servicio1.map((text) => {
                 return (
                   <div
                     key={Math.random()}
-                    className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md w-2/5 px-3 py-4"
+                    className="flex flex-row justify-start items-center bg-hpampa m-1 rounded-tl-xl rounded-br-xl rounded-tr-md rounded-bl-md w-4/5 lg:w-2/5 px-3 py-4"
                   >
                     <GoTriangleRight className="text-white" />
                     <p className="text-white">{text}</p>
