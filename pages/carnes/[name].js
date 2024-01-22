@@ -10,7 +10,6 @@ const CarneDetalle = () => {
     query: { name },
   } = useRouter();
   const producto = prodCarnes.find((item) => item.name === name);
-  console.log(producto);
   return (
     <div className="bg-slate-200 h-full min-h-screen pb-10">
       <NavBarSectores />

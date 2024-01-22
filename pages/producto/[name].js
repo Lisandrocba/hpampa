@@ -38,7 +38,7 @@ const ProductoDetalle = () => {
             </div>
           </div>
         </div>
-        <div className=" lg:w-1/2 px-5 flex flex-col justify-center items-center">
+        <div className="w-full lg:w-1/2 px-5 flex flex-col justify-center items-center">
           {producto ? (
             <h4 className="text-hpampa font-bold text-start  hidden lg:block lg:mt-5">{producto.titulo}</h4>
           ) : null}
