@@ -8,7 +8,7 @@ const FrutosSecos = () => {
       <NavBarSectores />
       <div className="flex justify-center items-start flex-wrap my-10">
       <CartProductos
-          img="https://i.imgur.com/yIVrbsh.png"
+          img="https://i.imgur.com/YDdzjei.png"
           productos={[
             "Maní Roruka tostado sin sal linea gourmet",
             "Maní Roruka tostado con sal linea gourmet",

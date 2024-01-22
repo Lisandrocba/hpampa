@@ -38,7 +38,7 @@ const Alimentos = () => {
           sector="alimentos"
         />
         <CartProductos
-          img="https://i.imgur.com/2TQ8t8z.png"
+          img="https://i.imgur.com/AxgOaeS.png"
           productos={[
             "Miel Líquida", 
             "Miel con Jugo de Naranja",
@@ -52,7 +52,7 @@ const Alimentos = () => {
           sector="alimentos"
         />
         <CartProductos
-          img="https://i.imgur.com/cDzhBjA.png"
+          img="https://i.imgur.com/ZZJkApR.png"
           productos={[
             "La Prima", 
             "Sun Empire",
@@ -65,7 +65,7 @@ const Alimentos = () => {
           sector="alimentos"
         />
          <CartProductos
-          img="https://i.imgur.com/Gtxri1F.png"
+          img="https://i.imgur.com/FGDjbQ2.png"
           productos={[
             "Blend Extra Virgen", 
             "Extra Virgin",

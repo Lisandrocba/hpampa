@@ -162,10 +162,6 @@ const Bebidas = () => {
             "Reserva",
             "Tahon",
             "506 M",
-            "Leukade",
-            "Salinillas",
-            "Las Piletas",
-            "Los Quiñones",
           ]}
           imgW={200}
           name='tobelos'
