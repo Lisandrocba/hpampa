@@ -1,17 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
-import logoHPampa from "../public/logo-HPampa.png"
+import logoHPampa from "../public/Logo HPampa International Business (2).png"
 import Carrusel from './Carrusel';
+import NavBar from './NavBar';
 
-const Header = () => {
+const Header = ({scrollToComponent}) => {
   const el = React.useRef(null);
   return (
     <div >
-        <div  className="flex flex-row items-center justify-between px-2 py-3 lg:px-2 lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-30 carruselAnimacion">
-            <div className="flex flex-row items-center ml-3">
-                <Image src={logoHPampa} className='w-2/3' alt="logohpampa" width={200} height={30}/>
+        <div  className="flex flex-row items-center justify-between w-screen  lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-30 carruselAnimacion">
+            <div className="flex flex-row justify-start items-center w-1/3 ">
+              <NavBar scrollToComponent={scrollToComponent}/>
             </div>
-            <h1 className='lg:font-bold lg:text-xl lg:mr-3 w-2/3 text-end'>Comercio Exterior</h1>
+            
+            <div className="flex flex-row justify-center items-center ml-3 w-1/3">
+                <Image src={logoHPampa} alt="logohpampa" width={200} height={30}/>
+            </div>
+           
+            <h1 className='lg:font-bold text-end lg:text-xl w-1/3 pr-5'>Comercio Exterior</h1>
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="w-full">
