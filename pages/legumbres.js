@@ -6,7 +6,7 @@ const Legumbres = () => {
   return (
     <div>
       <NavBarSectores />
-      <div className="flex justify-center items-center flex-wrap my-10">
+      <div className="flex justify-center items-stretch flex-wrap gap-5">
         <CartProductos
           img="https://i.imgur.com/5yAI1Te.png"
           productos={[

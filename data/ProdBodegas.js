@@ -3,25 +3,104 @@ export const prodBebidas = [
   { 
     name : 'araujo',
     titulo: 'Bodega Araujo',
-    img : [
-      'https://i.imgur.com/0EPNmcQ.png',
-      'https://i.imgur.com/5R3z9kM.png',
-      'https://i.imgur.com/K73onbl.png',
-      'https://i.imgur.com/GLpvaTY.png',
-      'https://i.imgur.com/GxFCcmb.png',
-      'https://i.imgur.com/JfCzJRE.png',
+    descripcion : [
+      {
+        varidad: 'Varietales', 
+        img: 'https://i.imgur.com/0EPNmcQ.png',
+        tipos: [
+          'Malbec',
+          'Cabernet sauvignon',
+          'Chardonnay'
+        ]
+      },
+      {
+        varidad: 'Cask', 
+        img: 'https://i.imgur.com/5R3z9kM.png',
+        tipos: [
+          'Malbec',
+          'Cabernet sauvignon',
+          'Tempranillo'
+        ]
+      },
+      {
+        varidad: 'MIMI', 
+        img: 'https://i.imgur.com/K73onbl.png',
+        tipos: [
+          'Blend Malbec/Merlot',
+        ]
+      },
+      {
+        varidad: 'Nucha', 
+        img: 'https://i.imgur.com/GLpvaTY.png',
+        tipos: [
+          'Malbec Orgánico',
+        ]
+      },
+      {
+        varidad: 'Laurita', 
+        img: 'https://i.imgur.com/GxFCcmb.png',
+        tipos: [
+          'Rosado Malbec Orgánico',
+        ]
+      },
+      {
+        varidad: 'Graciano', 
+        img: 'https://i.imgur.com/JfCzJRE.png',
+        tipos: [
+          'Blend',
+          'Chardonnay'
+        ]
+      },
+   
     ],
   },
   {
     name : 'aconcagua',
     titulo: 'Aconcagua',
-    img: [
-      'https://i.imgur.com/hggkqEa.png',
-      'https://i.imgur.com/kleQBhR.png',
-      'https://i.imgur.com/VTcrPe4.png',
-      'https://i.imgur.com/cguHWLh.png',
-      'https://i.imgur.com/roo4dOm.png',  
-      'https://i.imgur.com/0esKBWK.png', 
+    descripcion: [
+      {
+        varidad: 'Blue Edition', 
+        img: 'https://i.imgur.com/hggkqEa.png',
+        tipos: [
+          'Enebro y Coriandro',
+        ]
+      },
+      {
+        varidad: 'Green Edition', 
+        img: 'https://i.imgur.com/kleQBhR.png',
+        tipos: [
+          'Lima & Lemongrass',
+        ]
+      },
+      {
+        varidad: 'White Edition', 
+        img: 'https://i.imgur.com/VTcrPe4.png',
+        tipos: [
+          'Cardamomo & Lemongrass',
+        ]
+      },
+      {
+        varidad: 'Pink Edition', 
+        img: 'https://i.imgur.com/cguHWLh.png',
+        tipos: [
+          'Red Berries',
+        ]
+      },
+      {
+        varidad: 'Blue Editión', 
+        img: 'https://i.imgur.com/0esKBWK.png',
+        tipos: [
+          'Enebro y Coriandro',
+        ]
+      },
+      {
+        varidad: 'Gin Tónic', 
+        img: 'https://i.imgur.com/roo4dOm.png',
+        tipos: [
+          'Listo para beber',
+        ]
+      },
+   
     ],
   },
   {

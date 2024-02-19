@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import NavBarSectores from "@/components/NavBarSectores";
 import FormControl from "@/components/FormControl";
+import { AiOutlineSend } from "react-icons/ai";
 
 const ProductoDetalle = () => {
   const {
@@ -21,16 +22,28 @@ const ProductoDetalle = () => {
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around">
               {producto
-                ? producto.img.map((i) => {
-                    return (
-                      <div key={Math.random()} className="flex justify-center items-center mx-3 my-2 lg:mt-5 bg-hpampa rounded-xl w-2/5 lg:w-1/4">
+                ? producto.descripcion.map((i) => {
+                  return (
+                      
+                      <div key={Math.random()} className="flex flex-col justify-between items-center mx-3 my-2 lg:mt-5 bg-hpampa rounded-xl w-2/5 lg:w-1/4 py-3">
+                        <p>{i.varidad}</p>
                         <Image
                           className={`mx-3 w-32 h-64 lg:h-64 lg:w-32 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                           alt="img"
-                          src={i}
+                          src={i.img}
                           width={400}
                           height={850}
                         />
+                       { 
+                       i.tipos.map((i)=>{
+                          return(
+                            <div className="flex flex-row justify-center items-center">
+                              <AiOutlineSend className="text-xs pr-1"/>
+                              <p className="text-xs">{i}</p>
+                            </div>  
+                          )
+                        })
+                        }
                       </div>
                     );
                   })
