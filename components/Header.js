@@ -8,16 +8,16 @@ const Header = ({scrollToComponent}) => {
   const el = React.useRef(null);
   return (
     <div >
-        <div  className="flex flex-row items-center justify-between w-screen z-50 relative lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-30 carruselAnimacion">
+        <div  className="flex flex-row items-center justify-between w-screen z-50 fixed lg:top-0 lg:left-0 lg:right-0 lg:z-30 carruselAnimacion">
             <div className="flex flex-row justify-start items-center  w-1/3 ">
               <NavBar scrollToComponent={scrollToComponent}/>
             </div>
             
-            <div className="flex flex-row justify-center items-center ml-3 w-1/3">
-                <Image className='w-32' src={logoHPampa} alt="logohpampa" width={200} height={30}/>
+            <div className="flex flex-row justify-center items-center  ml-3 w-1/3">
+                <Image className='w-24 lg:w-44' src={logoHPampa} alt="logohpampa" width={200} height={30}/>
             </div>
            
-            <h1 className='text-xs lg:font-bold text-end lg:text-xl w-1/3 pr-5'>Comercio Exterior</h1>
+            <h1 className='text-ssm lg:font-bold text-end lg:text-xl w-1/3 pr-5'>Comercio Exterior</h1>
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="w-full">
