@@ -48,7 +48,7 @@ const Carrusel=React.memo(()=> {
   
   return (
     <div className="w-full carousel-container relative">
-      <p className="text-slate-200 text-3xl lg:text-8xl font-bold absolute z-50 inset-x-0 top-[40%] text-center cursor-default">{imgs[index].msj}</p>
+      <p className="text-slate-200 text-3xl lg:text-8xl font-bold absolute z-10 inset-x-0 top-[40%] text-center cursor-default">{imgs[index].msj}</p>
       <Image
         src={imgs[index].img}
         className="w-full h-96 lg:h-screen object-cover contrast-50 "
