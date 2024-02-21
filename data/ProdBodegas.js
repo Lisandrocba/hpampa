@@ -106,44 +106,161 @@ export const prodBebidas = [
   {
     name: 'carelli',
     titulo: 'Bodega Carelli',
-    img: [
-      'https://i.imgur.com/3EnFcye.png',
-      'https://i.imgur.com/As367BQ.png',
-      'https://i.imgur.com/778aZ6i.png',
-      'https://i.imgur.com/RPgOGfs.png',
-      "https://i.imgur.com/lNve2Wd.png",      
+    descripcion: [
+      {
+        varidad: '34', 
+        img: 'https://i.imgur.com/3EnFcye.png',
+        tipos: [
+          'Malbec',
+          'Cabernet sauvignon',
+          'Chardonnay'
+        ]
+      },
+      {
+        varidad: 'Madero', 
+        img: 'https://i.imgur.com/As367BQ.png',
+        tipos: [
+          'Malbec',
+          'Cabernet sauvignon',
+          'Chardonnay'
+        ]
+      },
+      {
+        varidad: 'Carla Chiaro', 
+        img: 'https://i.imgur.com/778aZ6i.png',
+        tipos: [
+          'Malbec',
+          'Bonarda'
+        ]
+      },
+      {
+        varidad: 'Angel Reserva', 
+        img:  'https://i.imgur.com/RPgOGfs.png',
+        tipos: [
+          'Malbec'
+        ]
+      },
+      {
+        varidad: 'Malbec Gran Reserva', 
+        img:   "https://i.imgur.com/lNve2Wd.png",   
+        tipos: [
+          'Malbec'
+        ]
+      },
     ],
   },
   {
     name: 'bournett',
     titulo: 'Bodega Bournett',
-    img: [
-      "https://i.imgur.com/QUGd31r.png",
-      'https://i.imgur.com/ACxsgtx.png',
-      'https://i.imgur.com/NZbN2EK.png',
-      'https://i.imgur.com/djsFfS8.png',
-      'https://i.imgur.com/y9CWCyf.png',
-      'https://i.imgur.com/s338ieK.png',
+    descripcion:[
+      {
+        varidad: 'I.G: Malbec', 
+        img:  "https://i.imgur.com/QUGd31r.png",
+        tipos: [
+          'Merlot',
+          'Cabernet sauvignon',
+          'Chardonnay',
+          'Corbeau',
+          'Malbec Rosé',
+          'Cosecha Tardía'
+        ]
+      },
+      {
+        varidad: 'Numerado', 
+        img:   'https://i.imgur.com/ACxsgtx.png', 
+        tipos: [
+          'Malbec'
+        ]
+      },
+      {
+        varidad: 'Prestige Roble', 
+        img: 'https://i.imgur.com/NZbN2EK.png',
+        tipos: [
+          'Malbec',
+          'Red Blend',
+          'Pinot Noir'
+        ]
+      },
+      {
+        varidad: 'R.S', 
+        img:  'https://i.imgur.com/djsFfS8.png',
+        tipos: [
+          'Master Blend',
+        ]
+      },
+      {
+        varidad: 'Fangio', 
+        img:  'https://i.imgur.com/y9CWCyf.png',
+        tipos: [
+          'Legend',
+          'Bi Varietal'
+        ]
+      },
     ],
   },
   {
     name: 'doncarlos',
     titulo: 'Finca Don Carlos',
-    img: [
-      'https://i.imgur.com/B26s3KW.png',
-      'https://i.imgur.com/QtuH6rx.png',
-      'https://i.imgur.com/iCctUcO.png'
-      
+    descripcion: [
+      {
+        varidad: 'Anima Bendita', 
+        img:  'https://i.imgur.com/B26s3KW.png',
+        tipos: [
+          'Malbec',
+        ]
+      },
+      {
+        varidad: 'Corazón Salvaje', 
+        img:   'https://i.imgur.com/QtuH6rx.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Franc'
+        ]
+      },
+      {
+        varidad: 'Anima Bendita', 
+        img:  'https://i.imgur.com/iCctUcO.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Franc'
+        ]
+      },
     ],
   },
   {
     name: 'elnevado',
     titulo: 'Finca El Nevado',
-    img: [
-      "https://i.imgur.com/UC8oyG4.png",
-      'https://i.imgur.com/ANK3yHm.png',
-      'https://i.imgur.com/orw6r08.png'
-     
+    descripcion: [
+      {
+        varidad: 'Aturdido', 
+        img:  "https://i.imgur.com/UC8oyG4.png",
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Red Blend',
+          'Gran Corte Blend'
+        ]
+      },
+      {
+        varidad: 'Chico Malo', 
+        img:  'https://i.imgur.com/ANK3yHm.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Red Blend',
+          'Gran Corte Blend'
+        ]
+      },
+      {
+        varidad: 'El Naufrago', 
+        img:   'https://i.imgur.com/orw6r08.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Red Blend',
+          'Gran Corte Blend'
+        ]
+      },
     ],
   },
   {

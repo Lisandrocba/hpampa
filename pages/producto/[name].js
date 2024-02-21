@@ -20,13 +20,13 @@ const ProductoDetalle = () => {
       <div className="flex flex-col justify-center items-start px-10  lg:flex lg:flex-row">
         <div className="flex flex-col justify-center items-center col-span-2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
-            <div className="flex flex-row flex-wrap justify-around">
+            <div className="flex flex-row flex-wrap justify-around items-stretch min-w-[600px]">
               {producto
                 ? producto.descripcion.map((i) => {
                   return (
                       
-                      <div key={Math.random()} className="flex flex-col justify-between items-center mx-3 my-2 lg:mt-5 bg-hpampa rounded-xl w-2/5 lg:w-1/4 py-3">
-                        <p>{i.varidad}</p>
+                      <div key={Math.random()} className="flex flex-col justify-start items-center mx-3 my-2 lg:mt-5 bg-hpampa rounded-xl w-2/5 lg:w-1/4 pb-3">
+                        <p className="text-center w-full bg-white rounded-tl-xl rounded-tr-xl text-hpampa">{i.varidad}</p>
                         <Image
                           className={`mx-3 w-32 h-64 lg:h-64 lg:w-32 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                           alt="img"
@@ -38,8 +38,8 @@ const ProductoDetalle = () => {
                        i.tipos.map((i)=>{
                           return(
                             <div className="flex flex-row justify-center items-center">
-                              <AiOutlineSend className="text-xs pr-1"/>
-                              <p className="text-xs">{i}</p>
+                              <AiOutlineSend className="text-xs  pr-1"/>
+                              <p className="text-xs text-center">{i}</p>
                             </div>  
                           )
                         })
