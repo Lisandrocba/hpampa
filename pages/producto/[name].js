@@ -12,7 +12,7 @@ const ProductoDetalle = () => {
   } = useRouter();
   const producto = prodBebidas.find((item) => item.name === name);
   return (
-    <div className="h-full h-screen min-w-screen pb-10">
+    <div className="min-h-screen min-w-screen pb-10">
       <NavBarSectores />
       {producto ? (
             <h4 className="text-hpampa font-bold text-center my-5  lg:hidden lg:mt-5">{producto.titulo}</h4>
