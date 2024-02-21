@@ -266,74 +266,132 @@ export const prodBebidas = [
   {
     name: 'jorgerubio',
     titulo: 'Bodega Jorge Rubio',
-    img: [
-      'https://i.imgur.com/CoBVqw9.png',
-      'https://i.imgur.com/muatWXE.png',
-      'https://i.imgur.com/iaszJ0k.png',
-      'https://i.imgur.com/X8Coz0y.png',
-      "https://i.imgur.com/6YKaLG0.png",
-      'https://i.imgur.com/aUVqaro.png',
-      'https://i.imgur.com/3W43sIj.png',
-      'https://i.imgur.com/P2p0ViD.png',
-      'https://i.imgur.com/dDC5lyD.png',
+    descripcion: [
+      {
+        varidad: 'Finca Gabriel', 
+        img: 'https://i.imgur.com/6YKaLG0.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Merlot',
+          'Tempranillo',
+          'Syrah',
+          'Chardonnay',
+          'Natural Sweet Wine',
+          'Rose Syrah'
+        ]
+      },
+      {
+        varidad: 'Privado', 
+        img: 'https://i.imgur.com/aUVqaro.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Natural Sweet Red',
+          'Sauvignon Blanc',
+        ]
+      },
+      {
+        varidad: 'Finca Gabriel Roble', 
+        img: 'https://i.imgur.com/muatWXE.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Bonarda',
+          'Cabernet Franc',
+          'Pinot Noir'
+        ]
+      },
+      {
+        varidad: 'Gran Reserva', 
+        img:  'https://i.imgur.com/P2p0ViD.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Blend',
+        ]
+      },
+      {
+        varidad: 'Premiado', 
+        img:  'https://i.imgur.com/dDC5lyD.png',
+        tipos: [
+          'Malbec',
+        ]
+      },
     ],
   },
   {
     name: 'uko',
     titulo: 'Bodega Uko',
-    img: [
-      'https://i.imgur.com/7sXZmT6.png',
-      'https://i.imgur.com/9F6GgR7.png',
-      "https://i.imgur.com/anfKGwc.png",
-      'https://i.imgur.com/kKkoAtP.png',
+    descripcion: [
+      {
+        varidad: 'State', 
+        img:  'https://i.imgur.com/7sXZmT6.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Red Blend',
+          'Chardonnay',
+          'Sauvignon Blanc'
+        ]
+      },
+      {
+        varidad: 'Select Vineyards', 
+        img: 'https://i.imgur.com/9F6GgR7.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon',
+          'Red Blend',
+        ]
+      },
+      {
+        varidad: 'Mister Uko', 
+        img: "https://i.imgur.com/anfKGwc.png",
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon'
+        ]
+      },
+      {
+        varidad: 'Old Wines', 
+        img: 'https://i.imgur.com/kKkoAtP.png',
+        tipos: [
+          'Malbec',
+          'Cabernet Sauvignon'
+        ]
+      },
     ],
-  },
-  {
-    name: 'eltransito',
-    titulo: 'El Transito',
-    img: [
-      "https://i.imgur.com/2kJxMr6.png",
-      "https://i.imgur.com/RRkWUXb.png",
-      "https://i.imgur.com/mgcDZ0n.png",
-      "https://i.imgur.com/fXtZiWP.png",
-    ],
-    width: 'lg:scale-125'
-  },
-  {
-    name: 'moschini',
-    titulo: 'Bodega y viñedo Moschini',
-    img: [
-      "https://i.imgur.com/2TwDs5A.png",
-      "https://i.imgur.com/pNxnKA2.png",
-      "https://i.imgur.com/5QPS7dr.png",
-    ],
-    width: 'lg:scale-125'
+  
   },
   {
     name: 'secretopatagonico',
     titulo: 'Secreto Patagónico',
-    img: [
-      "https://i.imgur.com/0NS4yDc.png",
-      "https://i.imgur.com/5UM1D1T.png",
-      "https://i.imgur.com/ZJVvJKO.png",
-    ],
-    width: 'lg:scale-125'
-  },
-  {
-    name: 'tobelos',
-    titulo: 'TOBELOS',
-    img: [
-      "https://i.imgur.com/Wykbpig.png",
-      "https://i.imgur.com/d2vowwf.png",
-      "https://i.imgur.com/ba1fOFG.png",
-      "https://i.imgur.com/tuT2QdJ.png",
-      "https://i.imgur.com/hnEbdT5.png",
-      "https://i.imgur.com/IYVP2aF.png",
-      "https://i.imgur.com/INj5PwO.png",
-      "https://i.imgur.com/9aEm6pB.png",
-      "https://i.imgur.com/8yaTWC1.png",
-      "https://i.imgur.com/cT4rIe5.png",
-    ],
-    width: 'lg:scale-125'
-  },
+    descripcion:[
+      {
+        varidad: 'Classic', 
+        img: "https://i.imgur.com/0NS4yDc.png",
+        tipos: [
+          'Malbec',
+          'Pinot Noir',
+          'Chardonnay'
+        ]
+      },
+      {
+        varidad: 'Reserva', 
+        img:  "https://i.imgur.com/ZJVvJKO.png",
+        tipos: [
+          'Malbec',
+          'Pinot Noir'
+        ]
+      },
+      {
+        varidad: 'Rebel', 
+        img: "https://i.imgur.com/5UM1D1T.png",
+        tipos: [
+          'Malbec',
+          'Pinot Noir'
+        ]
+      }
+    ]
+  }
 ];

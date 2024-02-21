@@ -4,7 +4,8 @@ export const ProdSecos = [
         titulo: 'Roruka',
         img: 'https://i.imgur.com/z2LhnW6.png',
         productos: [
-            'Mani'
+            'Cacahuete tostado con/sin sal – Línea Gourmet',
+            'Cacahuete a Granel para Industria'
         ],
         tam: [
             '38/42',

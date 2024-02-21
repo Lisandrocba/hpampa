@@ -12,7 +12,7 @@ const ProductoDetalle = () => {
   } = useRouter();
   const producto = prodBebidas.find((item) => item.name === name);
   return (
-    <div className="bg-slate-200 h-full min-h-screen pb-10">
+    <div className="h-full min-h-screen pb-10">
       <NavBarSectores />
       {producto ? (
             <h4 className="text-hpampa font-bold text-center my-5  lg:hidden lg:mt-5">{producto.titulo}</h4>
@@ -26,7 +26,7 @@ const ProductoDetalle = () => {
                   return (
                       
                       <div key={Math.random()} className="flex flex-col justify-start items-center mx-3 my-2 lg:mt-5 bg-hpampa rounded-xl w-2/5 lg:w-1/4 pb-3">
-                        <p className="text-center w-full bg-white rounded-tl-xl rounded-tr-xl text-hpampa">{i.varidad}</p>
+                        <p className="text-center w-full bg-slate-700 rounded-tl-xl rounded-tr-xl text-white">{i.varidad}</p>
                         <Image
                           className={`mx-3 w-32 h-64 lg:h-64 lg:w-32 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                           alt="img"
@@ -53,7 +53,7 @@ const ProductoDetalle = () => {
         </div>
         <div className="w-full lg:w-1/2 px-5 flex flex-col justify-center items-center">
           {producto ? (
-            <h4 className="text-hpampa font-bold text-start  hidden lg:block lg:mt-5">{producto.titulo}</h4>
+            <h4 className="text-hpampa font-bold text-start text-xl hidden lg:block lg:mt-5">{producto.titulo}</h4>
           ) : null}
 
           <p className="text-2xl font-bold mt-10 text-slate-800 pb-8">

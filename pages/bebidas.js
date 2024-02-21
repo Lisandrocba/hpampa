@@ -53,28 +53,10 @@ const Bebidas = () => {
           name='uko'
           sector='producto'
         />
-        <CartProductos
-          img="https://i.imgur.com/iY3B6JI.png"
-          imgW={200}
-          name='eltransito'
-          sector='producto'
-        />
-        <CartProductos
-          img="https://i.imgur.com/iJH6f8R.png"
-          imgW={200}
-          name='moschini'
-          sector='producto'
-        />
          <CartProductos
           img="https://i.imgur.com/UPIUxBk.png"
           imgW={200}
           name='secretopatagonico'
-          sector='producto'
-        />
-         <CartProductos
-          img="https://i.imgur.com/1sKWNqx.png"
-          imgW={200}
-          name='tobelos'
           sector='producto'
         />
       </div>

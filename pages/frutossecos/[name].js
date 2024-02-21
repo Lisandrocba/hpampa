@@ -43,6 +43,14 @@ const FrutosSecos = () => {
                         :
                         null
                         }
+                         <div className="flex flex-col justify-center items-start ">
+                            <p className="text-xl font-bold mt-5">Productos:</p> 
+                            {i?.productos?.map(p=>{
+                                return(
+                                    <p key={Math.random()}>{p}</p>
+                                )
+                            })}
+                          </div>
                           <div className="flex flex-col justify-center items-start ">
                             <p className="text-xl font-bold mt-5">Tamaño:</p> 
                             {i?.tam?.map(p=>{
