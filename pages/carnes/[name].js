@@ -33,7 +33,7 @@ const CarneDetalle = () => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-around items-center  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 w-full lg:w-2/5"
+                          className="flex flex-col justify-around items-center  object-cover mb-10 bg-hpampa rounded-2xl py-5 px-5 text-slate-900 w-40 h-40 lg:w-2/5"
                         >
                           <p className="text-sm font-bold text-slate-800 text-center">{i.desc}</p>
                           <Image
@@ -57,9 +57,9 @@ const CarneDetalle = () => {
                       return (
                         <div
                           key={Math.random()}
-                          className="flex flex-col justify-around items-center mx-1 object-cover mb-3 bg-hpampa rounded-2xl px-3 w-full lg:w-2/5 text-slate-900"
+                          className="flex flex-col justify-around items-center mx-1 object-cover mb-3 bg-hpampa rounded-2xl px-3 w-40 h-40 lg:w-2/5 text-slate-900"
                         >
-                          <p className="text-sm font-bold text-slate-800 text-center mt-3">{i.desc}</p>
+                          <p className="text-ssm lg:text-sm font-bold text-slate-800 text-center mt-3">{i.desc}</p>
                           <Image
                             className={`mx-3  h-64 lg:h-auto lg:w-56 object-contain lg:hover:scale-125 ease-in duration-300 px-5 py-5`}
                             alt="img"
