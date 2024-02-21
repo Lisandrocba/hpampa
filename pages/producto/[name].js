@@ -17,7 +17,7 @@ const ProductoDetalle = () => {
       {producto ? (
             <h4 className="text-hpampa font-bold text-center my-5  lg:hidden lg:mt-5">{producto.titulo}</h4>
           ) : null}
-      <div className="flex flex-col justify-center items-start lg:px-10  lg:flex lg:flex-row">
+      <div className="flex flex-col justify-center items-center lg:px-10  lg:flex lg:flex-row">
         <div className="flex flex-col justify-center items-center col-span-2">
           <div className=" flex flex-col justify-center items-center rounded-xl">
             <div className="flex flex-row flex-wrap justify-around items-stretch lg:min-w-[600px]">
