@@ -95,7 +95,7 @@ const FormControlServicios = ({servicio}) => {
             id="telefono"
             name='telefono'
             className={`mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent ${formik.touched.telefono && formik.errors.telefono ? 'placeholder:text-red-500 border-red-500' : 'border-slate-800'} placeholder:text-slate-700   text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5`}
-            placeholder={`${formik.touched.telefono && formik.errors.telefono ? formik.errors.telefono :'Telefono'}`}
+            placeholder={`${formik.touched.telefono && formik.errors.telefono ? formik.errors.telefono :'Teléfono'}`}
             value={formik.values.telefono}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}

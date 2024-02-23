@@ -5,35 +5,35 @@ export const ProdAlimentos = [
     data: [
       {
         img: "https://i.imgur.com/8yTAI0O.png",
-        desc: "Risoni Clásico de Alubia y Arroz",
+        desc: "Risoni Clásico de Alubia y Arroz / Classic Bean and Rice Risoni",
       },
       {
         img: "https://i.imgur.com/JLSEy0j.png",
-        desc: "Risoni Zanahoria de Alubia y Arroz",
+        desc: "Risoni Zanahoria de Alubia y Arroz / Risoni Carrot Bean and Rice",
       },
       {
         img: "https://i.imgur.com/YVgd9KY.png",
-        desc: "Pasta Multicereal con Chia Fusilli",
+        desc: "Pasta Multicereal con Chia Fusilli / Multigrain Pasta with Chia Fusilli",
       },
       {
         img: "https://i.imgur.com/ojZLXIU.png",
-        desc: "Pasta Multicereal con Kale Fusilli",
+        desc: "Pasta Multicereal con Kale Fusilli / Multigrain Pasta with Kale Fusilli",
       },
       {
         img: "https://i.imgur.com/WVcP7ht.png",
-        desc: "Pasta Multicereal con Quinoa Fusilli",
+        desc: "Pasta Multicereal con Quinoa Fusilli / Multigrain Pasta with Fusilli Quinoa",
       },
       {
         img: "https://i.imgur.com/k3LmnFw.png",
-        desc: "Pasta de Legumbres Alubia y Quinoa",
+        desc: "Pasta de Legumbres Alubia y Quinoa / Bean and Quinoa Legume Pasta",
       },
       {
         img: "https://i.imgur.com/FGuq6BM.png",
-        desc: "Pasta de Legumbres Porotos, Alubia y Chía",
+        desc: "Pasta de Legumbres Porotos, Alubia y Chía / Legume Pasta Beans, Beans and Chia",
       },
       {
         img: "https://i.imgur.com/f3bB56a.png",
-        desc: "Pasta de Legumbres Arveja y Chía",
+        desc: "Pasta de Legumbres Arveja y Chía / Pea and Chia Legume Pasta",
       },
     ],
   },
@@ -85,7 +85,7 @@ export const ProdAlimentos = [
       },
       {
         img: "https://i.imgur.com/Y10o7LP.png",
-        desc: "Burrito / brebrush",
+        desc: "Burrito / Breebrush",
       },
       {
         img: "https://i.imgur.com/oJjSgIG.png",
@@ -167,7 +167,7 @@ export const ProdAlimentos = [
     data: [
       {
         img: "https://i.imgur.com/vAk7R9h.png",
-        desc: "Leche en Polvo",
+        desc: "Leche en Polvo / Milk powder",
       },
       {
         img: "https://i.imgur.com/3ibxoz7.png",
@@ -175,7 +175,7 @@ export const ProdAlimentos = [
       },
        {
         img: "https://i.imgur.com/SU7N3WD.png",
-        desc: "Queso Azul",
+        desc: "Queso Azul / Blue cheese",
       },
     ]
   },
@@ -185,11 +185,11 @@ export const ProdAlimentos = [
     data: [
       {
         img: "https://i.imgur.com/FabmjMb.png",
-        desc: "Paquete azucar de 1 kg",
+        desc: "Paquete azucar de 1 kg / 1 kg sugar package",
       },
       {
         img: "https://i.imgur.com/zThmHpv.png",
-        desc: "Azucar a granel",
+        desc: "Azucar a granel / Bulk sugar",
       },
     ]
   },
@@ -199,15 +199,15 @@ export const ProdAlimentos = [
     data: [
       {
         img: "https://i.imgur.com/g1XdB5s.png",
-        desc: "Arroz",
+        desc: "Arroz / Rice",
       },
       {
         img: "https://i.imgur.com/Ok9iZrc.png",
-        desc: "Galletitas",
+        desc: "Galletitas / Cookies",
       },
       {
         img: "https://i.imgur.com/3S0bGWu.png",
-        desc: "Galletitas bañadas con chocolate",
+        desc: "Galletitas bañadas con chocolate / Chocolate dipped cookies",
       },
       {
         img: "https://i.imgur.com/WqDWUYi.png",
@@ -215,19 +215,19 @@ export const ProdAlimentos = [
       },
       {
         img: "https://i.imgur.com/VIA34Y0.png",
-        desc: "Antojitos",
+        desc: "Antojitos / Appetizers",
       },
       {
         img: "https://i.imgur.com/dgLFB6w.png",
-        desc: "Alfajor",
+        desc: "Alfajor / Caramel cookie",
       },
       {
         img: "https://i.imgur.com/CCm2ENB.png",
-        desc: "Tostaditas",
+        desc: "Tostaditas / Toaster",
       },
       {
         img: "https://i.imgur.com/q7NkYZA.png",
-        desc: "Tostaditas",
+        desc: "Tostaditas / Toaster",
       },
     ]
   },

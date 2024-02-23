@@ -8,7 +8,7 @@ const textos = {
     "Proveedores Internacionales",
     "Misiones Comerciales e Inversas",
     "Participación en Ferias Internacionales",
-    "Planificación de Ordenes de Compra y Control de Producción",
+    "Planificación de Órdenes de Compra y Control de Producción",
     "Exportación por Cuenta y Orden de Terceros"
   ],
   servicio2: [
@@ -33,7 +33,7 @@ const HeaderConsultoria = () => {
     <div className="w-screen mx-0">
       <h2 className="text-xl lg:text-5xl pt-3 pb-7 mb-3 mt-10 text-center">
         <span className="text-2xl lg:text-6xl text-hpampa">S</span>ervicios de{" "}
-        <span className="text-2xl lg:text-6xl text-hpampa">C</span>onsultoria
+        <span className="text-2xl lg:text-6xl text-hpampa">C</span>onsultoría
       </h2>
       <div className="flex flex-col lg:flex-col lg:flex-wrap justify-center item-center mb-10 ">
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
@@ -42,7 +42,7 @@ const HeaderConsultoria = () => {
           ) : (
             <div className="flex flex-col justify-center items-center">
               <p className="font-bold text-2xl text-center pb-10">DESARROLLO COMERCIAL INTERNACIONAL</p>
-              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-stretch">
                 {textos.servicio1.map((text) => {
                   return (
                     <div
@@ -63,7 +63,7 @@ const HeaderConsultoria = () => {
             }
             className="py-3 my-3 px-5 bg-gray-dark hover:bg-slate-700 text-white rounded-lg lg:w-1/2 mt-3"
           >
-            {buttonForm.servicio1 ? "ver servicio" : "consultar"}
+            {buttonForm.servicio1 ? "Ver servicio" : "Consultar"}
           </button>
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default lg:px-5 py-10 lg:mx-10 my-3">
@@ -72,7 +72,7 @@ const HeaderConsultoria = () => {
           ) : (
             <div>
               <p className="font-bold text-2xl text-center pb-10">GESTION OPERATIVA Y ADUANERA</p>
-              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-stretch">
               {textos.servicio2.map((text) => {
                 return (
                   <div
@@ -93,7 +93,7 @@ const HeaderConsultoria = () => {
             }
             className="py-3 my-3 px-5 bg-gray-dark hover:bg-slate-700 text-white rounded-lg mt-3 lg:w-1/2 "
           >
-            {buttonForm.servicio2 ? "ver servicio" : "consultar"}
+            {buttonForm.servicio2 ? "Ver servicio" : "Consultar"}
           </button>
         </div>
        

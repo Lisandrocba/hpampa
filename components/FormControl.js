@@ -43,7 +43,7 @@ const FormControl = () => {
           id="nombreEmpresa"
           name='nombreEmpresa'
           className="mb-5 bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700  border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-          placeholder="Nombre compania"
+          placeholder="Nombre compañía"
           value={formik.values.nombreEmpresa}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -107,7 +107,7 @@ const FormControl = () => {
           id="telefono"
           name='telefono'
           className="mb-5  bg-transparent border-t-transparent border-l-transparent border-r-transparent placeholder:text-slate-700 border-slate-800 text-gray-900 text-xl border-2 focus:border-b-blue-500 focus:border-t-transparent focus:border-l-transparent focus:border-r-transparent focus:outline-none focus:ring-transparent block w-full p-2.5"
-          placeholder="Telefono"
+          placeholder="Teléfono"
           value={formik.values.telefono}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}

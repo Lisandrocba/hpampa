@@ -32,7 +32,7 @@ export const ProdSecos = [
         ],
         tam: [
             'Envasadas al vacio',
-            'vacuum packed'
+            'Vacuum packed'
         ],
         presentacion: [
             'Caja de 10 kg con 2 bolsas al vacío de 5 kg',
@@ -70,8 +70,10 @@ export const ProdSecos = [
             'Ex 110/120',
         ],
         presentacion: [
-            'Envase primario: Bolsa de polietileno de baja densidad color azul apta para contacto con alimentos. Envase secundario: Caja de cartón corrugado doble onda capacidad 10 y 5 kg netos y cinta adhesiva',
-            'Primary packing: Blue polyethylene bag low density approved for food contact. Secondary packing: Cardboard box 5 and 10 kg net, and adhesive tape',
+            'Envase primario: Bolsa de polietileno de baja densidad color azul apta para contacto con alimentos.',
+            'Envase secundario: Caja de cartón corrugado doble onda capacidad 10 y 5 kg netos y cinta adhesiva.',
+            'Primary packing: Blue polyethylene bag low density approved for food contact.',
+            'Secondary packing: Cardboard box 5 and 10 kg net, and adhesive tape.'
         ],
         formato: [
             'Ciruelas con y sin carozo; Sin Conservante',

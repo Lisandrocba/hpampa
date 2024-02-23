@@ -7,6 +7,11 @@ import { useRouter } from "next/router";
 const NavBarSectores = () => {
   const { asPath } = useRouter();
   const [estiloNavBar, setEstiloNavBar] = useState(true)
+  const [submenu, setSubmenu] = useState(false)
+
+  const submenuProductos =()=>{
+    setSubmenu(!submenu)
+  }
 
   return (
     <div className="relative z-10">
@@ -32,6 +37,9 @@ const NavBarSectores = () => {
           >
             Consultoria
           </Link>
+          <button onClick={submenuProductos}>Productos</button>
+          <p>Novedades</p>
+          <div className={`flex flex-col justify-center gap-6 items-start ${submenu ? 'absolute' : 'hidden'} bg-slate-100 p-5 top-20 translate-x-4`}>
           <Link
             className={
               asPath === "/bebidas"
@@ -80,8 +88,9 @@ const NavBarSectores = () => {
             }
             href="/alimentos"
           >
-            Alimentos
+            Alimentos Diarios
           </Link>
+          </div>
         </div>
       </div>
     </div>

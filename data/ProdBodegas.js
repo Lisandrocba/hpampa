@@ -9,7 +9,7 @@ export const prodBebidas = [
         img: 'https://i.imgur.com/0EPNmcQ.png',
         tipos: [
           'Malbec',
-          'Cabernet sauvignon',
+          'Cabernet Sauvignon',
           'Chardonnay'
         ]
       },
@@ -18,7 +18,7 @@ export const prodBebidas = [
         img: 'https://i.imgur.com/5R3z9kM.png',
         tipos: [
           'Malbec',
-          'Cabernet sauvignon',
+          'Cabernet Sauvignon',
           'Tempranillo'
         ]
       },
@@ -67,14 +67,14 @@ export const prodBebidas = [
       },
       {
         varidad: 'Green Edition', 
-        img: 'https://i.imgur.com/kleQBhR.png',
+        img: 'https://i.imgur.com/VTcrPe4.png',
         tipos: [
           'Lima & Lemongrass',
         ]
       },
       {
         varidad: 'White Edition', 
-        img: 'https://i.imgur.com/VTcrPe4.png',
+        img: 'https://i.imgur.com/kleQBhR.png',
         tipos: [
           'Cardamomo & Lemongrass',
         ]
@@ -87,14 +87,14 @@ export const prodBebidas = [
         ]
       },
       {
-        varidad: 'Blue Editión', 
+        varidad: 'Blue Edition', 
         img: 'https://i.imgur.com/0esKBWK.png',
         tipos: [
           'Enebro y Coriandro',
         ]
       },
       {
-        varidad: 'Gin Tónic', 
+        varidad: 'Gin Tonic', 
         img: 'https://i.imgur.com/roo4dOm.png',
         tipos: [
           'Listo para beber',
@@ -112,7 +112,7 @@ export const prodBebidas = [
         img: 'https://i.imgur.com/3EnFcye.png',
         tipos: [
           'Malbec',
-          'Cabernet sauvignon',
+          'Cabernet Sauvignon',
           'Chardonnay'
         ]
       },
@@ -121,7 +121,7 @@ export const prodBebidas = [
         img: 'https://i.imgur.com/As367BQ.png',
         tipos: [
           'Malbec',
-          'Cabernet sauvignon',
+          'Cabernet Sauvignon',
           'Chardonnay'
         ]
       },
@@ -154,11 +154,12 @@ export const prodBebidas = [
     titulo: 'Bodega Bournett',
     descripcion:[
       {
-        varidad: 'I.G: Malbec', 
+        varidad: 'I.G', 
         img:  "https://i.imgur.com/QUGd31r.png",
         tipos: [
+          'Malbec',
           'Merlot',
-          'Cabernet sauvignon',
+          'Cabernet Sauvignon',
           'Chardonnay',
           'Corbeau',
           'Malbec Rosé',
@@ -211,7 +212,7 @@ export const prodBebidas = [
       },
       {
         varidad: 'Corazón Salvaje', 
-        img:   'https://i.imgur.com/QtuH6rx.png',
+        img:   'https://i.imgur.com/8LTfPY7.png',
         tipos: [
           'Malbec',
           'Cabernet Franc'
@@ -325,7 +326,7 @@ export const prodBebidas = [
     titulo: 'Bodega Uko',
     descripcion: [
       {
-        varidad: 'State', 
+        varidad: 'Estate', 
         img:  'https://i.imgur.com/7sXZmT6.png',
         tipos: [
           'Malbec',
@@ -378,7 +379,7 @@ export const prodBebidas = [
       },
       {
         varidad: 'Reserva', 
-        img:  "https://i.imgur.com/ZJVvJKO.png",
+        img:  "https://i.imgur.com/5UM1D1T.png",
         tipos: [
           'Malbec',
           'Pinot Noir'
@@ -386,7 +387,7 @@ export const prodBebidas = [
       },
       {
         varidad: 'Rebel', 
-        img: "https://i.imgur.com/5UM1D1T.png",
+        img: "https://i.imgur.com/ZJVvJKO.png",
         tipos: [
           'Malbec',
           'Pinot Noir'

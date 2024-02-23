@@ -33,7 +33,7 @@ export const prodCarnes = [
             },
             {
                 img: 'https://i.imgur.com/XRunFBT.png',
-                desc: 'Corazon de Cuadril / Heart Of Rump'
+                desc: 'Corazón de Cuadril / Heart Of Rump'
             },        
         ],
       },
@@ -82,7 +82,7 @@ export const prodCarnes = [
 
         ],
         kilos: [
-            'Codero / lamb: 8-15 kg',
+            'Cordero / Lamb: 8-15 kg',
             'Cabrito / Baby Goat: 6-8 kg',
             'Cabra / Goat 8-15: kg',
             'Mutton: 16-25 kg',
@@ -101,7 +101,7 @@ export const prodCarnes = [
             },
             {
                 img: 'https://i.imgur.com/iOrY6Md.png',
-                desc: 'Fillet de Pechuga / Single Fillet'
+                desc: 'Filet de Pechuga / Single Fillet'
             },
             {
                 img: 'https://i.imgur.com/Ug6AC0D.png',
@@ -110,10 +110,6 @@ export const prodCarnes = [
             {
                 img: 'https://i.imgur.com/WQxgPkf.png',
                 desc: 'Cuarto Trasero / Leg Quarter'
-            },
-            {
-                img: 'https://i.imgur.com/WQxgPkf.png',
-                desc: 'Fillet de Pechuga / Single Fillet'
             },
             {
                 img:  'https://i.imgur.com/DI35FQR.png',
@@ -170,7 +166,7 @@ export const prodCarnes = [
             img:  'https://i.imgur.com/FgmsgdX.png',
             desc: 'Corvina / Croaker',
             tipos:[
-                'Whole / Entero',
+                'Entero / Whole',
                 'Eviscerada / WGS',
                 'Pan Ready / Pan Ready'
             ]
