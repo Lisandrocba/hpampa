@@ -36,13 +36,13 @@ const HeaderConsultoria = () => {
         <span className="text-2xl lg:text-6xl text-hpampa">C</span>onsultoría
       </h2>
       <div className="flex flex-col lg:flex-col lg:flex-wrap justify-center item-center mb-10 ">
-        <div className="flex flex-col flex-wrap justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
+        <div className="flex flex-col flex-wrap  justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
           {buttonForm.servicio1 ? (
             <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center w-full">
               <p className="font-bold text-2xl text-center pb-10">DESARROLLO COMERCIAL INTERNACIONAL</p>
-              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-stretch">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch w-full">
                 {textos.servicio1.map((text) => {
                   return (
                     <div
@@ -70,9 +70,9 @@ const HeaderConsultoria = () => {
           {buttonForm.servicio2 ? (
             <FormControlServicios  servicio={buttonForm.servicio}/>
           ) : (
-            <div>
+            <div className="w-full">
               <p className="font-bold text-2xl text-center pb-10">GESTION OPERATIVA Y ADUANERA</p>
-              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-stretch">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center w-full lg:items-stretch">
               {textos.servicio2.map((text) => {
                 return (
                   <div

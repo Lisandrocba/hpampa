@@ -15,7 +15,7 @@ const NavBar = ({scrollToComponent}) => {
     return (
         <div className="relative  top-0 left-0  ">
           <div className={`flex flex-row items-center justify-between px-2 py-2 pr-5`}>
-            <button className={` ${estiloNavBar ? '' : ''}`} onClick={()=>setEstiloNavBar(!estiloNavBar)}>
+            <button className='bg-white p-2 rounded-2xl -translate-y-2' onClick={()=>setEstiloNavBar(!estiloNavBar)}>
               <svg className="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>

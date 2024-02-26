@@ -37,9 +37,9 @@ const NavBarSectores = () => {
           >
             Consultoria
           </Link>
-          <button onClick={submenuProductos}>Productos</button>
-          <p>Novedades</p>
-          <div className={`flex flex-col justify-center gap-6 items-start ${submenu ? 'absolute' : 'hidden'} bg-slate-100 p-5 top-20 translate-x-4`}>
+          <button className="hidden lg:block" onClick={submenuProductos}>Productos</button>
+         
+          <div className={`flex flex-col lg:flex-col justify-center items-center gap-6 lg:items-start ${submenu ? 'absolute' : 'lg:hidden'} bg-slate-100 p-5 lg:top-20 lg:translate-x-4`}>
           <Link
             className={
               asPath === "/bebidas"
@@ -91,6 +91,7 @@ const NavBarSectores = () => {
             Alimentos Diarios
           </Link>
           </div>
+          <p>Novedades</p>
         </div>
       </div>
     </div>
