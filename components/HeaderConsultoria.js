@@ -41,7 +41,7 @@ const HeaderConsultoria = () => {
             <FormControlServicios servicio={buttonForm.servicio}/>
           ) : (
             <div className="flex flex-col justify-center items-center w-full">
-              <p className="font-bold text-2xl text-center pb-10">DESARROLLO COMERCIAL INTERNACIONAL</p>
+              <p className="font-bold lg:text-2xl text-center px-2 pb-10">DESARROLLO COMERCIAL INTERNACIONAL</p>
               <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch w-full">
                 {textos.servicio1.map((text) => {
                   return (
@@ -71,7 +71,7 @@ const HeaderConsultoria = () => {
             <FormControlServicios  servicio={buttonForm.servicio}/>
           ) : (
             <div className="w-full">
-              <p className="font-bold text-2xl text-center pb-10">GESTION OPERATIVA Y ADUANERA</p>
+              <p className="font-bold lg:text-2xl text-center px-2 pb-10">GESTION OPERATIVA Y ADUANERA</p>
               <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center w-full lg:items-stretch">
               {textos.servicio2.map((text) => {
                 return (
