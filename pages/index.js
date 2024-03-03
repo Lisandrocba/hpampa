@@ -21,7 +21,7 @@ export default function Home() {
     <div>
       <Head>
         <title>HPampa - comercio exterior</title>
-        <meta name="description" content="Depósito Aduanero con Servicios de Apoyo Logístico para servicio de Importación, Exportación y Tránsito." />
+        <meta name="description" content="Depósito Aduanero con Servicios de Apoyo Logístico para servicio de Importación, Exportación y Tránsito. Comercio Exterior" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>

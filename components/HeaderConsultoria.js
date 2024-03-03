@@ -38,7 +38,7 @@ const HeaderConsultoria = () => {
       <div className="flex flex-col lg:flex-col lg:flex-wrap justify-center item-center mb-10 ">
         <div className="flex flex-col flex-wrap  justify-center items-center cursor-default border-b-solid border-b-2 border-slate-400 lg:px-5 py-10 lg:mx-10 my-3">
           {buttonForm.servicio1 ? (
-            <FormControlServicios servicio={buttonForm.servicio}/>
+            <FormControlServicios servicio={'DESARROLLO COMERCIAL INTERNACIONAL'}/>
           ) : (
             <div className="flex flex-col justify-center items-center w-full">
               <p className="font-bold lg:text-2xl text-center px-2 pb-10">DESARROLLO COMERCIAL INTERNACIONAL</p>
@@ -68,7 +68,7 @@ const HeaderConsultoria = () => {
         </div>
         <div className="flex flex-col flex-wrap justify-center items-center cursor-default lg:px-5 py-10 lg:mx-10 my-3">
           {buttonForm.servicio2 ? (
-            <FormControlServicios  servicio={buttonForm.servicio}/>
+            <FormControlServicios  servicio={'GESTION OPERATIVA Y ADUANERA'}/>
           ) : (
             <div className="w-full">
               <p className="font-bold lg:text-2xl text-center px-2 pb-10">GESTION OPERATIVA Y ADUANERA</p>
