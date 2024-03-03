@@ -22,6 +22,7 @@ const Alimentos = () => {
           ]}
           name="pastaceca"
           sector="alimentos"
+          menuName = 'Pasta Ceca / Dry Pasta'
         />
         <CartProductos
           img="https://i.imgur.com/EIqJl7f.png"
@@ -36,6 +37,7 @@ const Alimentos = () => {
           ]}
           name="yerba"
           sector="alimentos"
+          menuName = 'Yerba / Herb'
         />
         <CartProductos
           img="https://i.imgur.com/AxgOaeS.png"
@@ -50,6 +52,7 @@ const Alimentos = () => {
           ]}
           name="miel"
           sector="alimentos"
+          menuName = 'Miel / Honey'
         />
         <CartProductos
           img="https://i.imgur.com/ZZJkApR.png"
@@ -63,6 +66,7 @@ const Alimentos = () => {
           ]}
           name="aceite"
           sector="alimentos"
+          menuName = 'Aceite / Oil'
         />
          <CartProductos
           img="https://i.imgur.com/FGDjbQ2.png"
@@ -73,6 +77,7 @@ const Alimentos = () => {
           ]}
           name="aceiteoliva"
           sector="alimentos"
+          menuName = 'Aceite de Oliva / Olive Oil'
         />
         <CartProductos
           img="https://i.imgur.com/DKG4cV8.png"
@@ -83,12 +88,14 @@ const Alimentos = () => {
           ]}
           name="lacteos"
           sector="alimentos"
+          menuName = 'Lacteos / Dairy'
         />
         <CartProductos
           img="https://i.imgur.com/5yAI1Te.png"
           productos={["Paquete de azucar por 1kg", "Azucar a granel"]}
           name="azucar"
           sector="alimentos"
+          menuName = 'Azúcar / Sugar'
         />
         <CartProductos
           img="https://i.imgur.com/GF9EJn5.png"
@@ -103,6 +110,7 @@ const Alimentos = () => {
           ]}
           name="arroz"
           sector="alimentos"
+          menuName = 'Arroz / Rice'
         />
           <CartProductos
           img="https://i.imgur.com/AgC6qir.png"
@@ -118,6 +126,7 @@ const Alimentos = () => {
           ]}
           name="tapasempanadas"
           sector="alimentos"
+          menuName = 'Tapa de Empanadas'
         />
           <CartProductos
           img="https://i.imgur.com/PdONJWc.png"
@@ -131,6 +140,7 @@ const Alimentos = () => {
           ]}
           name="panificacion"
           sector="alimentos"
+          menuName = 'Panificación / Baking'
         />
       </div>
     </div>
