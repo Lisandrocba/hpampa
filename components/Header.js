@@ -14,7 +14,7 @@ const Header = ({scrollToComponent}) => {
             </div>
             
             <div className="flex flex-row justify-center items-center  ml-3 w-1/3 -translate-x-6">
-                <Image className='w-24 lg:w-44' src={logoHPampa} alt="logohpampa" width={200} height={30}/>
+                <Image priority className='w-24 lg:w-44 h-auto' src={logoHPampa} alt="logohpampa" width={200} height={30}/>
             </div>
            
             <h1 className='text-ssm lg:font-bold text-end lg:text-xl w-1/3 pr-5'>Comercio Exterior</h1>

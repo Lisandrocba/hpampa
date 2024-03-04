@@ -54,6 +54,7 @@ const Carrusel=React.memo(()=> {
         className="w-full h-96 lg:h-screen object-cover contrast-50 "
         alt="..."
         width='5000'
+        priority
       />
     </div>
   );
