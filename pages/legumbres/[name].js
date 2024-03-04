@@ -53,7 +53,7 @@ const LegumbresDetalle = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-2/5 px-5 flex flex-col justify-center items-start">
+        <div className="lg:w-2/5 w-full px-5 flex flex-col justify-center items-center lg:items-start">
           {producto ? (
             <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5">
               {producto.titulo}
@@ -67,7 +67,7 @@ const LegumbresDetalle = () => {
                 })
               : null}
           </div>
-          <p className="text-xl lg:text-2xl mt-5 font-bold text-slate-800 pb-8">
+          <p className="text-xl  lg:text-2xl mt-5 font-bold text-slate-800 pb-8">
             Consultas sobre el producto
           </p>
           <FormControl />

@@ -91,7 +91,10 @@ const NavBarSectores = () => {
             Alimentos Diarios
           </Link>
           </div>
-          <p className="py-4 text-lg lg:py-0 lg:text-sm xl:text-lg">Novedades</p>
+          <div>
+            <p className="absolute text-ssm translate-x-14 lg:-translate-y-3 text-emerald-600 font-bold cursor-default">Próximamente</p>
+            <p className="py-4 text-lg lg:py-0 lg:text-sm xl:text-lg cursor-default">Novedades</p>
+          </div>
         </div>
       </div>
     </div>

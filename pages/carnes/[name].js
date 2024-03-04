@@ -87,7 +87,7 @@ const CarneDetalle = () => {
           }
           </div>
         </div>
-        <div className="lg:w-2/5 px-5">
+        <div className="lg:w-2/5 px-5 w-full">
             {producto ? (
               <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5">
                 {producto.titulo}

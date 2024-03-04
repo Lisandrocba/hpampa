@@ -51,7 +51,7 @@ const AlimentosDetalle = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-2/5 px-5 flex flex-col justify-center items-start">
+        <div className="lg:w-2/5 w-full px-5 flex flex-col justify-center items-start">
         {producto ? (
               <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5 ">
                 {producto.titulo}

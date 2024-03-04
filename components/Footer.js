@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div>
-        <section class="spikes"></section>
+        <section className="spikes"></section>
         <div className="p-5 flex flex-col sm:flex-row lg:flex-row justify-center items-center lg:items-start bg-slate-800 sm:px-10 lg:px-20">
             <div className="w-1/3 sm:my-20 lg:my-14 px-7 sm:px-5">
                 <Image className="m-3" src={logoHPampa} alt="logohpampa" width={70} height={40}/>

@@ -84,7 +84,7 @@ const FrutosSecos = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-5 flex flex-col justify-center items-start">
+        <div className="lg:w-1/2 w-full px-5 flex flex-col justify-center items-start">
             {producto ? (
               <h4 className="text-hpampa hidden lg:block font-bold lg:mt-5">
                 {res?.titulo}
