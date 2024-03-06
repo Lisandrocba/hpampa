@@ -16,9 +16,9 @@ const NavBarSectores = () => {
   return (
     <div className="relative z-10">
       <div className="flex flex-row items-center justify-between px-2  bg-slate-100 mb-5 py-2 lg:relative pr-5">
-        <div className="flex flex-row items-center ml-3">
-          <Link href="/">
-            <Image className="w-1/3 lg:w-1/2" src={logoHPampa} alt="logohpampa" width={200} height={30} />
+        <div className="flex flex-row items-center ml-3 w-1/3">
+          <Link className="w-42" href="/">
+            <Image className="w-42 lg:w-36" src={logoHPampa} alt="logohpampa" width={100} height={30} />
           </Link>
         </div>
         <button onClick={()=>setEstiloNavBar(!estiloNavBar)}>

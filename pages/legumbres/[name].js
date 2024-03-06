@@ -32,7 +32,7 @@ const LegumbresDetalle = () => {
                         className="flex flex-col justify-between items-center mx-3 my-2  object-cover mb-10 bg-hpampa rounded-2xl w-2/5 h-64 py-5 px-5 text-slate-900"
                       >
                         <Image
-                          className={`mx-3 w-76 lg:h-56 lg:w-auto object-contain lg:hover:scale-125 ease-in duration-300 lg:px-5 lg:py-5`}
+                          className={`mx-3 w-76 lg:w-44 object-contain lg:hover:scale-125 ease-in duration-300 lg:px-5 lg:py-5`}
                           alt="img"
                           src={i.img}
                           width={100}

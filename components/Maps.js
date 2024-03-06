@@ -15,8 +15,8 @@ const Map = () => {
         const {Map} = await loader.importLibrary('maps')
 
         const posicion = {
-          lat: parseFloat(-31.243888407845628), 
-          lng: parseFloat(-64.46761913905584)
+          lat: parseFloat(42.62890695315134), 
+          lng: parseFloat(-0.3217958220048078), 
         }
 
         const mapOptions = google.maps.MapOptions = {
