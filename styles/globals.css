@@ -78,6 +78,21 @@ body::-webkit-scrollbar-thumb {
  
 }
 
+textarea::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+textarea::-webkit-scrollbar:vertical{
+  width:8px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #273444;
+  border-radius: 20px;
+  border: 1px solid #f1f2f3;
+ 
+}
+
 .spikes {
   position: relative;
   background: #ffffff;
@@ -97,6 +112,8 @@ body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%);
   background-position: 0 0;
 }
+
+
 
 @keyframes bucle {
   0%{

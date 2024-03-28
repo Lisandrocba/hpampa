@@ -64,8 +64,8 @@ const FormControl = () => {
     },
   });
   return (
-    <form ref={formRef} className="w-full" onSubmit={formik.handleSubmit}>
-      <div className="flex flex-col items-center justify-center w-full">
+    <form ref={formRef} className="w-full " onSubmit={formik.handleSubmit}>
+      <div className="flex flex-col items-center justify-center w-full h-auto">
         <input
           type="text"
           id="nombreEmpresa"
