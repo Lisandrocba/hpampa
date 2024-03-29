@@ -63,6 +63,31 @@
   animation: bucle 20s linear infinite;
 }
 
+.sobra-item{
+  box-shadow: #273444 5px 5px;
+  transition: all 0.3s;
+}
+
+.sobra-item:hover{
+  box-shadow: #273444 8px 8px;
+}
+
+.efecto-sombra{
+  transition: all 0.3s;
+}
+
+.efecto-sombra:hover{
+  box-shadow: #273444 3px 3px;
+}
+
+.sobra-ventana{
+  box-shadow: 0 0 0 1000px #2734448b;
+}
+
+.displayNone{
+  display: none;
+}
+
 body::-webkit-scrollbar {
   -webkit-appearance: none;
 }

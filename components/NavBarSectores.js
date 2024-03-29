@@ -90,6 +90,16 @@ const NavBarSectores = () => {
           >
             Alimentos Diarios
           </Link>
+          <Link
+            className={
+              asPath === "/ferreteria"
+                 ? "py-4 text-lg lg:py-0 lg:text-sm xl:text-lg xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+                : "py-4 text-lg lg:py-0 lg:text-sm xl:text-lg lg:text-slate-800"
+            }
+            href="/ferreteria"
+          >
+            Ferreteria
+          </Link>
           </div>
           <div>
             <p className="absolute text-ssm translate-x-14 lg:-translate-y-3 text-emerald-600 font-bold cursor-default">Próximamente</p>

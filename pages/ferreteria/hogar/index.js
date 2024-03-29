@@ -1,8 +1,7 @@
-
 import FormControl from '@/components/FormControl'
 import NavBarSectores from '@/components/NavBarSectores'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import tractor from '../../../public/tractor.png'
 import cortadora from '../../../public/segadora.png'
 import desmalezadora from '../../../public/desbrozadora.png'
@@ -12,39 +11,40 @@ import { FaPersonDigging } from "react-icons/fa6";
 import podadora from '../../../public/2713420.png'
 import pozo from '../../../public/763591.png'
 import bombaagua from '../../../public/5735563.png'
-
+import Ventana from '@/components/Ventana'
 
 const Hogar = () => {
+  const [bandera, setBandera] = useState(false)
   return (
-    <div>
+    <div className='relative'>
       <NavBarSectores />
       <div className='flex flex-row justify-center items-start lg:mx-5'>
         <div className='lg:w-3/5 flex flex-row flex-wrap gap-6 justify-center items-stretch px-3'>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div onClick={()=> setBandera(!bandera)} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={tractor} width={100} height={100} alt='tractor'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={cortadora} width={100} height={100} alt='cortadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={desmalezadora} width={100} height={100} alt='desmalezadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={pulverizador} width={100} height={100} alt='pulverizador'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <GiChainsaw className='text-8xl'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <FaPersonDigging className='text-8xl' />
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={podadora} width={100} height={100} alt='podadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={pozo} width={100} height={100} alt='pozo'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer'>
+          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={bombaagua} width={100} height={100} alt='bombaagua'/>
           </div>
         </div>
@@ -55,6 +55,7 @@ const Hogar = () => {
           <FormControl />
         </div>
       </div>
+      <Ventana setBandera={setBandera} bandera={bandera}/>
     </div>
   )
 }
