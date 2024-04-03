@@ -16,7 +16,7 @@ const Generacion = () => {
   return (
     <div>
       <NavBarSectores />
-      <div className='flex flex-row justify-center items-start lg:mx-5'>
+      <div className='flex flex-col lg:flex-row justify-center lg:items-start lg:mx-5'>
         <div className='lg:w-3/5 flex flex-row flex-wrap gap-6 justify-center items-stretch px-3'>
           <div onClick={()=>{
               setBandera(!bandera)
@@ -43,7 +43,7 @@ const Generacion = () => {
             <Image src={generador} width={100} height={100} alt='generador'/>
           </div>
         </div>
-        <div className='lg:w-2/5 h-20 flex flex-col'>
+        <div className='lg:w-2/5 w-full justify-center items-center mt-20 px-5 lg:mt-0 flex flex-col'>
           <p className="text-xl  lg:text-2xl font-bold text-slate-800 pb-8">
             Consultas sobre el producto
           </p>

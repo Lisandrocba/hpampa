@@ -20,7 +20,7 @@ const Hogar = () => {
   return (
     <div className='relative'>
       <NavBarSectores />
-      <div className='flex flex-col lg:flex-row justify-center items-start lg:mx-5'>
+      <div className='flex flex-col lg:flex-row justify-center lg:items-start lg:mx-5'>
         <div className='lg:w-3/5 flex flex-row flex-wrap gap-6 justify-center items-stretch px-3'>
           <div onClick={()=>{
               setBandera(!bandera)
