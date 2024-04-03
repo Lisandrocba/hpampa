@@ -1,20 +1,30 @@
 import FormControl from '@/components/FormControl'
 import NavBarSectores from '@/components/NavBarSectores'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import compresor from '../../../public/compresor.png'
+import Ventana from '@/components/Ventana'
 
 
 const Aire = () => {
+  const [bandera, setBandera] = useState(false)
+  const [infoVentana, setInfoVentana] = useState([])
+
   return (
     <div>
       <NavBarSectores />
       <div className='flex flex-row justify-center items-start lg:mx-5'>
         <div className='lg:w-3/5 flex flex-row flex-wrap gap-6 justify-center items-stretch px-3'>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/mY3Gjf0.jpg'])
+          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={compresor} width={100} height={100} alt='compresor'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/doy6qY7.jpg'])
+          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={compresor} width={100} height={100} alt='compresor'/>
           </div>
         </div>
@@ -25,6 +35,7 @@ const Aire = () => {
           <FormControl />
         </div>
       </div>
+      <Ventana setBandera={setBandera} bandera={bandera} infoVentana={infoVentana}/>
     </div>
   )
 }

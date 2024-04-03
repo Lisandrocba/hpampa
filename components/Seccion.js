@@ -17,6 +17,7 @@ const Seccion = () => {
             <Link className="text-slate-100 pb-5 lg:pb-0 text-2xl italic hover:underline transition-colors hover:text-black duration-300 hover:rotate-2" href="/legumbres">Legumbres</Link>
             <Link className="text-slate-100 pb-5 lg:pb-0 text-2xl italic hover:underline transition-colors hover:text-black duration-300 hover:-rotate-2" href="/frutossecos">Frutos Secos</Link>
             <Link className="text-slate-100 pb-5 lg:pb-0 text-2xl italic hover:underline transition-colors hover:text-black duration-300 hover:rotate-2" href="/alimentos">Alimentos Diarios</Link>
+            <Link className="text-slate-100 pb-5 lg:pb-0 text-2xl italic hover:underline transition-colors hover:text-black duration-300 hover:rotate-2" href="/ferreteria">Ferreteria</Link>
           </div>
         </div>
       </div>

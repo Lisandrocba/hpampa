@@ -88,6 +88,16 @@ const NavBar = ({scrollToComponent}) => {
                 >
                   - Alimentos
                 </Link>
+                <Link
+                  className={
+                    asPath === "/ferreteria"
+                      ? "text-sm py-4 lg:py-0 lg:text-sm xl:text-sm xl:font-bold lg:text-slate-800 lg:border-b-2 lg:border-solid lg:border-x-slate-900"
+                      : "text-sm py-4 lg:py-0 lg:text-sm xl:text-sm lg:text-slate-800"
+                  }
+                  href="/ferreteria"
+                >
+                  - Ferreteria
+                </Link>
               </div>
               <button onClick={scrollContacto} className='font-bold text-sm h-1/6 pt-6'>
                   Contacto

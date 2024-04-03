@@ -15,47 +15,82 @@ import Ventana from '@/components/Ventana'
 
 const Hogar = () => {
   const [bandera, setBandera] = useState(false)
+  const [infoVentana, setInfoVentana] = useState([])
+  
   return (
     <div className='relative'>
       <NavBarSectores />
-      <div className='flex flex-row justify-center items-start lg:mx-5'>
+      <div className='flex flex-col lg:flex-row justify-center items-start lg:mx-5'>
         <div className='lg:w-3/5 flex flex-row flex-wrap gap-6 justify-center items-stretch px-3'>
-          <div onClick={()=> setBandera(!bandera)} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/LgvjgIW.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={tractor} width={100} height={100} alt='tractor'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/op21dqF.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={cortadora} width={100} height={100} alt='cortadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/K6SvN0K.jpg', 'https://i.imgur.com/xsc2g9p.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+            <Image src={cortadora} width={100} height={100} alt='cortadora'/>
+          </div>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/oqyg4Yp.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={desmalezadora} width={100} height={100} alt='desmalezadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/Aprd5eN.jpg', 'https://i.imgur.com/4BpW3ya.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+            <Image src={desmalezadora} width={100} height={100} alt='desmalezadora'/>
+          </div>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/k1eCHLo.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={pulverizador} width={100} height={100} alt='pulverizador'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/Aprd5eN.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <GiChainsaw className='text-8xl'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <FaPersonDigging className='text-8xl' />
-          </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/4BpW3ya.jpg'])
+          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={podadora} width={100} height={100} alt='podadora'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/Aprd5eN.jpg'])
+          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={pozo} width={100} height={100} alt='pozo'/>
           </div>
-          <div className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          <div onClick={()=>{
+              setBandera(!bandera)
+              setInfoVentana(['https://i.imgur.com/3uKxJ8g.jpg', 'https://i.imgur.com/xiqoTle.jpg'])
+          }} className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={bombaagua} width={100} height={100} alt='bombaagua'/>
           </div>
         </div>
-        <div className='lg:w-2/5 h-20 flex flex-col'>
+        <div className='lg:w-2/5 w-full justify-center items-center mt-20 px-5 lg:mt-0 flex flex-col'>
           <p className="text-xl  lg:text-2xl font-bold text-slate-800 pb-8">
             Consultas sobre el producto
           </p>
           <FormControl />
         </div>
       </div>
-      <Ventana setBandera={setBandera} bandera={bandera}/>
+      <Ventana setBandera={setBandera} bandera={bandera} infoVentana={infoVentana}/>
     </div>
   )
 }
