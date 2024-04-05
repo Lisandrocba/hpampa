@@ -34,7 +34,7 @@ const Herramientas = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/Q3DK2fg.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={sierra} width={100} height={100} alt='sierra'/>
+            <Image src={sierra} width={100} height={100} alt='sierra' loading='lazy'/>
             <p className='mt-3'>Máquinas combinadas</p>
             <p>para carpintería</p>
           </div>
@@ -42,7 +42,7 @@ const Herramientas = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/4L71DdV.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={carpinteria} width={100} height={100} alt='carpinteria'/>
+            <Image src={carpinteria} width={100} height={100} alt='carpinteria' loading='lazy'/>
             <p className='mt-3'>Sierras y tornos de madera</p>
             <p>Pegadoras de cantos</p>
             <p>Tupi hobbista</p>

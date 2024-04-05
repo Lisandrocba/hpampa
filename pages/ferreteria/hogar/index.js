@@ -26,14 +26,14 @@ const Hogar = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/LgvjgIW.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={tractor} width={100} height={100} alt='tractor'/>
+            <Image src={tractor} width={100} height={100} alt='tractor' loading='lazy'/>
             <p className='mt-3'>Minitractores</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/op21dqF.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={cortadora} width={100} height={100} alt='cortadora'/>
+            <Image src={cortadora} width={100} height={100} alt='cortadora' loading='lazy'/>
             <p className='mt-3'>Cortadora de césped</p>
             <p>eléctricas</p>
           </div>
@@ -41,7 +41,7 @@ const Hogar = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/K6SvN0K.jpg', 'https://i.imgur.com/xsc2g9p.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={cortadora} width={100} height={100} alt='cortadora'/>
+            <Image src={cortadora} width={100} height={100} alt='cortadora' loading='lazy'/>
             <p className='mt-3'>Cortadora de césped</p>
             <p>a nafta</p>
           </div>
@@ -49,14 +49,14 @@ const Hogar = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/oqyg4Yp.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={desmalezadora} width={100} height={100} alt='desmalezadora'/>
+            <Image src={desmalezadora} width={100} height={100} alt='desmalezadora' loading='lazy'/>
             <p className='mt-3'>Bordeadoras</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/Aprd5eN.jpg', 'https://i.imgur.com/4BpW3ya.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={podadora} width={100} height={100} alt='desmalezadora'/>
+            <Image src={podadora} width={100} height={100} alt='desmalezadora' loading='lazy'/>
             <p className='mt-3'>Motoguadañas</p>
             <p>Motorierras</p>
             <p>Hoyadora</p>
@@ -67,14 +67,14 @@ const Hogar = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/k1eCHLo.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={pulverizador} width={100} height={100} alt='pulverizador'/>
+            <Image src={pulverizador} width={100} height={100} alt='pulverizador' loading='lazy'/>
             <p className='mt-3'>Pulverizadores</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/3uKxJ8g.jpg', 'https://i.imgur.com/xiqoTle.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={bombaagua} width={100} height={100} alt='bombaagua'/>
+            <Image src={bombaagua} width={100} height={100} alt='bombaagua' loading='lazy'/>
             <p className='mt-3'>Electrobombas</p>
             <p>Presurizadora</p>
             <p>Electrobombas sumergibles</p>

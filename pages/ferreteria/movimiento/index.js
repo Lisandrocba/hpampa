@@ -18,7 +18,7 @@ const Movimiento = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/ntvzFG3.jpg'])
           }} className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={gancho} width={100} height={100} alt='gancho'/>
+            <Image src={gancho} width={100} height={100} alt='gancho' loading='lazy'/>
             <p className='mt-3'>Aparejos eléctricos</p>
             <p>Aparejos manuales a cadena</p>
           </div>

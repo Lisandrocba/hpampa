@@ -39,7 +39,7 @@ const AlimentosDetalle = () => {
                             src={i.img}
                             width={100}
                             height={100}
-                            priority
+                            loading='lazy'
                           />
                           <div className="flex flex-col justify-center items-start ">
                             <p className="text-slate-800 text-xs lg:text-lg font-bold text-center">{i.desc}</p>

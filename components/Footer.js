@@ -11,7 +11,7 @@ const Footer = () => {
         <section className="spikes"></section>
         <div className="p-5 flex flex-col sm:flex-row lg:flex-row justify-center items-center lg:items-start bg-slate-800 sm:px-10 lg:px-20">
             <div className="w-1/3 sm:my-20 lg:my-14 px-7 sm:px-5">
-                <Image className="m-3" src={logoHPampa} alt="logohpampa" width={70} height={40}/>
+                <Image className="m-3" src={logoHPampa} alt="logohpampa" width={70} height={40} loading='lazy'/>
             </div>
             <div className="flex flex-wrap gap-5 flex-row justify-center sm:items-start sm:justify-between sm:w-2/3 lg:w-2/3 py-5">
                 <div>

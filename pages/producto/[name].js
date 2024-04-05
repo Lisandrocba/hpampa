@@ -39,6 +39,7 @@ const ProductoDetalle = () => {
                           src={i.img}
                           width={400}
                           height={850}
+                          loading='lazy'
                         />
                         {i.tipos.map((i, index) => {
                           return (

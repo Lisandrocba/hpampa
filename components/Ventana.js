@@ -16,7 +16,7 @@ const Ventana = ({bandera, setBandera, infoVentana = []}) => {
           infoVentana[0] ?
           infoVentana.map((img, index) =>{
             return(
-              <Image key={index} width={500} height={500} src={img} alt='ventana' className='border-4 border-slate-800'/>
+              <Image key={index} width={500} height={500} src={img} alt='ventana' className='border-4 border-slate-800' loading='lazy'/>
             )
           })
           : null

@@ -37,6 +37,7 @@ const LegumbresDetalle = () => {
                           src={i.img}
                           width={100}
                           height={100}
+                          loading='lazy'
                         />
                         <div className="flex flex-col justify-center items-center ">
                           <p className="text-sm font-bold text-slate-800 text-center">

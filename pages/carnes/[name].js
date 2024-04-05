@@ -42,6 +42,7 @@ const CarneDetalle = () => {
                             src={i.img}
                             width={400}
                             height={800}
+                            loading='lazy'
                           />
                           <div className="mt-5">
                             {i.tipos
@@ -66,6 +67,7 @@ const CarneDetalle = () => {
                             src={i.img}
                             width={400}
                             height={800}
+                            loading='lazy'
                           />
                         </div>
                       );
@@ -105,6 +107,7 @@ const CarneDetalle = () => {
               src='https://i.imgur.com/F5Isnb4.png'
               width={400}
               height={800}
+              loading='lazy'
             />
             <Image
               className="w-24 h-24 object-contain p-2"
@@ -112,6 +115,7 @@ const CarneDetalle = () => {
               src='https://i.imgur.com/dVBa4Tq.png'
               width={400}
               height={800}
+              loading='lazy'
             />
             <Image
               className="w-24 h-24 object-contain p-2"
@@ -119,6 +123,7 @@ const CarneDetalle = () => {
               src='https://i.imgur.com/8JZzXAb.png'
               width={400}
               height={800}
+              loading='lazy'
             />
           </div>
         </div>

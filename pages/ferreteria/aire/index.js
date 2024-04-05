@@ -19,14 +19,14 @@ const Aire = () => {
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/mY3Gjf0.jpg'])
           }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={compresor} width={100} height={100} alt='compresor'/>
+            <Image src={compresor} width={100} height={100} alt='compresor' loading='lazy'/>
             <p>Compresor de aire</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/doy6qY7.jpg'])
           }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
-            <Image src={compresor} width={100} height={100} alt='compresor'/>
+            <Image src={compresor} width={100} height={100} alt='compresor' loading='lazy'/>
             <p>Compresor de correa</p>
           </div>
         </div>
