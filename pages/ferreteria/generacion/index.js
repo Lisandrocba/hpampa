@@ -21,26 +21,35 @@ const Generacion = () => {
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/vEY5fUn.jpg'])
-          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={bombaAgua} width={100} height={100} alt='bombaAgua'/>
+            <p className='mt-3'>Motobombas</p>
+            <p>Motores estacionarios</p>
+            <p>Morotes briggs & stratton</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/CbLUOy4.jpg'])
-          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={soldador} width={100} height={100} alt='soldador'/>
+            <p className='mt-3'>Soldadoras</p>
+            <p>Mascara fotosensible</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/fQY0jDY.jpg'])
-          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={cargador} width={100} height={100} alt='cargador'/>
+            <p className='mt-3'>Cargadores de batería</p>
+            <p>Arrancadores de batería</p>
           </div>
           <div onClick={()=>{
               setBandera(!bandera)
               setInfoVentana(['https://i.imgur.com/0SyEr4t.jpg'])
-          }}  className='bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
+          }}  className='flex flex-col justify-center items-center bg-hpampa p-3 rounded-2xl border-4 border-solid border-slate-700 cursor-pointer efecto-sombra'>
             <Image src={generador} width={100} height={100} alt='generador'/>
+            <p className='mt-3'>Grupos electrógenos</p>
+            <p>Motosoldador a nafta</p>
           </div>
         </div>
         <div className='lg:w-2/5 w-full justify-center items-center mt-20 px-5 lg:mt-0 flex flex-col'>
